@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4656,        121]
-NotebookOptionsPosition[      3499,         90]
-NotebookOutlinePosition[      4305,        117]
-CellTagsIndexPosition[      4262,        114]
+NotebookDataLength[      5793,        152]
+NotebookOptionsPosition[      4631,        121]
+NotebookOutlinePosition[      5439,        148]
+CellTagsIndexPosition[      5396,        145]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -47,8 +47,9 @@ Cell[BoxData[
    RowBox[{"{", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{
-      RowBox[{"RegularExpression", "[", "\"\<^\\\\d+$\>\"", "]"}], "\[Rule]", 
-      "\"\<number\>\""}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+      "RegularExpression", "[", "\"\<^(\\\\-)?\\\\d+(\\\\.)?(\\\\d+)?$\>\"", 
+       "]"}], "\[Rule]", "\"\<number\>\""}], ",", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"RegularExpression", "[", "\"\<(?i)^.+@.+\\\\..+$\>\"", "]"}], 
       "\[Rule]", "\"\<email\>\""}], ",", "\[IndentingNewLine]", 
@@ -77,19 +78,49 @@ Cell[BoxData[
    3.770907533935253*^9, 3.770907534343701*^9}, 3.770907853271167*^9, 
    3.770916744661894*^9, {3.770917785740967*^9, 3.770917786084804*^9}, {
    3.770930170654791*^9, 3.77093018398342*^9}, {3.770984102639523*^9, 
-   3.7709841029697847`*^9}, {3.770989075641919*^9, 
-   3.770989077012838*^9}},ExpressionUUID->"36b1d01f-c9a7-4696-94e9-\
-f6f5acecf4ad"],
+   3.7709841029697847`*^9}, {3.770989075641919*^9, 3.770989077012838*^9}, {
+   3.770996267175179*^9, 3.7709963046126328`*^9}, {3.770996334927438*^9, 
+   3.770996338875618*^9}},
+ CellLabel->
+  "In[609]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{
-  3.770985091318825*^9, {3.770985199669458*^9, 
-   3.77098520045041*^9}},ExpressionUUID->"41967d32-a163-44ea-85f2-\
-cdc6c96faf69"]
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Find", " ", "the", " ", "header"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"testdata", " ", "=", " ", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{
+      "Import", "[", "\"\</Users/xiaoyifei/Desktop/WSS/project/GIR.csv\>\"", 
+       "]"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"datapas", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"StringReplace", "[", "parsing", "]"}], "/@", 
+      RowBox[{"Map", "[", 
+       RowBox[{"ToString", ",", "testdata", ",", 
+        RowBox[{"{", "2", "}"}]}], "]"}]}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"common", " ", "=", " ", 
+     RowBox[{"Normal", "@@@", 
+      RowBox[{"Commonest", "/@", "datapas"}]}]}], ";"}], "\n", 
+   RowBox[{"Max", "@", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"MapThread", "[", "Position", "]"}], "[", 
+      RowBox[{"{", 
+       RowBox[{"datapas", ",", "common"}], "}"}], "]"}], "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "1"}], "]"}], "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.770997854389613*^9, 
+  3.770997878251295*^9}},ExpressionUUID->"31489065-e6f3-4b33-bbcf-\
+df5a9d0979e1"]
 }, Open  ]]
 },
 WindowSize->{720, 755},
-WindowMargins->{{Automatic, 43}, {Automatic, 0}},
+WindowMargins->{{Automatic, 10}, {Automatic, 113}},
 DockedCells->{
   Cell[
    TextData[{
@@ -120,8 +151,8 @@ Cell[CellGroupData[{
 Cell[580, 22, 213, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd"],
 Cell[796, 28, 364, 6, 35, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[1163, 36, 341, 5, 35, "Text",ExpressionUUID->"b70c649b-a958-4202-9f22-238ea1f9c7d4"],
-Cell[1507, 43, 1796, 38, 220, "Input",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
-Cell[3306, 83, 177, 4, 30, "Input",ExpressionUUID->"41967d32-a163-44ea-85f2-cdc6c96faf69"]
+Cell[1507, 43, 1953, 41, 220, "Input",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+Cell[3463, 86, 1152, 32, 136, "Input",ExpressionUUID->"31489065-e6f3-4b33-bbcf-df5a9d0979e1"]
 }, Open  ]]
 }
 ]
