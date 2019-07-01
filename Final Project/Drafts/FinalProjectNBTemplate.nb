@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4463,        118]
-NotebookOptionsPosition[      3398,         88]
-NotebookOutlinePosition[      4204,        115]
-CellTagsIndexPosition[      4161,        112]
+NotebookDataLength[      4656,        121]
+NotebookOptionsPosition[      3499,         90]
+NotebookOutlinePosition[      4305,        117]
+CellTagsIndexPosition[      4262,        114]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -43,47 +43,49 @@ Cell["< Mentor\[CloseCurlyQuote]s First and Last name>", "Text",
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{
-   RowBox[{"parsing", "[", "1", "]"}], "=", 
-   RowBox[{
-    RowBox[{"parsing", "[", "1", "]"}], "=", 
-    RowBox[{"{", 
+  RowBox[{"parsing", "=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"RegularExpression", "[", "\"\<^\\\\d+$\>\"", "]"}], "\[Rule]", 
+      "\"\<number\>\""}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"RegularExpression", "[", "\"\<(?i)^.+@.+\\\\..+$\>\"", "]"}], 
+      "\[Rule]", "\"\<email\>\""}], ",", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<^[[:alpha:]]$\>\"", "]"}], 
-       "\[Rule]", "\"\<letter\>\""}], ",", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<^[[:alpha:]]+$\>\"", "]"}], 
-       "\[Rule]", "\"\<word\>\""}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<^\\\\d+$\>\"", "]"}], 
-       "\[Rule]", "\"\<number\>\""}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<^$\>\"", "]"}], "\[Rule]", 
-       "\"\<empty\>\""}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<.+\>\"", "]"}], "\[Rule]", 
-       "\"\<other\>\""}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.+@.+\\\\..+$\>\"", "]"}], 
-       "\[Rule]", "\"\<email\>\""}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{
-       "RegularExpression", "[", 
-        "\"\<(?i)^\\\\s*(?:\\\\+?(\\\\d{1,3}))?[-. (]*(\\\\d{3})[-. \
+      "RegularExpression", "[", 
+       "\"\<(?i)^\\\\s*(?:\\\\+?(\\\\d{1,3}))?[-. (]*(\\\\d{3})[-. \
 )]*(\\\\d{3})[-. ]*(\\\\d{4})(?: *x(\\\\d+))?\\\\s*$\>\"", "]"}], "\[Rule]", 
-       "\"\<phone\>\""}], ",", "\[IndentingNewLine]", 
+      "\"\<phone\>\""}], ",", "\[IndentingNewLine]", 
+     RowBox[{
       RowBox[{
-       RowBox[{
-       "RegularExpression", "[", 
-        "\"\<(?i)^(https?\\\\:\\\\/\\\\/|www\\\\.).+$\>\"", "]"}], "\[Rule]", 
-       "\"\<URL address\>\""}]}], "}"}]}]}], ";"}]], "Input",
+      "RegularExpression", "[", 
+       "\"\<(?i)^(https?\\\\:\\\\/\\\\/|www\\\\.).+$\>\"", "]"}], "\[Rule]", 
+      "\"\<URL address\>\""}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"RegularExpression", "[", "\"\<^$\>\"", "]"}], "\[Rule]", 
+      "\"\<empty\>\""}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"RegularExpression", "[", "\"\<^DateObject.+$\>\"", "]"}], 
+      "\[Rule]", "\"\<date\>\""}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"RegularExpression", "[", "\"\<.+\>\"", "]"}], "\[Rule]", 
+      "\"\<other\>\""}]}], "}"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.770893824059902*^9, 3.770893871817873*^9}, 
    3.770895139635758*^9, {3.7709046589596157`*^9, 3.770904659549286*^9}, {
    3.770907533935253*^9, 3.770907534343701*^9}, 3.770907853271167*^9, 
-   3.770916744661894*^9, {3.770917785740967*^9, 
-   3.770917786084804*^9}},ExpressionUUID->"36b1d01f-c9a7-4696-94e9-\
-f6f5acecf4ad"]
+   3.770916744661894*^9, {3.770917785740967*^9, 3.770917786084804*^9}, {
+   3.770930170654791*^9, 3.77093018398342*^9}, {3.770984102639523*^9, 
+   3.7709841029697847`*^9}, {3.770989075641919*^9, 
+   3.770989077012838*^9}},ExpressionUUID->"36b1d01f-c9a7-4696-94e9-\
+f6f5acecf4ad"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.770985091318825*^9, {3.770985199669458*^9, 
+   3.77098520045041*^9}},ExpressionUUID->"41967d32-a163-44ea-85f2-\
+cdc6c96faf69"]
 }, Open  ]]
 },
 WindowSize->{720, 755},
@@ -118,7 +120,8 @@ Cell[CellGroupData[{
 Cell[580, 22, 213, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd"],
 Cell[796, 28, 364, 6, 35, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[1163, 36, 341, 5, 35, "Text",ExpressionUUID->"b70c649b-a958-4202-9f22-238ea1f9c7d4"],
-Cell[1507, 43, 1875, 42, 241, "Input",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"]
+Cell[1507, 43, 1796, 38, 220, "Input",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+Cell[3306, 83, 177, 4, 30, "Input",ExpressionUUID->"41967d32-a163-44ea-85f2-cdc6c96faf69"]
 }, Open  ]]
 }
 ]
