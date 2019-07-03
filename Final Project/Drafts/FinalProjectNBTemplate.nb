@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     20715,        452]
-NotebookOptionsPosition[     19551,        421]
-NotebookOutlinePosition[     20359,        448]
-CellTagsIndexPosition[     20316,        445]
+NotebookDataLength[     24267,        527]
+NotebookOptionsPosition[     23103,        496]
+NotebookOutlinePosition[     23911,        523]
+CellTagsIndexPosition[     23868,        520]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -45,75 +45,81 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"(*", " ", "Parsings", " ", "*)"}], "\n", 
   RowBox[{
-   RowBox[{"dataParsing", "=", 
-    RowBox[{"{", "\n", "\t", 
-     RowBox[{
+   RowBox[{
+    RowBox[{"dataParsing", "=", 
+     RowBox[{"{", "\n", "\t", 
       RowBox[{
-       RowBox[{
-       "RegularExpression", "[", "\"\<^(\\\\-)?\\\\d+(\\\\.)?(\\\\d+)?$\>\"", 
-        "]"}], "\[Rule]", "\"\<(interpret) Number\>\""}], ",", "\n", "\t", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.+@.+\\\\..+$\>\"", "]"}], 
-       "\[Rule]", "\"\<(interpret) Email address\>\""}], ",", "\n", "\t", 
-      RowBox[{
-       RowBox[{
-       "RegularExpression", "[", 
-        "\"\<(?i)^\\\\s*(?:\\\\+?(\\\\d{1,3}))?[-. (]*(\\\\d{3})[-. \
-)]*(\\\\d{3})[-. ]*(\\\\d{4})(?: *x(\\\\d+))?\\\\s*$\>\"", "]"}], "\n", 
-       "\t\t\t\t\t", "\[Rule]", "\"\<(interpret) Phone\>\""}], ",", "\n", 
-      "\t", 
-      RowBox[{
-       RowBox[{
-       "RegularExpression", "[", 
-        "\"\<(?i)^(https?\\\\:\\\\/\\\\/|www\\\\.).+$\>\"", "]"}], "\[Rule]", 
-       "\"\<(interpret) URL address\>\""}], ",", "\n", "\t", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<^$\>\"", "]"}], "\[Rule]", 
-       "\"\<(interpret) Empty\>\""}], ",", "\n", "\t", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<.+\>\"", "]"}], "\[Rule]", 
-       "\"\<(interpret) Other\>\""}]}], "\n", "}"}]}], "\n", "\n", 
-   RowBox[{"headParsing", "=", 
-    RowBox[{"{", "\[IndentingNewLine]", "\t", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.*year.*$\>\"", "]"}], 
-       "\[Rule]", "\"\<(interpret) Year\>\""}], ",", "\[IndentingNewLine]", 
-      "\t", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.*city.*$\>\"", "]"}], 
-       "\[Rule]", "\"\<(interpret) City\>\""}], ",", "\[IndentingNewLine]", 
-      "\t", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.*country.*$\>\"", "]"}], 
-       "\[Rule]", "\"\<(interpret) Country\>\""}], ",", "\[IndentingNewLine]",
-       "\t", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.*state.*$\>\"", "]"}], 
-       "\[Rule]", "\"\<(interpret) State\>\""}], ",", "\[IndentingNewLine]", 
-      "\t", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.*zip.*$\>\"", "]"}], 
-       "\[Rule]", "\"\<(interpret) Zip\>\""}], ",", "\[IndentingNewLine]", 
-      "\t", 
-      RowBox[{"(*", 
        RowBox[{
         RowBox[{
-         RowBox[{"RegularExpression", "[", "\"\<(?i)^.*street.*$\>\"", "]"}], 
-         "\[Rule]", "\"\<(interpret) Street address\>\""}], ","}], "*)"}], 
-      "\[IndentingNewLine]", "\t", 
+        "RegularExpression", "[", "\"\<^(\\\\-)?\\\\d+(\\\\.)?(\\\\d+)?$\>\"",
+          "]"}], "\[Rule]", "\"\<(interpret) Number\>\""}], ",", "\n", "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.+@.+\\\\..+$\>\"", "]"}],
+         "\[Rule]", "\"\<(interpret) Email address\>\""}], ",", "\n", "\t", 
+       RowBox[{
+        RowBox[{
+        "RegularExpression", "[", 
+         "\"\<(?i)^\\\\s*(?:\\\\+?(\\\\d{1,3}))?[-. (]*(\\\\d{3})[-. \
+)]*(\\\\d{3})[-. ]*(\\\\d{4})(?: *x(\\\\d+))?\\\\s*$\>\"", "]"}], "\n", 
+        "\t\t\t\t\t", "\[Rule]", "\"\<(interpret) Phone\>\""}], ",", "\n", 
+       "\t", 
+       RowBox[{
+        RowBox[{
+        "RegularExpression", "[", 
+         "\"\<(?i)^(https?\\\\:\\\\/\\\\/|www\\\\.).+$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) URL address\>\""}], ",", "\n", "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<^$\>\"", "]"}], "\[Rule]", 
+        "\"\<(interpret) Empty\>\""}], ",", "\n", "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<.+\>\"", "]"}], "\[Rule]", 
+        "\"\<(interpret) Other\>\""}]}], "\n", "}"}]}], ";"}], "\n", "\n", 
+   RowBox[{
+    RowBox[{"headParsing", "=", 
+     RowBox[{"{", "\[IndentingNewLine]", "\t", 
       RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.*latitude.*$\>\"", "]"}], 
-       "\[Rule]", "\"\<(interpret) Latitude\>\""}], ",", 
-      "\[IndentingNewLine]", "\t", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.*longitude.*$\>\"", "]"}],
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*year.*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) Year\>\""}], ",", "\[IndentingNewLine]", 
+       "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*city.*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) City\>\""}], ",", "\[IndentingNewLine]", 
+       "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*country.*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) Country\>\""}], ",", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*state.*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) State\>\""}], ",", "\[IndentingNewLine]", 
+       "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*zip.*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) Zip\>\""}], ",", "\[IndentingNewLine]", 
+       "\t", 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"RegularExpression", "[", "\"\<(?i)^.*street.*$\>\"", "]"}],
+           "\[Rule]", "\"\<(interpret) Street address\>\""}], ","}], "*)"}], 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*latitude.*$\>\"", "]"}],
+         "\[Rule]", "\"\<(interpret) Latitude\>\""}], ",", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{
+        RowBox[{
+        "RegularExpression", "[", "\"\<(?i)^.*longitude.*$\>\"", "]"}], 
         "\[Rule]", "\"\<(interpret) Longitude\>\""}], ",", 
-      "\[IndentingNewLine]", "\t", 
-      RowBox[{
-       RowBox[{"RegularExpression", "[", "\"\<(?i)^.*date.*$\>\"", "]"}], 
-       "\[Rule]", "\"\<(interpret) Date\>\""}]}], "\[IndentingNewLine]", 
-     "}"}]}]}]}]], "Code",
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*date.*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) Date\>\""}], ",", "\n", "\t", 
+       RowBox[{
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*e-?mail.*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) Email\>\""}]}], "\[IndentingNewLine]", 
+      "}"}]}], ";"}]}]}]], "Code",
  CellChangeTimes->{{3.770893824059902*^9, 3.770893871817873*^9}, 
    3.770895139635758*^9, {3.7709046589596157`*^9, 3.770904659549286*^9}, {
    3.770907533935253*^9, 3.770907534343701*^9}, 3.770907853271167*^9, 
@@ -128,8 +134,10 @@ Cell[BoxData[
    3.771087420341053*^9, 3.7710874745572042`*^9}, {3.7711521028185883`*^9, 
    3.7711521030657473`*^9}, {3.771156832412849*^9, 3.771156840773218*^9}, {
    3.771156907874185*^9, 3.771157037903173*^9}, {3.771171183148324*^9, 
-   3.771171183297724*^9}},ExpressionUUID->"36b1d01f-c9a7-4696-94e9-\
-f6f5acecf4ad"],
+   3.771171183297724*^9}, {3.771176369631094*^9, 3.771176371402487*^9}, {
+   3.771176930485298*^9, 3.771176973807097*^9}},
+ CellLabel->
+  "In[2500]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
 
 Cell[BoxData[
  RowBox[{
@@ -162,8 +170,9 @@ Cell[BoxData[
         " ", "goodTypes", ",", " ", "firstGoodRow", ",", " ", "header", ",", 
         " ", "headPart", ",", " ", "bodyPart", ",", " ", "mergeHeader", ",", 
         " ", "parseHeader", ",", "\n", "\t", "diffHeader", ",", " ", 
-        "specialType", ",", " ", "bodySpecial", ",", " ", "yearPosition"}], 
-       "}"}], ",", "\n", "\t", "\n", "\t", 
+        "specialType", ",", " ", "bodySpecial", ",", " ", "yearPosition", ",",
+         " ", "datePosition", ",", " ", "emailPosition"}], "}"}], ",", "\n", 
+      "\t", "\n", "\t", 
       RowBox[{"(*", " ", 
        RowBox[{
         RowBox[{
@@ -354,23 +363,81 @@ Cell[BoxData[
        RowBox[{"(*", " ", 
         RowBox[{"Interpret", " ", "special", " ", "body", " ", "parts"}], " ",
          "*)"}], "\n", "\t", "\n", "\t", 
-       RowBox[{"(*", " ", "Year", " ", "*)"}], "\n", "\t", 
+       RowBox[{"(*", " ", 
+        RowBox[{"Year", ":", " ", "Fast"}], " ", "*)"}], "\n", "\t", 
        RowBox[{"yearPosition", " ", "=", " ", 
-        RowBox[{"First", "[", 
-         RowBox[{
-          RowBox[{"Normal", "@@@", 
-           RowBox[{"Position", "[", 
-            RowBox[{"parseHeader", ",", "\"\<(interpret) Year\>\""}], "]"}]}],
-           ",", "0"}], "]"}]}], ";", "\n", "\t", 
+        RowBox[{"Normal", "@@@", 
+         RowBox[{"Position", "[", 
+          RowBox[{"parseHeader", ",", "\"\<(interpret) Year\>\""}], "]"}]}]}],
+        ";", "\n", "\t", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"yearPosition", " ", "\[NotEqual]", " ", 
+            RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", "\t\t", 
+           RowBox[{
+            RowBox[{"yearTemp", " ", "=", " ", 
+             RowBox[{"Map", "[", 
+              RowBox[{"ToString", ",", 
+               RowBox[{
+                RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+                RowBox[{"[", "yearPosition", "]"}], "]"}], ",", 
+               RowBox[{"{", "2", "}"}]}], "]"}]}], ";", "\[IndentingNewLine]",
+             "\t\t", 
+            RowBox[{"Map", "[", 
+             RowBox[{"DateObject", ",", "yearTemp", ",", 
+              RowBox[{"{", "2", "}"}]}], "]"}]}]}], "\n", "\t", "]"}], "\n", 
+         "\t", "\n", "\t", 
+         RowBox[{"(*", " ", 
+          RowBox[{
+           RowBox[{"Date", ":", " ", "Slow"}], ",", " ", 
+           RowBox[{
+           "only", " ", "takes", " ", "first", " ", "10", " ", "for", " ", 
+            "now"}]}], " ", "*)"}], "\n", "\t", "datePosition"}], " ", "=", 
+        " ", 
+        RowBox[{"Normal", "@@@", 
+         RowBox[{"Position", "[", 
+          RowBox[{"parseHeader", ",", "\"\<(interpret) Date\>\""}], "]"}]}]}],
+        ";", "\n", "\t", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"datePosition", " ", "\[NotEqual]", " ", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
+           RowBox[{
+            RowBox[{"dateTemp", " ", "=", " ", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+               RowBox[{"[", "datePosition", "]"}], "]"}], "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", 
+                RowBox[{";;", "10"}]}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+            RowBox[{
+             RowBox[{"Interpreter", "[", "\"\<DateTime\>\"", "]"}], "/@", 
+             "dateTemp"}]}]}], "\n", "\t", "]"}], "\n", "\t", "\n", "\t", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Email", ":", " ", "Fast"}], " ", "*)"}], "\n", "\t", 
+         "emailPosition"}], " ", "=", " ", 
+        RowBox[{"Normal", "@@@", 
+         RowBox[{"Position", "[", 
+          RowBox[{"parseHeader", ",", "\"\<(interpret) Email\>\""}], 
+          "]"}]}]}], ";", "\n", "\t", 
        RowBox[{"If", "[", 
         RowBox[{
-         RowBox[{"yearPosition", " ", "\[NotEqual]", " ", "0"}], ",", "\n", 
-         "\t\t", 
-         RowBox[{"DateObject", "/@", 
+         RowBox[{"emailPosition", " ", "\[NotEqual]", " ", 
+          RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
+         RowBox[{
+          RowBox[{"emailTemp", " ", "=", " ", 
+           RowBox[{
+            RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+            RowBox[{"[", "emailPosition", "]"}], "]"}]}], ";", "\n", "\t\t", 
           RowBox[{
-           RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
-           RowBox[{"[", "yearPosition", "]"}], "]"}]}]}], "\n", "\t", 
-        "]"}]}]}], "\[IndentingNewLine]", "]"}]}]}]}]], "Code",
+           RowBox[{"Interpreter", "[", "\"\<EmailAddress\>\"", "]"}], "/@", 
+           "emailTemp"}]}]}], "\n", "\t", "]"}]}]}], "\[IndentingNewLine]", 
+     "]"}]}]}]}]], "Code",
  CellChangeTimes->{{3.770997854389613*^9, 3.770997878251295*^9}, 
    3.770999490025022*^9, {3.771062694622528*^9, 3.77106270479753*^9}, {
    3.7710654212985086`*^9, 3.771065464663496*^9}, {3.771065502322473*^9, 
@@ -414,13 +481,21 @@ Cell[BoxData[
    3.771171196909747*^9, 3.77117124622336*^9}, {3.77117206027807*^9, 
    3.771172087131365*^9}, {3.771173071858019*^9, 3.771173072921113*^9}, 
    3.771173231489388*^9, {3.7711734138121557`*^9, 3.771173440326792*^9}, {
-   3.771173703125832*^9, 
-   3.7711737657046547`*^9}},ExpressionUUID->"508d6289-ca04-4680-bf55-\
-cec08b5171ff"]
+   3.771173703125832*^9, 3.7711737657046547`*^9}, {3.771173901084103*^9, 
+   3.771173906541379*^9}, {3.7711745777580338`*^9, 3.771174615658437*^9}, {
+   3.771175176742317*^9, 3.7711751989022293`*^9}, {3.771175268267655*^9, 
+   3.771175330013216*^9}, {3.771175691646459*^9, 3.771175695501378*^9}, {
+   3.7711760093273153`*^9, 3.771176088355908*^9}, {3.771176132660473*^9, 
+   3.771176139628004*^9}, {3.771176196432115*^9, 3.771176214644499*^9}, 
+   3.771176386180928*^9, {3.7711764335600853`*^9, 3.771176467495945*^9}, {
+   3.771176896170887*^9, 3.771176901300745*^9}, {3.771177154643105*^9, 
+   3.771177221777507*^9}},
+ CellLabel->
+  "In[2530]:=",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
 }, Open  ]]
 },
 WindowSize->{1026, 679},
-WindowMargins->{{Automatic, 85}, {Automatic, 25}},
+WindowMargins->{{Automatic, -7}, {23, Automatic}},
 DockedCells->{
   Cell[
    TextData[{
@@ -451,8 +526,8 @@ Cell[CellGroupData[{
 Cell[580, 22, 213, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd"],
 Cell[796, 28, 364, 6, 35, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[1163, 36, 341, 5, 35, "Text",ExpressionUUID->"b70c649b-a958-4202-9f22-238ea1f9c7d4"],
-Cell[1507, 43, 4244, 88, 452, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
-Cell[5754, 133, 13781, 285, 1422, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
+Cell[1507, 43, 4645, 96, 471, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+Cell[6155, 141, 16932, 352, 1707, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
 }, Open  ]]
 }
 ]
