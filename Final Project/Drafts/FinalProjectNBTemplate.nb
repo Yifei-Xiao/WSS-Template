@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     51844,       1106]
-NotebookOptionsPosition[     50678,       1075]
-NotebookOutlinePosition[     51487,       1102]
-CellTagsIndexPosition[     51444,       1099]
+NotebookDataLength[     49881,       1080]
+NotebookOptionsPosition[     48717,       1049]
+NotebookOutlinePosition[     49524,       1076]
+CellTagsIndexPosition[     49481,       1073]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -240,22 +240,6 @@ Cell[BoxData[
         RowBox[{"Map", "[", 
          RowBox[{"parser", ",", "columns", ",", 
           RowBox[{"{", "2", "}"}]}], "]"}]}], ";", "\n", "\t", "\n", "\t", 
-       "\n", "\t", 
-       RowBox[{"(*", " ", 
-        RowBox[{"old", " ", "staff"}], " ", "*)"}], "\n", "\t", 
-       RowBox[{"(*", " ", 
-        RowBox[{
-         RowBox[{"columns", " ", "=", " ", 
-          RowBox[{
-           RowBox[{"StringReplace", "[", "dataParsing", "]"}], " ", "/@", " ", 
-           RowBox[{"Map", "[", 
-            RowBox[{"ToString", ",", " ", 
-             RowBox[{"Transpose", "[", 
-              RowBox[{"Take", "[", 
-               RowBox[{"file", ",", " ", 
-                RowBox[{"UpTo", "[", "100", "]"}]}], "]"}], "]"}], ",", " ", 
-             RowBox[{"{", "2", "}"}]}], "]"}]}]}], ";"}], " ", "*)"}], "\n", 
-       "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{
         "find", " ", "the", " ", "most", " ", "common", " ", "data", " ", 
@@ -414,103 +398,6 @@ Cell[BoxData[
            RowBox[{"Length", "[", "fileSpecialTypePosition", "]"}]}], "}"}]}],
          "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
-        RowBox[{"old", " ", "staff"}], " ", "*)"}], "\n", "\t", "\n", "\t", 
-       RowBox[{"(*", "\n", "\t", "\n", "\t", 
-        RowBox[{"(*", " ", 
-         RowBox[{
-         "find", " ", "which", " ", "parts", " ", "are", " ", "replaced"}], 
-         " ", "*)"}], "\n", "\t", 
-        RowBox[{
-         RowBox[{"headSpecialTypePosition", " ", "=", " ", 
-          RowBox[{"Normal", "@@@", "\n", "\t\t\t\t", 
-           RowBox[{"Position", "[", 
-            RowBox[{
-             RowBox[{"headJoin", " ", "-", " ", "headParsing"}], ",", " ", 
-             "\n", "\t\t\t\t\t\t", 
-             RowBox[{"Except", "[", "0", "]"}], ",", " ", 
-             RowBox[{"{", "1", "}"}], ",", " ", "\n", "\t\t\t\t\t\t", 
-             RowBox[{"Heads", "\[Rule]", "False"}]}], "]"}]}]}], ";", "\n", 
-         "\t", "\n", "\t", 
-         RowBox[{"(*", " ", 
-          RowBox[{
-          "Also", " ", "find", " ", "if", " ", "body", " ", "already", " ", 
-           "contains", " ", "special", " ", "type", " ", "of", " ", "data", 
-           " ", "during", " ", "first", " ", "parsing"}], " ", "*)"}], "\n", 
-         "\t", 
-         RowBox[{"bodySpecialType", " ", "=", " ", 
-          RowBox[{"Complement", "[", 
-           RowBox[{"bodyCommon", ",", 
-            RowBox[{"{", 
-             RowBox[{
-             "\"\<(interpret) Other\>\"", ",", " ", 
-              "\"\<(interpret) Empty\>\"", ",", " ", "\"\<Real\>\"", ",", 
-              " ", "\"\<Integer\>\""}], "}"}]}], "]"}]}], ";", "\n", "\t", 
-         RowBox[{"bodySpecial", " ", "=", " ", 
-          RowBox[{"Normal", "@@@", 
-           RowBox[{"Position", "[", 
-            RowBox[{"bodyCommon", ",", " ", 
-             RowBox[{"Alternatives", "@@", "bodySpecialType"}]}], "]"}]}]}], 
-         ";", "\n", "\t", 
-         RowBox[{"(*", " ", 
-          RowBox[{"Get", " ", "rid", " ", "of", " ", "duplicate"}], " ", 
-          "*)"}], "\n", "\t", 
-         RowBox[{"diffBody", " ", "=", " ", 
-          RowBox[{"Complement", "[", 
-           RowBox[{"bodySpecial", ",", "headSpecialTypePosition"}], "]"}]}], 
-         ";", "\n", "\t", "\n", "\t", 
-         RowBox[{"(*", " ", 
-          RowBox[{"Print", " ", "the", " ", "result"}], " ", "*)"}], "\n", 
-         "\t", 
-         RowBox[{"Do", "[", "\n", "\t\t", 
-          RowBox[{
-           RowBox[{"Print", "[", 
-            RowBox[{"\"\<Column \>\"", ",", 
-             RowBox[{"headSpecialTypePosition", "[", 
-              RowBox[{"[", "i", "]"}], "]"}], ",", "\"\< maybe is \>\"", ",", 
-             " ", 
-             RowBox[{"headParsing", "[", 
-              RowBox[{"[", 
-               RowBox[{"headSpecialTypePosition", "[", 
-                RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "\n", 
-             "\t\t\t\t", "\"\<\\nRandom selected data is \>\"", ",", " ", 
-             RowBox[{"RandomSample", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
-                RowBox[{"[", 
-                 RowBox[{"headSpecialTypePosition", "[", 
-                  RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "5"}], 
-              "]"}]}], "]"}], ",", "\n", "\t\t", 
-           RowBox[{"{", 
-            RowBox[{"i", ",", 
-             RowBox[{"Length", "[", "headSpecialTypePosition", "]"}]}], 
-            "}"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
-         RowBox[{"Do", "[", "\n", "\t\t", 
-          RowBox[{
-           RowBox[{"Print", "[", 
-            RowBox[{"\"\<Body Column \>\"", ",", " ", 
-             RowBox[{"diffBody", "[", 
-              RowBox[{"[", "i", "]"}], "]"}], ",", " ", "\"\< maybe is \>\"", 
-             ",", " ", 
-             RowBox[{"bodyCommon", "[", 
-              RowBox[{"[", 
-               RowBox[{"diffBody", "[", 
-                RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", " ", "\n", 
-             "\t\t\t\t", "\"\<\\nRandom selected data is \>\"", ",", " ", 
-             RowBox[{"RandomSample", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
-                RowBox[{"[", 
-                 RowBox[{"diffBody", "[", 
-                  RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "5"}], 
-              "]"}]}], "]"}], ",", "\n", "\t\t", 
-           RowBox[{"{", 
-            RowBox[{"i", ",", 
-             RowBox[{"Length", "[", "diffBody", "]"}]}], "}"}]}], 
-          "\[IndentingNewLine]", "      ", "]"}], ";"}], "\n", "      ", "\n",
-         "    ", "*)"}], "\n", "\t", "\n", "\t", 
-       RowBox[{"(*", " ", 
         RowBox[{"Interpret", " ", "special", " ", "body", " ", "parts"}], " ",
          "*)"}], "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
@@ -552,7 +439,16 @@ Cell[BoxData[
           RowBox[{"Print", "[", 
            RowBox[{
             RowBox[{"yearResult", "//", "Dataset"}], "//", "Transpose"}], 
-           "]"}], ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+           "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "yearPosition"}], "]"}], "]"}], "=", 
+           
+           RowBox[{"yearResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";",
+        "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{"Phone", ":", " ", "Fast"}], " ", "*)"}], "\n", "\t", 
        RowBox[{"phonePosition", " ", "=", " ", 
@@ -589,7 +485,15 @@ Cell[BoxData[
           RowBox[{"Print", "[", 
            RowBox[{
             RowBox[{"phoneResult", "//", "Dataset"}], "//", "Transpose"}], 
-           "]"}], ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+           "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "phonePosition"}], "]"}], "]"}], "=", 
+           RowBox[{"phoneResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";",
+        "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{"URL", " ", 
          RowBox[{"address", ":", " ", "Fast"}]}], " ", "*)"}], "\n", "\t", 
@@ -627,7 +531,15 @@ Cell[BoxData[
           RowBox[{"Print", "[", 
            RowBox[{
             RowBox[{"URLResult", "//", "Dataset"}], "//", "Transpose"}], 
-           "]"}], ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+           "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "URLPosition"}], "]"}], "]"}], "=", 
+           RowBox[{"URLResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";",
+        "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{"Email", ":", " ", "Fast"}], " ", "*)"}], "\n", "\t", 
        RowBox[{"emailPosition", " ", "=", " ", 
@@ -664,7 +576,15 @@ Cell[BoxData[
           RowBox[{"Print", "[", 
            RowBox[{
             RowBox[{"emailResult", "//", "Dataset"}], "//", "Transpose"}], 
-           "]"}], ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+           "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "emailPosition"}], "]"}], "]"}], "=", 
+           RowBox[{"emailResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";",
+        "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{"Zip", " ", 
          RowBox[{"code", ":", " ", "Fast"}]}], " ", "*)"}], "\n", "\t", 
@@ -704,7 +624,15 @@ Cell[BoxData[
           RowBox[{"Print", "[", 
            RowBox[{
             RowBox[{"zipResult", "//", "Dataset"}], "//", "Transpose"}], 
-           "]"}], ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+           "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "zipPosition"}], "]"}], "]"}], "=", 
+           RowBox[{"zipResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";",
+        "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{
          RowBox[{"latitude", " ", "and", " ", 
@@ -845,7 +773,16 @@ Cell[BoxData[
           RowBox[{"Print", "[", 
            RowBox[{
             RowBox[{"dateResult", "//", "Dataset"}], "//", "Transpose"}], 
-           "]"}], ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+           "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "datePosition"}], "]"}], "]"}], "=", 
+           
+           RowBox[{"dateResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";",
+        "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{
          RowBox[{"City", ":", " ", "Slow"}], ",", " ", 
@@ -885,7 +822,16 @@ Cell[BoxData[
           RowBox[{"Print", "[", 
            RowBox[{
             RowBox[{"cityResult", "//", "Dataset"}], "//", "Transpose"}], 
-           "]"}], ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+           "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "cityPosition"}], "]"}], "]"}], "=", 
+           
+           RowBox[{"cityResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";",
+        "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{
          RowBox[{"State", ":", " ", "Slow"}], ",", " ", 
@@ -927,7 +873,15 @@ Cell[BoxData[
           RowBox[{"Print", "[", 
            RowBox[{
             RowBox[{"stateResult", "//", "Dataset"}], "//", "Transpose"}], 
-           "]"}], ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+           "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "statePosition"}], "]"}], "]"}], "=", 
+           RowBox[{"stateResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";",
+        "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{
          RowBox[{"Country", ":", " ", "Slow"}], ",", " ", 
@@ -968,8 +922,24 @@ Cell[BoxData[
           RowBox[{"Print", "[", 
            RowBox[{
             RowBox[{"countryResult", "//", "Dataset"}], "//", "Transpose"}], 
-           "]"}], ";"}]}], "\n", "\t", "]"}], ";"}]}], "\[IndentingNewLine]", 
-     "]"}]}]}]}]], "Code",
+           "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "countryPosition"}], "]"}], "]"}], 
+           "=", 
+           RowBox[{"countryResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";",
+        "\n", "\t", 
+       RowBox[{"Print", "[", "\"\<Showing final result...\>\"", "]"}], ";", 
+       "\n", "\t", 
+       RowBox[{"Print", "[", 
+        RowBox[{
+         RowBox[{"bodyPart", "[", 
+          RowBox[{"[", 
+           RowBox[{";;", "10"}], "]"}], "]"}], "//", "TableForm"}], "]"}]}]}],
+      "\[IndentingNewLine]", "]"}]}]}]}]], "Code",
  CellChangeTimes->{{3.770997854389613*^9, 3.770997878251295*^9}, 
    3.770999490025022*^9, {3.771062694622528*^9, 3.77106270479753*^9}, {
    3.7710654212985086`*^9, 3.771065464663496*^9}, {3.771065502322473*^9, 
@@ -1068,13 +1038,17 @@ Cell[BoxData[
    3.771343126550541*^9}, {3.7713432001002007`*^9, 3.771343236728299*^9}, {
    3.77134346477745*^9, 3.771343499992959*^9}, {3.77134414390543*^9, 
    3.771344241724742*^9}, {3.771345206592505*^9, 3.771345207353414*^9}, {
-   3.7713452503478947`*^9, 3.771345251055282*^9}},
+   3.7713452503478947`*^9, 3.771345251055282*^9}, {3.7713460312306957`*^9, 
+   3.7713460423289757`*^9}, {3.77134666328308*^9, 3.771346677598681*^9}, {
+   3.7713467081772747`*^9, 3.77134673119074*^9}, {3.771346766646269*^9, 
+   3.7713468769111977`*^9}, {3.7713469189208508`*^9, 3.7713469956458273`*^9}},
+ 
  CellLabel->
-  "In[2726]:=",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
+  "In[2777]:=",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
 }, Open  ]]
 },
 WindowSize->{1253, 755},
-WindowMargins->{{Automatic, -52}, {Automatic, 0}},
+WindowMargins->{{2, Automatic}, {Automatic, 0}},
 DockedCells->{
   Cell[
    TextData[{
@@ -1106,7 +1080,7 @@ Cell[580, 22, 213, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3
 Cell[796, 28, 364, 6, 35, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[1163, 36, 341, 5, 35, "Text",ExpressionUUID->"b70c649b-a958-4202-9f22-238ea1f9c7d4"],
 Cell[1507, 43, 6203, 127, 604, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
-Cell[7713, 172, 42949, 900, 4481, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
+Cell[7713, 172, 40988, 874, 4025, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
 }, Open  ]]
 }
 ]
