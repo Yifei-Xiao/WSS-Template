@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     46297,        988]
-NotebookOptionsPosition[     45129,        957]
-NotebookOutlinePosition[     45940,        984]
-CellTagsIndexPosition[     45897,        981]
+NotebookDataLength[     51098,       1086]
+NotebookOptionsPosition[     49934,       1055]
+NotebookOutlinePosition[     50741,       1082]
+CellTagsIndexPosition[     50698,       1079]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -79,10 +79,11 @@ Cell[BoxData[
      RowBox[{"{", "\[IndentingNewLine]", "\t", 
       RowBox[{
        RowBox[{
-        RowBox[{
-        "RegularExpression", "[", "\"\<(?i)^.*\\\\byear\\\\b.*$\>\"", "]"}], 
-        "\[Rule]", "\"\<(interpret) Year\>\""}], ",", "\[IndentingNewLine]", 
-       "\t", 
+        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*year.*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) Year\>\""}], ",", " ", 
+       RowBox[{"(*", 
+        RowBox[{"need", " ", "change"}], "*)"}], "\[IndentingNewLine]", "\t", 
+       
        RowBox[{
         RowBox[{
         "RegularExpression", "[", "\"\<(?i)^.*\\\\bcity\\\\b.*$\>\"", "]"}], 
@@ -149,9 +150,11 @@ Cell[BoxData[
    3.7712565703121758`*^9}, {3.7712568985305653`*^9, 3.771256901379912*^9}, {
    3.771259041029545*^9, 3.771259043442831*^9}, {3.771273050933056*^9, 
    3.771273056751824*^9}, {3.771323169487397*^9, 3.771323215121355*^9}, {
-   3.7713273887728863`*^9, 3.771327392197198*^9}},
+   3.7713273887728863`*^9, 3.771327392197198*^9}, {3.771331483046513*^9, 
+   3.771331486543951*^9}, {3.771331582058197*^9, 3.771331584076147*^9}, {
+   3.771331795644189*^9, 3.7713318149267387`*^9}},
  CellLabel->
-  "In[2120]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+  "In[2472]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
 
 Cell[BoxData[
  RowBox[{
@@ -184,10 +187,10 @@ Cell[BoxData[
         " ", "goodTypes", ",", " ", "firstGoodRow", ",", " ", "header", ",", 
         " ", "headPart", ",", " ", "bodyPart", ",", "\n", "\t", 
         "headToString", ",", " ", "headParsing", ",", " ", "headJoin", ",", 
-        "\n", "\t", "headSpecialTypePosition", ",", " ", "bodySpecial", ",", 
-        " ", "bodySpecialType", ",", " ", "diffBody", ",", "\n", "\t", 
-        "yearPosition", ",", " ", "yearTemp", ",", " ", "yearResult", ",", 
-        "\n", "\t", "datePosition", ",", " ", "dateTemp", ",", " ", 
+        "\n", "\t", "fileType", ",", " ", "specialList", ",", " ", 
+        "fileSpecialTypePosition", ",", " ", "fileSpecialType", ",", "\n", 
+        "\t", "yearPosition", ",", " ", "yearTemp", ",", " ", "yearResult", 
+        ",", "\n", "\t", "datePosition", ",", " ", "dateTemp", ",", " ", 
         "dateCheck", ",", " ", "dateResult", ",", "\n", "\t", "emailPosition",
          ",", " ", "emailTemp", ",", " ", "emailResult", ",", "\n", "\t", 
         "phonePosition", ",", " ", "phoneTemp", ",", " ", "phoneResult", ",", 
@@ -333,94 +336,180 @@ Cell[BoxData[
          "headJoin"}]}], ";", "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{
-        "find", " ", "which", " ", "parts", " ", "are", " ", "replaced"}], 
-        " ", "*)"}], "\n", "\t", 
-       RowBox[{"headSpecialTypePosition", " ", "=", " ", 
-        RowBox[{"Normal", "@@@", "\n", "\t\t\t\t", 
-         RowBox[{"Position", "[", 
-          RowBox[{
-           RowBox[{"headJoin", " ", "-", " ", "headParsing"}], ",", " ", "\n",
-            "\t\t\t\t\t\t", 
-           RowBox[{"Except", "[", "0", "]"}], ",", " ", 
-           RowBox[{"{", "1", "}"}], ",", " ", "\n", "\t\t\t\t\t\t", 
-           RowBox[{"Heads", "\[Rule]", "False"}]}], "]"}]}]}], ";", "\n", 
+        "combine", " ", "head", " ", "and", " ", "body", " ", "special", " ", 
+         "type"}], " ", "*)"}], "\n", "\t", 
+       RowBox[{"fileType", " ", "=", " ", 
+        RowBox[{"Transpose", "[", 
+         RowBox[{"{", 
+          RowBox[{"headParsing", ",", "bodyCommon"}], "}"}], "]"}]}], ";", 
+       "\n", "\t", "\n", "\t", 
+       RowBox[{"(*", " ", 
+        RowBox[{"Special", " ", "type", " ", "list"}], " ", "*)"}], "\n", 
        "\t", "\n", "\t", 
+       RowBox[{"specialList", " ", "=", " ", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<(interpret) Email address\>\"", ",", " ", 
+          "\"\<(interpret) Phone\>\"", ",", " ", "\n", "\t\t\t\t\t", 
+          "\"\<(interpret) URL address\>\"", ",", "\"\<(interpret) Year\>\"", 
+          ",", "\n", "\t\t\t\t\t", "\"\<(interpret) City\>\"", ",", " ", 
+          "\"\<(interpret) Country\>\"", ",", "\n", "\t\t\t\t\t", 
+          "\"\<(interpret) State\>\"", ",", "\"\<(interpret) Zip\>\"", ",", 
+          "\n", "\t\t\t\t\t", "\"\<(interpret) Latitude\>\"", ",", 
+          "\"\<(interpret) Longitude\>\"", ",", "\n", "\t\t\t\t\t", 
+          "\"\<(interpret) Date\>\""}], "}"}]}], ";", "\n", "\t", "\n", "\t", 
+       
        RowBox[{"(*", " ", 
         RowBox[{
-        "Also", " ", "find", " ", "if", " ", "body", " ", "already", " ", 
-         "contains", " ", "special", " ", "type", " ", "of", " ", "data", " ",
-          "during", " ", "first", " ", "parsing"}], " ", "*)"}], "\n", "\t", 
-       RowBox[{"bodySpecialType", " ", "=", " ", 
-        RowBox[{"Complement", "[", 
-         RowBox[{"bodyCommon", ",", 
-          RowBox[{"{", 
-           RowBox[{
-           "\"\<(interpret) Other\>\"", ",", " ", "\"\<(interpret) Empty\>\"",
-             ",", " ", "\"\<Real\>\"", ",", " ", "\"\<Integer\>\""}], "}"}]}],
-          "]"}]}], ";", "\n", "\t", 
-       RowBox[{"bodySpecial", " ", "=", " ", 
-        RowBox[{"Normal", "@@@", 
-         RowBox[{"Position", "[", 
-          RowBox[{"bodyCommon", ",", " ", 
-           RowBox[{"Alternatives", "@@", "bodySpecialType"}]}], "]"}]}]}], 
-       ";", "\n", "\t", 
+        "find", " ", "the", " ", "position", " ", "and", " ", "head"}], " ", 
+        "*)"}], "\n", "\t", 
+       RowBox[{"fileSpecialTypePosition", " ", "=", " ", 
+        RowBox[{
+         RowBox[{"Position", "[", "\n", "\t\t", 
+          RowBox[{"fileType", ",", "\n", "\t\t", 
+           RowBox[{"_List", "?", 
+            RowBox[{"(", 
+             RowBox[{"MemberQ", "[", 
+              RowBox[{"_String", "?", 
+               RowBox[{"(", 
+                RowBox[{"StringStartsQ", "[", 
+                 RowBox[{"Alternatives", "@@", "specialList"}], "]"}], 
+                ")"}]}], "]"}], ")"}]}]}], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", "\n", 
+       "\t", 
+       RowBox[{"fileSpecialType", " ", "=", "  ", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Intersection", "[", 
+           RowBox[{"#", ",", "specialList"}], "]"}], "&"}], "/@", 
+         RowBox[{"fileType", "[", 
+          RowBox[{"[", "fileSpecialTypePosition", "]"}], "]"}]}]}], ";", "\n",
+        "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
-        RowBox[{"Get", " ", "rid", " ", "of", " ", "duplicate"}], " ", "*)"}],
+        RowBox[{"print", " ", "the", " ", "result"}], " ", "*)"}], "\n", "\t",
         "\n", "\t", 
-       RowBox[{"diffBody", " ", "=", " ", 
-        RowBox[{"Complement", "[", 
-         RowBox[{"bodySpecial", ",", "headSpecialTypePosition"}], "]"}]}], 
-       ";", "\n", "\t", "\n", "\t", 
-       RowBox[{"(*", " ", 
-        RowBox[{"Print", " ", "the", " ", "result"}], " ", "*)"}], "\n", "\t", 
        RowBox[{"Do", "[", "\n", "\t\t", 
         RowBox[{
          RowBox[{"Print", "[", 
           RowBox[{"\"\<Column \>\"", ",", 
-           RowBox[{"headSpecialTypePosition", "[", 
+           RowBox[{"fileSpecialTypePosition", "[", 
             RowBox[{"[", "i", "]"}], "]"}], ",", "\"\< maybe is \>\"", ",", 
            " ", 
-           RowBox[{"headParsing", "[", 
-            RowBox[{"[", 
-             RowBox[{"headSpecialTypePosition", "[", 
-              RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "\n", 
-           "\t\t\t\t", "\"\<\\nRandom selected data is \>\"", ",", " ", 
+           RowBox[{
+            RowBox[{"fileSpecialType", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "1", "]"}], "]"}], ",", "\n", "\t\t\t", 
+           "\"\<\\nRandom data is \>\"", ",", 
            RowBox[{"RandomSample", "[", 
             RowBox[{
              RowBox[{
               RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+              RowBox[{"[", 
+               RowBox[{"fileSpecialTypePosition", "[", 
+                RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "5"}], 
+            "]"}]}], "]"}], ",", "\n", "\t\t\t", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", 
+           RowBox[{"Length", "[", "fileSpecialTypePosition", "]"}]}], "}"}]}],
+         "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+       RowBox[{"(*", " ", 
+        RowBox[{"old", " ", "staff"}], " ", "*)"}], "\n", "\t", "\n", "\t", 
+       RowBox[{"(*", "\n", "\t", "\n", "\t", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+         "find", " ", "which", " ", "parts", " ", "are", " ", "replaced"}], 
+         " ", "*)"}], "\n", "\t", 
+        RowBox[{
+         RowBox[{"headSpecialTypePosition", " ", "=", " ", 
+          RowBox[{"Normal", "@@@", "\n", "\t\t\t\t", 
+           RowBox[{"Position", "[", 
+            RowBox[{
+             RowBox[{"headJoin", " ", "-", " ", "headParsing"}], ",", " ", 
+             "\n", "\t\t\t\t\t\t", 
+             RowBox[{"Except", "[", "0", "]"}], ",", " ", 
+             RowBox[{"{", "1", "}"}], ",", " ", "\n", "\t\t\t\t\t\t", 
+             RowBox[{"Heads", "\[Rule]", "False"}]}], "]"}]}]}], ";", "\n", 
+         "\t", "\n", "\t", 
+         RowBox[{"(*", " ", 
+          RowBox[{
+          "Also", " ", "find", " ", "if", " ", "body", " ", "already", " ", 
+           "contains", " ", "special", " ", "type", " ", "of", " ", "data", 
+           " ", "during", " ", "first", " ", "parsing"}], " ", "*)"}], "\n", 
+         "\t", 
+         RowBox[{"bodySpecialType", " ", "=", " ", 
+          RowBox[{"Complement", "[", 
+           RowBox[{"bodyCommon", ",", 
+            RowBox[{"{", 
+             RowBox[{
+             "\"\<(interpret) Other\>\"", ",", " ", 
+              "\"\<(interpret) Empty\>\"", ",", " ", "\"\<Real\>\"", ",", 
+              " ", "\"\<Integer\>\""}], "}"}]}], "]"}]}], ";", "\n", "\t", 
+         RowBox[{"bodySpecial", " ", "=", " ", 
+          RowBox[{"Normal", "@@@", 
+           RowBox[{"Position", "[", 
+            RowBox[{"bodyCommon", ",", " ", 
+             RowBox[{"Alternatives", "@@", "bodySpecialType"}]}], "]"}]}]}], 
+         ";", "\n", "\t", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Get", " ", "rid", " ", "of", " ", "duplicate"}], " ", 
+          "*)"}], "\n", "\t", 
+         RowBox[{"diffBody", " ", "=", " ", 
+          RowBox[{"Complement", "[", 
+           RowBox[{"bodySpecial", ",", "headSpecialTypePosition"}], "]"}]}], 
+         ";", "\n", "\t", "\n", "\t", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Print", " ", "the", " ", "result"}], " ", "*)"}], "\n", 
+         "\t", 
+         RowBox[{"Do", "[", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"Print", "[", 
+            RowBox[{"\"\<Column \>\"", ",", 
+             RowBox[{"headSpecialTypePosition", "[", 
+              RowBox[{"[", "i", "]"}], "]"}], ",", "\"\< maybe is \>\"", ",", 
+             " ", 
+             RowBox[{"headParsing", "[", 
               RowBox[{"[", 
                RowBox[{"headSpecialTypePosition", "[", 
-                RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "5"}], 
-            "]"}]}], "]"}], ",", "\n", "\t\t", 
-         RowBox[{"{", 
-          RowBox[{"i", ",", 
-           RowBox[{"Length", "[", "headSpecialTypePosition", "]"}]}], "}"}]}],
-         "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
-       RowBox[{"Do", "[", "\n", "\t\t", 
-        RowBox[{
-         RowBox[{"Print", "[", 
-          RowBox[{"\"\<Body Column \>\"", ",", " ", 
-           RowBox[{"diffBody", "[", 
-            RowBox[{"[", "i", "]"}], "]"}], ",", " ", "\"\< maybe is \>\"", 
-           ",", " ", 
-           RowBox[{"bodyCommon", "[", 
-            RowBox[{"[", 
+                RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "\n", 
+             "\t\t\t\t", "\"\<\\nRandom selected data is \>\"", ",", " ", 
+             RowBox[{"RandomSample", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+                RowBox[{"[", 
+                 RowBox[{"headSpecialTypePosition", "[", 
+                  RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "5"}], 
+              "]"}]}], "]"}], ",", "\n", "\t\t", 
+           RowBox[{"{", 
+            RowBox[{"i", ",", 
+             RowBox[{"Length", "[", "headSpecialTypePosition", "]"}]}], 
+            "}"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+         RowBox[{"Do", "[", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"Print", "[", 
+            RowBox[{"\"\<Body Column \>\"", ",", " ", 
              RowBox[{"diffBody", "[", 
-              RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", " ", "\n", 
-           "\t\t\t\t", "\"\<\\nRandom selected data is \>\"", ",", " ", 
-           RowBox[{"RandomSample", "[", 
-            RowBox[{
-             RowBox[{
-              RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+              RowBox[{"[", "i", "]"}], "]"}], ",", " ", "\"\< maybe is \>\"", 
+             ",", " ", 
+             RowBox[{"bodyCommon", "[", 
               RowBox[{"[", 
                RowBox[{"diffBody", "[", 
-                RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "5"}], 
-            "]"}]}], "]"}], ",", "\n", "\t\t", 
-         RowBox[{"{", 
-          RowBox[{"i", ",", 
-           RowBox[{"Length", "[", "diffBody", "]"}]}], "}"}]}], 
-        "\[IndentingNewLine]", "      ", "]"}], ";", "\n", "\t", "\n", "\t", 
+                RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", " ", "\n", 
+             "\t\t\t\t", "\"\<\\nRandom selected data is \>\"", ",", " ", 
+             RowBox[{"RandomSample", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+                RowBox[{"[", 
+                 RowBox[{"diffBody", "[", 
+                  RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], ",", "5"}], 
+              "]"}]}], "]"}], ",", "\n", "\t\t", 
+           RowBox[{"{", 
+            RowBox[{"i", ",", 
+             RowBox[{"Length", "[", "diffBody", "]"}]}], "}"}]}], 
+          "\[IndentingNewLine]", "      ", "]"}], ";"}], "\n", "      ", "\n",
+         "    ", "*)"}], "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{"Interpret", " ", "special", " ", "body", " ", "parts"}], " ",
          "*)"}], "\n", "\t", "\n", "\t", 
@@ -950,13 +1039,22 @@ Cell[BoxData[
    3.77132737137997*^9}, 3.771327418413536*^9, {3.7713274706145563`*^9, 
    3.771327507637512*^9}, 3.771327585553032*^9, {3.77132807000697*^9, 
    3.771328119065892*^9}, {3.771328153653393*^9, 3.771328155529661*^9}, {
-   3.771328187769702*^9, 3.771328205935135*^9}, 
-   3.771328243434765*^9},ExpressionUUID->"508d6289-ca04-4680-bf55-\
+   3.771328187769702*^9, 3.771328205935135*^9}, 3.771328243434765*^9, {
+   3.771333118105323*^9, 3.7713333511226463`*^9}, {3.7713416904759274`*^9, 
+   3.7713416906810827`*^9}, {3.771342050419466*^9, 3.771342138034359*^9}, {
+   3.7713422610214357`*^9, 3.771342300581264*^9}, {3.771342335853059*^9, 
+   3.771342360869754*^9}, {3.771342458525908*^9, 3.771342538226438*^9}, {
+   3.771342578749619*^9, 3.771342579847415*^9}, {3.771342626737908*^9, 
+   3.771342745199588*^9}, {3.771342843901886*^9, 3.7713428769243517`*^9}, {
+   3.771342937931197*^9, 3.771342952582621*^9}, {3.77134308708558*^9, 
+   3.771343126550541*^9}, {3.7713432001002007`*^9, 3.771343236728299*^9}, {
+   3.77134346477745*^9, 
+   3.771343499992959*^9}},ExpressionUUID->"508d6289-ca04-4680-bf55-\
 cec08b5171ff"]
 }, Open  ]]
 },
-WindowSize->{Full, Full},
-WindowMargins->{{Automatic, 49}, {-42, Automatic}},
+WindowSize->{1253, 755},
+WindowMargins->{{2, Automatic}, {Automatic, 0}},
 DockedCells->{
   Cell[
    TextData[{
@@ -987,8 +1085,8 @@ Cell[CellGroupData[{
 Cell[580, 22, 213, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd"],
 Cell[796, 28, 364, 6, 35, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[1163, 36, 341, 5, 35, "Text",ExpressionUUID->"b70c649b-a958-4202-9f22-238ea1f9c7d4"],
-Cell[1507, 43, 5263, 110, 471, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
-Cell[6773, 155, 38340, 799, 3987, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
+Cell[1507, 43, 5469, 113, 471, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+Cell[6979, 158, 42939, 894, 4614, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
 }, Open  ]]
 }
 ]
