@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     50895,       1093]
-NotebookOptionsPosition[     49730,       1062]
-NotebookOutlinePosition[     50538,       1089]
-CellTagsIndexPosition[     50495,       1086]
+NotebookDataLength[     52926,       1142]
+NotebookOptionsPosition[     51761,       1111]
+NotebookOutlinePosition[     52569,       1138]
+CellTagsIndexPosition[     52526,       1135]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -79,31 +79,36 @@ Cell[BoxData[
      RowBox[{"{", "\[IndentingNewLine]", "\t", 
       RowBox[{
        RowBox[{
-        RowBox[{"RegularExpression", "[", "\"\<(?i)^.*year.*$\>\"", "]"}], 
+        RowBox[{
+        "RegularExpression", "[", 
+         "\"\<(?i)^.*(\\\\b|\\\\_)year(\\\\b|\\\\_).*$\>\"", "]"}], 
         "\[Rule]", "\"\<(interpret) Year\>\""}], ",", " ", 
        RowBox[{"(*", 
         RowBox[{"need", " ", "change"}], "*)"}], "\[IndentingNewLine]", "\t", 
        
        RowBox[{
         RowBox[{
-        "RegularExpression", "[", "\"\<(?i)^.*\\\\bcity\\\\b.*$\>\"", "]"}], 
+        "RegularExpression", "[", 
+         "\"\<(?i)^.*(\\\\b|\\\\_)city(\\\\b|\\\\_).*$\>\"", "]"}], 
         "\[Rule]", "\"\<(interpret) City\>\""}], ",", "\[IndentingNewLine]", 
        "\t", 
        RowBox[{
         RowBox[{
-        "RegularExpression", "[", "\"\<(?i)^.*\\\\bcountry\\\\b.*$\>\"", 
-         "]"}], "\[Rule]", "\"\<(interpret) Country\>\""}], ",", 
+        "RegularExpression", "[", 
+         "\"\<(?i)^.*(\\\\b|\\\\_)country(\\\\b|\\\\_).*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) Country\>\""}], ",", 
        "\[IndentingNewLine]", "\t", 
        RowBox[{
         RowBox[{
-        "RegularExpression", "[", "\"\<(?i)^.*\\\\bstate\\\\b.*$\>\"", "]"}], 
+        "RegularExpression", "[", 
+         "\"\<(?i)^.*(\\\\b|\\\\_)state(\\\\b|\\\\_).*$\>\"", "]"}], 
         "\[Rule]", "\"\<(interpret) State\>\""}], ",", "\[IndentingNewLine]", 
        "\t", 
        RowBox[{
         RowBox[{
-        "RegularExpression", "[", "\"\<(?i)^.*\\\\bzip\\\\b.*$\>\"", "]"}], 
-        "\[Rule]", "\"\<(interpret) Zip\>\""}], ",", "\[IndentingNewLine]", 
-       "\t", 
+        "RegularExpression", "[", 
+         "\"\<(?i)^.*(\\\\b|\\\\_)zip(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
+        "\"\<(interpret) Zip\>\""}], ",", "\[IndentingNewLine]", "\t", 
        RowBox[{"(*", 
         RowBox[{
          RowBox[{
@@ -112,17 +117,20 @@ Cell[BoxData[
        "\[IndentingNewLine]", "\t", 
        RowBox[{
         RowBox[{
-        "RegularExpression", "[", "\"\<(?i)^.*\\\\blatitude\\\\b.*$\>\"", 
-         "]"}], "\[Rule]", "\"\<(interpret) Latitude\>\""}], ",", 
+        "RegularExpression", "[", 
+         "\"\<(?i)^.*(\\\\b|\\\\_)latitude(\\\\b|\\\\_).*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) Latitude\>\""}], ",", 
        "\[IndentingNewLine]", "\t", 
        RowBox[{
         RowBox[{
-        "RegularExpression", "[", "\"\<(?i)^.*\\\\blongitude\\\\b.*$\>\"", 
-         "]"}], "\[Rule]", "\"\<(interpret) Longitude\>\""}], ",", 
+        "RegularExpression", "[", 
+         "\"\<(?i)^.*(\\\\b|\\\\_)longitude(\\\\b|\\\\_).*$\>\"", "]"}], 
+        "\[Rule]", "\"\<(interpret) Longitude\>\""}], ",", 
        "\[IndentingNewLine]", "\t", 
        RowBox[{
         RowBox[{
-        "RegularExpression", "[", "\"\<(?i)^.*\\\\bdate\\\\b.*$\>\"", "]"}], 
+        "RegularExpression", "[", 
+         "\"\<(?i)^.*(\\\\b|\\\\_)date(\\\\b|\\\\_).*$\>\"", "]"}], 
         "\[Rule]", "\"\<(interpret) Date\>\""}]}], "\n", "\t", 
       RowBox[{"(*", 
        RowBox[{
@@ -166,9 +174,10 @@ Cell[BoxData[
    3.7713273887728863`*^9, 3.771327392197198*^9}, {3.771331483046513*^9, 
    3.771331486543951*^9}, {3.771331582058197*^9, 3.771331584076147*^9}, {
    3.771331795644189*^9, 3.7713318149267387`*^9}, {3.7713452099181843`*^9, 
-   3.771345233040357*^9}, {3.771351033373549*^9, 3.771351035957493*^9}},
+   3.771345233040357*^9}, {3.771351033373549*^9, 3.771351035957493*^9}, {
+   3.771363288084218*^9, 3.771363338678097*^9}},
  CellLabel->
-  "In[2850]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+  "In[3118]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
 
 Cell[BoxData[
  RowBox[{
@@ -213,7 +222,7 @@ Cell[BoxData[
         " ", "\n", "\t", "zipPosition", ",", " ", "zipTemp", ",", " ", 
         "zipResult", ",", "\n", "\t", "latiPosition", ",", " ", 
         "longiPosition", ",", " ", "latiTemp", ",", " ", "longiTemp", ",", 
-        " ", "latiTemp2", ",", " ", "longiTemp2", ",", "\n", "\t", 
+        " ", "latiResult", ",", " ", "longiResult", ",", "\n", "\t", 
         "statePosition", ",", " ", "stateTemp", ",", " ", "stateResult", ",", 
         "\n", "\t", "countryPosition", ",", " ", "countryTemp", ",", " ", 
         "countryResult"}], "}"}], ",", "\n", "\t", "\n", "\t", 
@@ -662,50 +671,85 @@ Cell[BoxData[
           RowBox[{"longiPosition", " ", "\[NotEqual]", " ", 
            RowBox[{"{", "}"}]}]}], ",", "\n", "\t\t", 
          RowBox[{
+          RowBox[{
+          "Print", "[", "\"\<Interpreting LATI and LOGNI...\>\"", "]"}], ";", 
+          "\n", "\t\t", 
           RowBox[{"latiTemp", " ", "=", " ", 
            RowBox[{
-            RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
-            RowBox[{"[", "latiPosition", "]"}], "]"}]}], ";", "\n", "\t\t", 
+            RowBox[{
+             RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+             RowBox[{"[", "latiPosition", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", 
+              RowBox[{";;", "10"}]}], "]"}], "]"}]}], ";", "\n", "\t\t", 
           RowBox[{"longiTemp", " ", "=", " ", 
            RowBox[{
-            RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
-            RowBox[{"[", "longiPosition", "]"}], "]"}]}], ";", "\n", "\t\t", 
-          RowBox[{"latiTemp2", " ", "=", " ", 
-           RowBox[{"Partition", "[", 
             RowBox[{
-             RowBox[{"latiTemp", "[", 
-              RowBox[{"[", 
-               RowBox[{"1", ",", 
-                RowBox[{";;", "10"}]}], "]"}], "]"}], ",", "2"}], "]"}]}], 
-          ";", "\n", "\t\t", 
-          RowBox[{"longiTemp2", " ", "=", " ", 
-           RowBox[{"Partition", "[", 
-            RowBox[{
-             RowBox[{"longiTemp", "[", 
-              RowBox[{"[", 
-               RowBox[{"1", ",", 
-                RowBox[{";;", "10"}]}], "]"}], "]"}], ",", "2"}], "]"}]}], 
-          ";", "\n", "\t\t", 
-          RowBox[{"Print", "[", 
+             RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+             RowBox[{"[", "longiPosition", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", 
+              RowBox[{";;", "10"}]}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+          RowBox[{"latiResult", " ", "=", " ", 
            RowBox[{
-            RowBox[{
-             RowBox[{"Map", "[", 
-              RowBox[{"LatitudeLongitude", ",", "\n", "\t\t\t", 
-               RowBox[{
-                RowBox[{
-                "Print", "[", "\"\<Interpreting LATI and LOGNI...\>\"", "]"}],
-                 ";", "\[IndentingNewLine]", "\t\t\t", 
-                RowBox[{"Map", "[", 
-                 RowBox[{"GeoPosition", ",", 
-                  RowBox[{"Transpose", "/@", 
-                   RowBox[{"Transpose", "[", 
-                    RowBox[{"{", 
-                    RowBox[{"latiTemp2", ",", "longiTemp2"}], "}"}], "]"}]}], 
-                  ",", 
-                  RowBox[{"{", "2", "}"}]}], "]"}]}], ",", 
-               "\[IndentingNewLine]", "\t\t\t", 
-               RowBox[{"{", "2", "}"}]}], "\[IndentingNewLine]", "\t\t", 
-              "]"}], "//", "Dataset"}], "//", "Transpose"}], "]"}]}]}], "\n", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"LatitudeLongitude", "@*", "GeoPosition"}], "/@", 
+              RowBox[{"Transpose", "[", 
+               RowBox[{"{", 
+                RowBox[{"latiTemp", ",", "longiTemp"}], "}"}], "]"}]}], ")"}],
+             "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+          RowBox[{"longiResult", " ", "=", " ", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"LatitudeLongitude", "@*", "GeoPosition"}], "/@", 
+              RowBox[{"Transpose", "[", 
+               RowBox[{"{", 
+                RowBox[{"latiTemp", ",", "longiTemp"}], "}"}], "]"}]}], ")"}],
+             "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+          RowBox[{"Print", "[", 
+           RowBox[{"latiResult", "//", "Dataset"}], "]"}], ";", "\n", "\t\t", 
+          
+          RowBox[{"Print", "[", 
+           RowBox[{"longiResult", "//", "Dataset"}], "]"}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "latiPosition"}], "]"}], "]"}], "=", 
+           
+           RowBox[{"latiResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"bodyPart", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{";;", "10"}], ",", "longiPosition"}], "]"}], "]"}], "=", 
+           RowBox[{"longiResult", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t\t", 
+        RowBox[{"(*", 
+         RowBox[{"Print", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Map", "[", 
+             RowBox[{
+             "LatitudeLongitude", ",", "\[IndentingNewLine]", "\t\t\t", 
+              RowBox[{"Map", "[", 
+               RowBox[{"GeoPosition", ",", 
+                RowBox[{"Transpose", "/@", 
+                 RowBox[{"Transpose", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"latiTemp2", ",", "longiTemp2"}], "}"}], "]"}]}], 
+                ",", 
+                RowBox[{"{", "2", "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+              "\t\t\t", 
+              RowBox[{"{", "2", "}"}]}], "\[IndentingNewLine]", "\t\t", "]"}],
+             "//", "Dataset"}], "//", "Transpose"}], "]"}], "*)"}], "\n", 
         "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
        RowBox[{"(*", " ", 
         RowBox[{
@@ -934,14 +978,12 @@ Cell[BoxData[
         "\n", "\t", 
        RowBox[{"Print", "[", "\"\<Showing final result...\>\"", "]"}], ";", 
        "\n", "\t", 
-       RowBox[{"Print", "[", 
-        RowBox[{
-         RowBox[{"Join", "[", 
-          RowBox[{"headPart", ",", 
-           RowBox[{"bodyPart", "[", 
-            RowBox[{"[", 
-             RowBox[{";;", "10"}], "]"}], "]"}]}], "]"}], "//", "TableForm"}],
-         "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]}]}]}]], "Code",
+       RowBox[{"Join", "[", 
+        RowBox[{"headPart", ",", 
+         RowBox[{"bodyPart", "[", 
+          RowBox[{"[", 
+           RowBox[{";;", "10"}], "]"}], "]"}]}], "]"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}]}]}]], "Code",
  CellChangeTimes->{{3.770997854389613*^9, 3.770997878251295*^9}, 
    3.770999490025022*^9, {3.771062694622528*^9, 3.77106270479753*^9}, {
    3.7710654212985086`*^9, 3.771065464663496*^9}, {3.771065502322473*^9, 
@@ -1056,7 +1098,14 @@ Cell[BoxData[
    3.7713516384268847`*^9, 3.771351645851728*^9}, {3.771351683233982*^9, 
    3.771351701633712*^9}, {3.7713517749376297`*^9, 3.7713518056864557`*^9}, {
    3.771352124179758*^9, 3.7713522506909237`*^9}, {3.7713522927562532`*^9, 
-   3.771352345661683*^9}},ExpressionUUID->"508d6289-ca04-4680-bf55-\
+   3.771352345661683*^9}, {3.7713578732139683`*^9, 3.771357877409656*^9}, {
+   3.771358350826892*^9, 3.77135837050408*^9}, {3.77135937966943*^9, 
+   3.77135938207716*^9}, {3.77135946726029*^9, 3.7713595319493093`*^9}, {
+   3.771359577335731*^9, 3.7713595919798737`*^9}, {3.771359816539343*^9, 
+   3.771359926737631*^9}, {3.7713599836058607`*^9, 3.77136003554767*^9}, {
+   3.771360171657888*^9, 3.7713602882557*^9}, {3.771360321835531*^9, 
+   3.771360325672859*^9}, {3.771361665641724*^9, 
+   3.7713616791345053`*^9}},ExpressionUUID->"508d6289-ca04-4680-bf55-\
 cec08b5171ff"]
 }, Open  ]]
 },
@@ -1092,8 +1141,8 @@ Cell[CellGroupData[{
 Cell[580, 22, 213, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd"],
 Cell[796, 28, 364, 6, 35, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[1163, 36, 341, 5, 35, "Text",ExpressionUUID->"b70c649b-a958-4202-9f22-238ea1f9c7d4"],
-Cell[1507, 43, 6255, 127, 623, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
-Cell[7765, 172, 41949, 887, 4025, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
+Cell[1507, 43, 6521, 136, 623, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+Cell[8031, 181, 43714, 927, 4101, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"]
 }, Open  ]]
 }
 ]
