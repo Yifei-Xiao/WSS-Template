@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     62085,       1304]
-NotebookOptionsPosition[     60530,       1269]
-NotebookOutlinePosition[     61336,       1296]
-CellTagsIndexPosition[     61293,       1293]
+NotebookDataLength[     69577,       1456]
+NotebookOptionsPosition[     67928,       1420]
+NotebookOutlinePosition[     68736,       1447]
+CellTagsIndexPosition[     68693,       1444]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -40,6 +40,13 @@ Cell["< Mentor\[CloseCurlyQuote]s First and Last name>", "Text",
   3.54981906151682*^9}, {3.770055624686027*^9, 
   3.770055659820487*^9}},ExpressionUUID->"b70c649b-a958-4202-9f22-\
 238ea1f9c7d4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Code",
+ CellChangeTimes->{{3.771549144113089*^9, 3.771549161381157*^9}},
+ CellLabel->
+  "In[639]:=",ExpressionUUID->"8fa9d9e4-37c2-4a00-b5fe-412f26c7f724"],
 
 Cell[BoxData[
  RowBox[{
@@ -166,7 +173,7 @@ Cell[BoxData[
    3.771363288084218*^9, 3.771363338678097*^9}, {3.771364230845042*^9, 
    3.7713642310129433`*^9}, {3.7714133262549343`*^9, 3.771413329965107*^9}},
  CellLabel->
-  "In[274]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+  "In[640]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
 
 Cell[BoxData[
  RowBox[{
@@ -422,7 +429,7 @@ Cell[BoxData[
    3.7715210525687857`*^9, 3.771521054036087*^9}, {3.7715213003893547`*^9, 
    3.771521300554264*^9}},
  CellLabel->
-  "In[439]:=",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
+  "In[643]:=",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
 
 Cell[BoxData[
  RowBox[{
@@ -536,7 +543,7 @@ Cell[BoxData[
   3.771415484368325*^9}, {3.771416172279963*^9, 3.7714161744438343`*^9}, {
   3.771521126353561*^9, 3.771521126482526*^9}},
  CellLabel->
-  "In[438]:=",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
+  "In[645]:=",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
 
 Cell[BoxData[
  RowBox[{
@@ -580,208 +587,240 @@ Cell[BoxData[
         RowBox[{"amount", " ", "=", " ", "All"}]}], "\n", "\t", "]"}], ";", 
       "\t", "\n", "\n", "\t", 
       RowBox[{"(*", " ", "Phone", " ", "*)"}], "\n", "\t", 
-      RowBox[{"phonePosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) Phone\>\""}], "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
       RowBox[{"If", "[", 
        RowBox[{
-        RowBox[{"phonePosition", "\[NotEqual]", 
-         RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
+        RowBox[{"TrueQ", "[", 
+         RowBox[{"interpretListAssociation", "[", "isPhone", "]"}], "]"}], 
+        ",", "\n", "\t\t", 
         RowBox[{
-         RowBox[{"print", "[", "\"\<Interpreting PHONE...\>\"", "]"}], ";", 
-         "\n", "\t\t", 
-         RowBox[{"phoneTemp", " ", "=", " ", 
-          RowBox[{"Transpose", "[", 
-           RowBox[{"bodyPart", "[", 
-            RowBox[{"[", 
-             RowBox[{"amount", ",", "phonePosition"}], "]"}], "]"}], "]"}]}], 
-         ";", "\n", "\t\t", 
-         RowBox[{"phoneResult", " ", "=", " ", 
+         RowBox[{"phonePosition", " ", "=", " ", 
           RowBox[{
-           RowBox[{"Interpreter", "[", "\"\<PhoneNumber\>\"", "]"}], "/@", 
-           "phoneTemp"}]}], ";", "\n", "\t\t", 
-         RowBox[{"phoneResult", " ", "=", " ", 
-          RowBox[{"phoneResult", "/.", 
-           RowBox[{
-            RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
-            RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"phoneResult", "//", "TableForm"}], "]"}], ";", "\n", 
-         "\t\t", 
-         RowBox[{
-          RowBox[{"fastBody", "[", 
-           RowBox[{"[", 
-            RowBox[{"amount", ",", "phonePosition"}], "]"}], "]"}], "=", 
-          RowBox[{"phoneResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";", 
-      "\n", "\t", "\n", "\t", 
-      RowBox[{"(*", " ", "Email", " ", "*)"}], "\n", "\t", 
-      RowBox[{"emailPosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) Email address\>\""}], 
-         "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
-      RowBox[{"If", "[", 
-       RowBox[{
-        RowBox[{"emailPosition", " ", "\[NotEqual]", " ", 
-         RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
-        RowBox[{
-         RowBox[{"print", "[", "\"\<Interpreting EMAIL...\>\"", "]"}], ";", 
-         "\n", "\t\t", 
-         RowBox[{"emailTemp", " ", "=", " ", 
-          RowBox[{"Transpose", "[", 
-           RowBox[{"bodyPart", "[", 
-            RowBox[{"[", 
-             RowBox[{"amount", ",", "emailPosition"}], "]"}], "]"}], "]"}]}], 
-         ";", "\n", "\t\t", 
-         RowBox[{"emailResult", " ", "=", " ", 
-          RowBox[{
-           RowBox[{"Interpreter", "[", "\"\<EmailAddress\>\"", "]"}], "/@", 
-           "emailTemp"}]}], ";", "\n", "\t\t", 
-         RowBox[{"emailResult", " ", "=", " ", 
-          RowBox[{"emailResult", "/.", 
-           RowBox[{
-            RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
-            RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"emailResult", "//", "TableForm"}], "]"}], ";", "\n", 
-         "\t\t", 
-         RowBox[{
-          RowBox[{"fastBody", "[", 
-           RowBox[{"[", 
-            RowBox[{"amount", ",", "emailPosition"}], "]"}], "]"}], "=", 
-          RowBox[{"emailResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";", 
-      "\n", "\t", "\n", "\t", 
-      RowBox[{"(*", " ", 
-       RowBox[{"URL", " ", 
-        RowBox[{"address", ":", " ", "Fast"}]}], " ", "*)"}], "\n", "\t", 
-      RowBox[{"URLPosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) URL address\>\""}], "]"}], 
-        "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
-      RowBox[{"If", "[", 
-       RowBox[{
-        RowBox[{"URLPosition", "\[NotEqual]", 
-         RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
-        RowBox[{
-         RowBox[{"print", "[", "\"\<Interpreting URL...\>\"", "]"}], ";", 
-         "\n", "\t\t", 
-         RowBox[{"URLTemp", " ", "=", " ", 
-          RowBox[{"Transpose", "[", 
-           RowBox[{"bodyPart", "[", 
-            RowBox[{"[", 
-             RowBox[{"amount", ",", "URLPosition"}], "]"}], "]"}], "]"}]}], 
-         ";", "\n", "\t\t", 
-         RowBox[{"URLResult", " ", "=", " ", 
-          RowBox[{"Map", "[", 
-           RowBox[{"URL", ",", "URLTemp", ",", 
-            RowBox[{"{", "2", "}"}]}], "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{"URLResult", " ", "=", " ", 
-          RowBox[{"URLResult", "/.", 
-           RowBox[{
-            RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
-            RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"URLResult", "//", "TableForm"}], "]"}], ";", "\n", "\t\t", 
-         
-         RowBox[{
-          RowBox[{"fastBody", "[", 
-           RowBox[{"[", 
-            RowBox[{"amount", ",", "URLPosition"}], "]"}], "]"}], "=", 
-          RowBox[{"URLResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";", 
-      "\n", "\t", "\n", "\t", 
-      RowBox[{"(*", " ", 
-       RowBox[{"Latitude", " ", "and", " ", "longitude"}], " ", "*)"}], "\n", 
-      "\t", 
-      RowBox[{"latiPosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) Latitude\>\""}], "]"}], 
-        "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
-      RowBox[{"longiPosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) Longitude\>\""}], "]"}], 
-        "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
-      RowBox[{"If", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"latiPosition", " ", "\[NotEqual]", " ", 
-          RowBox[{"{", "}"}]}], " ", "&&", " ", 
-         RowBox[{"longiPosition", " ", "\[NotEqual]", " ", 
-          RowBox[{"{", "}"}]}]}], ",", "\n", "\t\t", 
-        RowBox[{
-         RowBox[{
-         "print", "[", "\"\<Interpreting LATI and LOGNI...\>\"", "]"}], ";", 
-         "\n", "\t\t", 
-         RowBox[{"latiTemp", " ", "=", " ", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
-            RowBox[{"[", "latiPosition", "]"}], "]"}], "[", 
-           RowBox[{"[", 
-            RowBox[{"1", ",", "amount"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{"longiTemp", " ", "=", " ", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
-            RowBox[{"[", "longiPosition", "]"}], "]"}], "[", 
-           RowBox[{"[", 
-            RowBox[{"1", ",", "amount"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{"latiResult", " ", "=", " ", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"LatitudeLongitude", "@*", "GeoPosition"}], "/@", 
-             RowBox[{"Transpose", "[", 
-              RowBox[{"{", 
-               RowBox[{"latiTemp", ",", "longiTemp"}], "}"}], "]"}]}], ")"}], 
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) Phone\>\""}], "]"}], 
            "[", 
            RowBox[{"[", 
             RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{"longiResult", " ", "=", " ", 
+         RowBox[{"If", "[", 
           RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"LatitudeLongitude", "@*", "GeoPosition"}], "/@", 
+           RowBox[{"phonePosition", "\[NotEqual]", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"print", "[", "\"\<Interpreting PHONE...\>\"", "]"}], ";",
+             "\n", "\t\t\t", 
+            RowBox[{"phoneTemp", " ", "=", " ", 
              RowBox[{"Transpose", "[", 
-              RowBox[{"{", 
-               RowBox[{"latiTemp", ",", "longiTemp"}], "}"}], "]"}]}], ")"}], 
+              RowBox[{"bodyPart", "[", 
+               RowBox[{"[", 
+                RowBox[{"amount", ",", "phonePosition"}], "]"}], "]"}], 
+              "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"phoneResult", " ", "=", " ", 
+             RowBox[{
+              RowBox[{"Interpreter", "[", "\"\<PhoneNumber\>\"", "]"}], "/@", 
+              "phoneTemp"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"phoneResult", " ", "=", " ", 
+             RowBox[{"phoneResult", "/.", 
+              RowBox[{
+               RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
+               RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"phoneResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{
+             RowBox[{"fastBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "phonePosition"}], "]"}], "]"}], "=", 
+             RowBox[{"phoneResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
+      RowBox[{"(*", " ", "Email", " ", "*)"}], "\n", "\t", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"TrueQ", "[", 
+         RowBox[{"interpretListAssociation", "[", "isEmail", "]"}], "]"}], 
+        ",", "\n", "\t\t", 
+        RowBox[{
+         RowBox[{"emailPosition", " ", "=", " ", 
+          RowBox[{
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) Email address\>\""}], 
+            "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"emailPosition", " ", "\[NotEqual]", " ", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"print", "[", "\"\<Interpreting EMAIL...\>\"", "]"}], ";",
+             "\n", "\t\t\t", 
+            RowBox[{"emailTemp", " ", "=", " ", 
+             RowBox[{"Transpose", "[", 
+              RowBox[{"bodyPart", "[", 
+               RowBox[{"[", 
+                RowBox[{"amount", ",", "emailPosition"}], "]"}], "]"}], 
+              "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"emailResult", " ", "=", " ", 
+             RowBox[{
+              RowBox[{"Interpreter", "[", "\"\<EmailAddress\>\"", "]"}], "/@",
+               "emailTemp"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"emailResult", " ", "=", " ", 
+             RowBox[{"emailResult", "/.", 
+              RowBox[{
+               RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
+               RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"emailResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{
+             RowBox[{"fastBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "emailPosition"}], "]"}], "]"}], "=", 
+             RowBox[{"emailResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\t", "\n", "\t", "\n", "\t", 
+      RowBox[{"(*", " ", 
+       RowBox[{"URL", " ", 
+        RowBox[{"address", ":", " ", "Fast"}]}], " ", "*)"}], "\n", "\t", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"TrueQ", "[", 
+         RowBox[{"interpretListAssociation", "[", "isURL", "]"}], "]"}], ",", 
+        "\n", "\t\t", 
+        RowBox[{
+         RowBox[{"URLPosition", " ", "=", " ", 
+          RowBox[{
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) URL address\>\""}], 
+            "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"URLPosition", "\[NotEqual]", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"print", "[", "\"\<Interpreting URL...\>\"", "]"}], ";", 
+            "\n", "\t\t\t", 
+            RowBox[{"URLTemp", " ", "=", " ", 
+             RowBox[{"Transpose", "[", 
+              RowBox[{"bodyPart", "[", 
+               RowBox[{"[", 
+                RowBox[{"amount", ",", "URLPosition"}], "]"}], "]"}], "]"}]}],
+             ";", "\n", "\t\t\t", 
+            RowBox[{"URLResult", " ", "=", " ", 
+             RowBox[{"Map", "[", 
+              RowBox[{"URL", ",", "URLTemp", ",", 
+               RowBox[{"{", "2", "}"}]}], "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"URLResult", " ", "=", " ", 
+             RowBox[{"URLResult", "/.", 
+              RowBox[{
+               RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
+               RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"URLResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{
+             RowBox[{"fastBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "URLPosition"}], "]"}], "]"}], "=", 
+             RowBox[{"URLResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\t", "\n", "\t\t", "\n", "\t", 
+      RowBox[{"(*", " ", 
+       RowBox[{"Latitude", " ", "and", " ", "longitude"}], " ", "*)"}], "\n", 
+      "\t", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"TrueQ", "[", 
+         RowBox[{
+         "interpretListAssociation", "[", "isLatitudeandLongitude", "]"}], 
+         "]"}], ",", "\n", "\t\t", 
+        RowBox[{
+         RowBox[{"latiPosition", " ", "=", " ", 
+          RowBox[{
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) Latitude\>\""}], "]"}], 
            "[", 
            RowBox[{"[", 
-            RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"latiResult", "//", "TableForm"}], "]"}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"longiResult", "//", "TableForm"}], "]"}], ";", "\n", 
-         "\t\t", 
-         RowBox[{
-          RowBox[{"fastBody", "[", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"longiPosition", " ", "=", " ", 
+          RowBox[{
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) Longitude\>\""}], "]"}],
+            "[", 
            RowBox[{"[", 
-            RowBox[{"amount", ",", "latiPosition"}], "]"}], "]"}], "=", 
-          RowBox[{"latiResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{
-          RowBox[{"fastBody", "[", 
-           RowBox[{"[", 
-            RowBox[{"amount", ",", "longiPosition"}], "]"}], "]"}], "=", 
-          RowBox[{"longiResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t", "]"}], ";", "\n",
-       "\t", "\n", "\t", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"latiPosition", " ", "\[NotEqual]", " ", 
+             RowBox[{"{", "}"}]}], " ", "&&", " ", 
+            RowBox[{"longiPosition", " ", "\[NotEqual]", " ", 
+             RowBox[{"{", "}"}]}]}], ",", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{
+            "print", "[", "\"\<Interpreting LATI and LOGNI...\>\"", "]"}], 
+            ";", "\n", "\t\t\t", 
+            RowBox[{"latiTemp", " ", "=", " ", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+               RowBox[{"[", "latiPosition", "]"}], "]"}], "[", 
+              RowBox[{"[", 
+               RowBox[{"1", ",", "amount"}], "]"}], "]"}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"longiTemp", " ", "=", " ", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Transpose", "[", "bodyPart", "]"}], "[", 
+               RowBox[{"[", "longiPosition", "]"}], "]"}], "[", 
+              RowBox[{"[", 
+               RowBox[{"1", ",", "amount"}], "]"}], "]"}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"latiResult", " ", "=", " ", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"LatitudeLongitude", "@*", "GeoPosition"}], "/@", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"latiTemp", ",", "longiTemp"}], "}"}], "]"}]}], 
+               ")"}], "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"longiResult", " ", "=", " ", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"LatitudeLongitude", "@*", "GeoPosition"}], "/@", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"latiTemp", ",", "longiTemp"}], "}"}], "]"}]}], 
+               ")"}], "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"latiResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"longiResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{
+             RowBox[{"fastBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "latiPosition"}], "]"}], "]"}], "=", 
+             RowBox[{"latiResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{
+             RowBox[{"fastBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "longiPosition"}], "]"}], "]"}], "=", 
+             RowBox[{"longiResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\t", "\n", "\t", "\n", "\t", 
       RowBox[{"Return", "[", 
        RowBox[{"{", "fastBody", "}"}], "]"}], ";"}]}], "\n", 
     "]"}]}]}]], "Code",
@@ -796,9 +835,10 @@ Cell[BoxData[
    3.7714182531087093`*^9, {3.7714187329687023`*^9, 3.771418764998981*^9}, {
    3.771419107595562*^9, 3.7714191391136637`*^9}, {3.771521132077989*^9, 
    3.771521164512788*^9}, {3.771529963416052*^9, 3.771530066986767*^9}, 
-   3.7715305729316196`*^9},
+   3.7715305729316196`*^9, {3.771548497616865*^9, 3.771548562871903*^9}, {
+   3.771548754857568*^9, 3.771548859591177*^9}},
  CellLabel->
-  "In[437]:=",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
+  "In[646]:=",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
 
 Cell[BoxData[
  RowBox[{
@@ -845,271 +885,321 @@ Cell[BoxData[
         RowBox[{"amount", " ", "=", " ", "All"}]}], "\n", "\t", "]"}], ";", 
       "\t", "\n", "\t", "\n", "\t", 
       RowBox[{"(*", " ", "Year", " ", "*)"}], "\n", "\t", 
-      RowBox[{"yearPosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) Year\>\""}], "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
       RowBox[{"If", "[", 
        RowBox[{
-        RowBox[{"yearPosition", " ", "\[NotEqual]", " ", 
-         RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
-        RowBox[{
-         RowBox[{"print", "[", "\"\<Interpreting YEAR...\>\"", "]"}], ";", 
+        RowBox[{"TrueQ", "[", 
+         RowBox[{"interpretListAssociation", "[", "isYear", "]"}], "]"}], ",",
          "\n", "\t\t", 
-         RowBox[{"yearTemp", " ", "=", " ", 
-          RowBox[{"Map", "[", 
-           RowBox[{"ToString", ",", 
-            RowBox[{"Transpose", "[", 
-             RowBox[{"bodyPart", "[", 
-              RowBox[{"[", 
-               RowBox[{"amount", ",", "yearPosition"}], "]"}], "]"}], "]"}], 
-            ",", 
-            RowBox[{"{", "2", "}"}]}], "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{"yearResult", " ", "=", " ", 
+        RowBox[{
+         RowBox[{"yearPosition", " ", "=", " ", 
           RowBox[{
-           RowBox[{"Interpreter", "[", "\"\<Date\>\"", "]"}], "/@", 
-           "yearTemp"}]}], ";", "\n", "\t\t", 
-         RowBox[{"yearResult", " ", "=", " ", 
-          RowBox[{"yearResult", "/.", 
-           RowBox[{
-            RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
-            RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"yearResult", "//", "TableForm"}], "]"}], ";", "\n", "\t\t", 
-         RowBox[{
-          RowBox[{"slowBody", "[", 
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) Year\>\""}], "]"}], "[", 
            RowBox[{"[", 
-            RowBox[{"amount", ",", "yearPosition"}], "]"}], "]"}], "=", 
-          RowBox[{"yearResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";", 
-      "\n", "\t", "\n", "\t", 
-      RowBox[{"(*", " ", "Date", " ", "*)"}], "\n", "\t", 
-      RowBox[{"datePosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) Date\>\""}], "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
-      RowBox[{"If", "[", 
-       RowBox[{
-        RowBox[{"datePosition", " ", "\[NotEqual]", " ", 
-         RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
-        RowBox[{
-         RowBox[{"print", "[", "\"\<Interpreting DATE...\>\"", "]"}], ";", 
-         "\n", "\t\t", 
-         RowBox[{"dateTemp", " ", "=", " ", 
-          RowBox[{"Transpose", "[", 
-           RowBox[{"bodyPart", "[", 
-            RowBox[{"[", 
-             RowBox[{"amount", ",", "datePosition"}], "]"}], "]"}], "]"}]}], 
-         ";", "\n", "\t\t", 
-         RowBox[{"(*", " ", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"If", "[", 
           RowBox[{
-          "Need", " ", "to", " ", "try", " ", "DateTime", " ", "and", " ", 
-           "Date"}], " ", "*)"}], "\n", "\t\t", 
-         RowBox[{"(*", " ", 
-          RowBox[{
-          "Check", " ", "the", " ", "result", " ", "column", " ", "by", " ", 
-           "column"}], " ", "*)"}], "\n", "\t\t", 
-         RowBox[{"dateResult", "=", 
-          RowBox[{"Map", "[", "\n", "\t\t\t\t\t\t", 
+           RowBox[{"yearPosition", " ", "\[NotEqual]", " ", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t\t", 
            RowBox[{
-            RowBox[{
-             RowBox[{"Block", "[", 
+            RowBox[{"print", "[", "\"\<Interpreting YEAR...\>\"", "]"}], ";", 
+            "\n", "\t\t\t", 
+            RowBox[{"yearTemp", " ", "=", " ", 
+             RowBox[{"Map", "[", 
+              RowBox[{"ToString", ",", 
+               RowBox[{"Transpose", "[", 
+                RowBox[{"bodyPart", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"amount", ",", "yearPosition"}], "]"}], "]"}], 
+                "]"}], ",", 
+               RowBox[{"{", "2", "}"}]}], "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"yearResult", " ", "=", " ", 
+             RowBox[{
+              RowBox[{"Interpreter", "[", "\"\<Date\>\"", "]"}], "/@", 
+              "yearTemp"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"yearResult", " ", "=", " ", 
+             RowBox[{"yearResult", "/.", 
               RowBox[{
-               RowBox[{"{", "tmp", "}"}], ",", "\n", "\t\t\t\t\t\t\t", 
-               RowBox[{
-                RowBox[{"tmp", "=", 
-                 RowBox[{
-                  RowBox[{"Interpreter", "[", "\"\<DateTime\>\"", "]"}], "[", 
-                  "#", "]"}]}], ";", "\n", "\t\t\t\t\t\t\t", 
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{"AnyTrue", "[", 
-                   RowBox[{"tmp", ",", "FailureQ"}], "]"}], ",", "\n", 
-                  "\t\t\t\t\t\t\t\t", 
-                  RowBox[{
-                   RowBox[{"Interpreter", "[", "\"\<Date\>\"", "]"}], "[", 
-                   "#", "]"}], ",", "\n", "\t\t\t\t\t\t\t\t", "tmp"}], "\n", 
-                 "\t\t\t\t\t\t\t\t", "]"}]}]}], "\n", "\t\t\t\t\t\t", "]"}], 
-             "&"}], "\n", "\t\t\t\t\t\t", ",", "\n", "\t\t\t\t\t\t", 
-            "dateTemp"}], "\n", "\t\t\t\t\t", "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{"dateResult", " ", "=", " ", 
-          RowBox[{"dateResult", "/.", 
-           RowBox[{
-            RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
-            RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"dateResult", "//", "TableForm"}], "]"}], ";", "\n", "\t\t", 
-         RowBox[{
-          RowBox[{"slowBody", "[", 
+               RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
+               RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"yearResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{
+             RowBox[{"slowBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "yearPosition"}], "]"}], "]"}], "=", 
+             RowBox[{"yearResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\t", "\n", "\t", "\n", "\t", 
+      RowBox[{"(*", " ", "Date", " ", "*)"}], "\n", "\t", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"TrueQ", "[", 
+         RowBox[{"interpretListAssociation", "[", "isDate", "]"}], "]"}], ",",
+         "\n", "\t\t", 
+        RowBox[{
+         RowBox[{"datePosition", " ", "=", " ", 
+          RowBox[{
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) Date\>\""}], "]"}], "[", 
            RowBox[{"[", 
-            RowBox[{"amount", ",", "datePosition"}], "]"}], "]"}], "=", 
-          RowBox[{"dateResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";", 
-      "\n", "\t", "\n", "\t", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"datePosition", " ", "\[NotEqual]", " ", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"print", "[", "\"\<Interpreting DATE...\>\"", "]"}], ";", 
+            "\n", "\t\t\t", 
+            RowBox[{"dateTemp", " ", "=", " ", 
+             RowBox[{"Transpose", "[", 
+              RowBox[{"bodyPart", "[", 
+               RowBox[{"[", 
+                RowBox[{"amount", ",", "datePosition"}], "]"}], "]"}], 
+              "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"(*", " ", 
+             RowBox[{
+             "Need", " ", "to", " ", "try", " ", "DateTime", " ", "and", " ", 
+              "Date"}], " ", "*)"}], "\n", "\t\t\t", 
+            RowBox[{"(*", " ", 
+             RowBox[{
+             "Check", " ", "the", " ", "result", " ", "column", " ", "by", 
+              " ", "column"}], " ", "*)"}], "\n", "\t\t\t", 
+            RowBox[{"dateResult", "=", 
+             RowBox[{"Map", "[", "\n", "\t\t\t\t\t\t\t", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Block", "[", 
+                 RowBox[{
+                  RowBox[{"{", "tmp", "}"}], ",", "\n", "\t\t\t\t\t\t\t\t", 
+                  RowBox[{
+                   RowBox[{"tmp", "=", 
+                    RowBox[{
+                    RowBox[{"Interpreter", "[", "\"\<DateTime\>\"", "]"}], 
+                    "[", "#", "]"}]}], ";", "\n", "\t\t\t\t\t\t\t\t", 
+                   RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"AnyTrue", "[", 
+                    RowBox[{"tmp", ",", "FailureQ"}], "]"}], ",", "\n", 
+                    "\t\t\t\t\t\t\t\t\t", 
+                    RowBox[{
+                    RowBox[{"Interpreter", "[", "\"\<Date\>\"", "]"}], "[", 
+                    "#", "]"}], ",", "\n", "\t\t\t\t\t\t\t\t\t", "tmp"}], 
+                    "\n", "\t\t\t\t\t\t\t\t\t", "]"}]}]}], "\n", 
+                 "\t\t\t\t\t\t\t", "]"}], "&"}], "\n", "\t\t\t\t\t\t\t", ",", 
+               "\n", "\t\t\t\t\t\t\t", "dateTemp"}], "\n", "\t\t\t\t\t\t", 
+              "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"dateResult", " ", "=", " ", 
+             RowBox[{"dateResult", "/.", 
+              RowBox[{
+               RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
+               RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"dateResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{
+             RowBox[{"slowBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "datePosition"}], "]"}], "]"}], "=", 
+             RowBox[{"dateResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\t", "\n", "\t", "\n", "\t", 
       RowBox[{"(*", " ", 
        RowBox[{"Zip", " ", "code"}], " ", "*)"}], "\n", "\t", 
-      RowBox[{"zipPosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) Zip\>\""}], "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
       RowBox[{"If", "[", 
        RowBox[{
-        RowBox[{"zipPosition", " ", "\[NotEqual]", " ", 
-         RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
+        RowBox[{"TrueQ", "[", 
+         RowBox[{"interpretListAssociation", "[", "isZip", "]"}], "]"}], ",", 
+        "\n", "\t\t", 
         RowBox[{
-         RowBox[{"print", "[", "\"\<Interpreting ZIP...\>\"", "]"}], ";", 
-         "\n", "\t\t", 
-         RowBox[{"zipTemp", " ", "=", " ", 
-          RowBox[{"Map", "[", 
-           RowBox[{"ToString", ",", "\n", "\t\t\t\t\t", 
-            RowBox[{"Transpose", "[", 
-             RowBox[{"bodyPart", "[", 
+         RowBox[{"zipPosition", " ", "=", " ", 
+          RowBox[{
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) Zip\>\""}], "]"}], "[", 
+           
+           RowBox[{"[", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"zipPosition", " ", "\[NotEqual]", " ", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"print", "[", "\"\<Interpreting ZIP...\>\"", "]"}], ";", 
+            "\n", "\t\t\t", 
+            RowBox[{"zipTemp", " ", "=", " ", 
+             RowBox[{"Map", "[", 
+              RowBox[{"ToString", ",", "\n", "\t\t\t\t\t\t", 
+               RowBox[{"Transpose", "[", 
+                RowBox[{"bodyPart", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"amount", ",", "zipPosition"}], "]"}], "]"}], "]"}],
+                ",", "\n", "\t\t\t\t\t\t", 
+               RowBox[{"{", "2", "}"}]}], "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"zipResult", " ", "=", " ", 
+             RowBox[{
+              RowBox[{"Interpreter", "[", "\"\<ZIPCode\>\"", "]"}], "/@", 
+              "zipTemp"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"zipResult", " ", "=", " ", 
+             RowBox[{"zipResult", "/.", 
+              RowBox[{
+               RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
+               RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"zipResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{
+             RowBox[{"slowBody", "[", 
               RowBox[{"[", 
-               RowBox[{"amount", ",", "zipPosition"}], "]"}], "]"}], "]"}], 
-            ",", "\n", "\t\t\t\t\t", 
-            RowBox[{"{", "2", "}"}]}], "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{"zipResult", " ", "=", " ", 
-          RowBox[{
-           RowBox[{"Interpreter", "[", "\"\<ZIPCode\>\"", "]"}], "/@", 
-           "zipTemp"}]}], ";", "\n", "\t\t", 
-         RowBox[{"zipResult", " ", "=", " ", 
-          RowBox[{"zipResult", "/.", 
-           RowBox[{
-            RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
-            RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"zipResult", "//", "TableForm"}], "]"}], ";", "\n", "\t\t", 
-         
-         RowBox[{
-          RowBox[{"slowBody", "[", 
-           RowBox[{"[", 
-            RowBox[{"amount", ",", "zipPosition"}], "]"}], "]"}], "=", 
-          RowBox[{"zipResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t", "]"}], ";", 
-      "\n", "\t", "\n", "\t", 
+               RowBox[{"amount", ",", "zipPosition"}], "]"}], "]"}], "=", 
+             RowBox[{"zipResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\t", "\n", "\t", "\n", "\t", 
       RowBox[{"(*", " ", "City", " ", "*)"}], "\n", "\t", 
-      RowBox[{"cityPosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) City\>\""}], "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
       RowBox[{"If", "[", 
        RowBox[{
-        RowBox[{"cityPosition", " ", "\[NotEqual]", " ", 
-         RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
-        RowBox[{
-         RowBox[{"print", "[", "\"\<Interpreting CITY...\>\"", "]"}], ";", 
+        RowBox[{"TrueQ", "[", 
+         RowBox[{"interpretListAssociation", "[", "isCity", "]"}], "]"}], ",",
          "\n", "\t\t", 
-         RowBox[{"cityTemp", " ", "=", " ", 
-          RowBox[{"Transpose", "[", 
-           RowBox[{"bodyPart", "[", 
-            RowBox[{"[", 
-             RowBox[{"amount", ",", "cityPosition"}], "]"}], "]"}], "]"}]}], 
-         ";", "\n", "\t\t", 
-         RowBox[{"cityResult", " ", "=", " ", 
+        RowBox[{
+         RowBox[{"cityPosition", " ", "=", " ", 
           RowBox[{
-           RowBox[{"Interpreter", "[", "\"\<City\>\"", "]"}], "/@", 
-           "cityTemp"}]}], ";", "\n", "\t\t", 
-         RowBox[{"cityResult", " ", "=", " ", 
-          RowBox[{"cityResult", "/.", 
-           RowBox[{
-            RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
-            RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"cityResult", "//", "TableForm"}], "]"}], ";", "\n", "\t\t", 
-         RowBox[{
-          RowBox[{"slowBody", "[", 
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) City\>\""}], "]"}], "[", 
            RowBox[{"[", 
-            RowBox[{"amount", ",", "cityPosition"}], "]"}], "]"}], "=", 
-          RowBox[{"cityResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t", "]"}], ";", "\n",
-       "\t", "\n", "\t", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"cityPosition", " ", "\[NotEqual]", " ", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"print", "[", "\"\<Interpreting CITY...\>\"", "]"}], ";", 
+            "\n", "\t\t\t", 
+            RowBox[{"cityTemp", " ", "=", " ", 
+             RowBox[{"Transpose", "[", 
+              RowBox[{"bodyPart", "[", 
+               RowBox[{"[", 
+                RowBox[{"amount", ",", "cityPosition"}], "]"}], "]"}], 
+              "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"cityResult", " ", "=", " ", 
+             RowBox[{
+              RowBox[{"Interpreter", "[", "\"\<City\>\"", "]"}], "/@", 
+              "cityTemp"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"cityResult", " ", "=", " ", 
+             RowBox[{"cityResult", "/.", 
+              RowBox[{
+               RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
+               RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"cityResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{
+             RowBox[{"slowBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "cityPosition"}], "]"}], "]"}], "=", 
+             RowBox[{"cityResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\t", "\n", "\t", "\n", "\t", 
       RowBox[{"(*", " ", "State", " ", "*)"}], "\n", "\t", 
-      RowBox[{"statePosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) State\>\""}], "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
       RowBox[{"If", "[", 
        RowBox[{
-        RowBox[{"statePosition", " ", "\[NotEqual]", " ", 
-         RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
+        RowBox[{"TrueQ", "[", 
+         RowBox[{"interpretListAssociation", "[", "isState", "]"}], "]"}], 
+        ",", "\n", "\t\t", 
         RowBox[{
-         RowBox[{"print", "[", "\"\<Interpreting STATE...\>\"", "]"}], ";", 
-         "\n", "\t\t", 
-         RowBox[{"stateTemp", " ", "=", " ", 
-          RowBox[{"Transpose", "[", 
-           RowBox[{"bodyPart", "[", 
-            RowBox[{"[", 
-             RowBox[{"amount", ",", "statePosition"}], "]"}], "]"}], "]"}]}], 
-         ";", "\n", "\t\t", 
-         RowBox[{"stateResult", " ", "=", " ", 
+         RowBox[{"statePosition", " ", "=", " ", 
           RowBox[{
-           RowBox[{
-           "Interpreter", "[", "\"\<AdministrativeDivision\>\"", "]"}], "/@", 
-           "stateTemp"}]}], ";", "\n", "\t\t", 
-         RowBox[{"stateResult", " ", "=", " ", 
-          RowBox[{"stateResult", "/.", 
-           RowBox[{
-            RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
-            RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"stateResult", "//", "TableForm"}], "]"}], ";", " ", "\n", 
-         "\t\t", 
-         RowBox[{
-          RowBox[{"slowBody", "[", 
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) State\>\""}], "]"}], 
+           "[", 
            RowBox[{"[", 
-            RowBox[{"amount", ",", "statePosition"}], "]"}], "]"}], "=", 
-          RowBox[{"stateResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t", "]"}], ";", "\n",
-       "\t", "\n", "\t", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"statePosition", " ", "\[NotEqual]", " ", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"print", "[", "\"\<Interpreting STATE...\>\"", "]"}], ";",
+             "\n", "\t\t\t", 
+            RowBox[{"stateTemp", " ", "=", " ", 
+             RowBox[{"Transpose", "[", 
+              RowBox[{"bodyPart", "[", 
+               RowBox[{"[", 
+                RowBox[{"amount", ",", "statePosition"}], "]"}], "]"}], 
+              "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"stateResult", " ", "=", " ", 
+             RowBox[{
+              RowBox[{
+              "Interpreter", "[", "\"\<AdministrativeDivision\>\"", "]"}], "/@",
+               "stateTemp"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"stateResult", " ", "=", " ", 
+             RowBox[{"stateResult", "/.", 
+              RowBox[{
+               RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
+               RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"stateResult", "//", "TableForm"}], "]"}], ";", " ", 
+            "\n", "\t\t\t", 
+            RowBox[{
+             RowBox[{"slowBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "statePosition"}], "]"}], "]"}], "=", 
+             RowBox[{"stateResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\n", "\t", "\n", "\t", 
       RowBox[{"(*", " ", "Country", " ", "*)"}], "\n", "\t", 
-      RowBox[{"countryPosition", " ", "=", " ", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{"dataType", ",", "\"\<(interpret) Country\>\""}], "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t", 
       RowBox[{"If", "[", 
        RowBox[{
-        RowBox[{"countryPosition", " ", "\[NotEqual]", " ", 
-         RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
+        RowBox[{"TrueQ", "[", 
+         RowBox[{"interpretListAssociation", "[", "isCountry", "]"}], "]"}], 
+        ",", "\n", "\t\t", 
         RowBox[{
-         RowBox[{"print", "[", "\"\<Interpreting COUNTRY...\>\"", "]"}], ";", 
-         "\n", "\t\t", 
-         RowBox[{"countryTemp", " ", "=", " ", 
-          RowBox[{"Transpose", "[", 
-           RowBox[{"bodyPart", "[", 
-            RowBox[{"[", 
-             RowBox[{"amount", ",", "countryPosition"}], "]"}], "]"}], 
-           "]"}]}], ";", "\n", "\t\t", 
-         RowBox[{"countryResult", " ", "=", " ", 
+         RowBox[{"countryPosition", " ", "=", " ", 
           RowBox[{
-           RowBox[{"Interpreter", "[", "\"\<Country\>\"", "]"}], "/@", 
-           "countryTemp"}]}], ";", "\n", "\t\t", 
-         RowBox[{"countryResult", " ", "=", " ", 
-          RowBox[{"countryResult", "/.", 
-           RowBox[{
-            RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
-            RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", "\t\t", 
-         RowBox[{"print", "[", 
-          RowBox[{"countryResult", "//", "TableForm"}], "]"}], ";", "\n", 
-         "\t\t", "\n", "\t\t", 
-         RowBox[{
-          RowBox[{"slowBody", "[", 
+           RowBox[{"Position", "[", 
+            RowBox[{"dataType", ",", "\"\<(interpret) Country\>\""}], "]"}], 
+           "[", 
            RowBox[{"[", 
-            RowBox[{"amount", ",", "countryPosition"}], "]"}], "]"}], "=", 
-          RowBox[{"countryResult", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t", "]"}], ";", "\n",
-       "\t", "\n", "\t", 
+            RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\n", "\t\t", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"countryPosition", " ", "\[NotEqual]", " ", 
+            RowBox[{"{", "}"}]}], ",", "\n", "\t\t\t", 
+           RowBox[{
+            RowBox[{"print", "[", "\"\<Interpreting COUNTRY...\>\"", "]"}], 
+            ";", "\n", "\t\t\t", 
+            RowBox[{"countryTemp", " ", "=", " ", 
+             RowBox[{"Transpose", "[", 
+              RowBox[{"bodyPart", "[", 
+               RowBox[{"[", 
+                RowBox[{"amount", ",", "countryPosition"}], "]"}], "]"}], 
+              "]"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"countryResult", " ", "=", " ", 
+             RowBox[{
+              RowBox[{"Interpreter", "[", "\"\<Country\>\"", "]"}], "/@", 
+              "countryTemp"}]}], ";", "\n", "\t\t\t", 
+            RowBox[{"countryResult", " ", "=", " ", 
+             RowBox[{"countryResult", "/.", 
+              RowBox[{
+               RowBox[{"f_", "?", "FailureQ"}], "\[RuleDelayed]", 
+               RowBox[{"f", "[", "\"\<Input\>\"", "]"}]}]}]}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{"print", "[", 
+             RowBox[{"countryResult", "//", "TableForm"}], "]"}], ";", "\n", 
+            "\t\t\t", 
+            RowBox[{
+             RowBox[{"slowBody", "[", 
+              RowBox[{"[", 
+               RowBox[{"amount", ",", "countryPosition"}], "]"}], "]"}], "=", 
+             
+             RowBox[{"countryResult", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t\t", "]"}], 
+         ";"}]}], "\n", "\t", "]"}], ";", "\t", "\n", "\t", "\n", "\t", 
       RowBox[{"Return", "[", 
        RowBox[{"{", "slowBody", "}"}], "]"}], ";"}]}], "\n", 
     "]"}]}]}]], "Code",
@@ -1128,9 +1218,10 @@ Cell[BoxData[
    3.771529605182623*^9, 3.771529632352042*^9}, {3.7715296659987707`*^9, 
    3.7715297073527*^9}, {3.771529750710251*^9, 3.7715297508353662`*^9}, {
    3.771529785578179*^9, 3.771529893718485*^9}, {3.771530078498304*^9, 
-   3.7715301044825573`*^9}, 3.771530566944283*^9},
+   3.7715301044825573`*^9}, 3.771530566944283*^9, {3.771548948562317*^9, 
+   3.771549119211182*^9}},
  CellLabel->
-  "In[436]:=",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
+  "In[647]:=",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
 
 Cell[BoxData[{
  RowBox[{
@@ -1142,19 +1233,46 @@ Cell[BoxData[{
       RowBox[{"interpretType", " ", "\[Rule]", " ", "none"}], ",", "\n", "\t", 
       RowBox[{"intermediateStep", " ", "\[Rule]", " ", "False"}], ",", "\n", 
       "\t", 
-      RowBox[{"fastPreview", " ", "\[Rule]", " ", "False"}]}], "\n", "}"}]}], 
-   ";"}], "\n"}], "\n", 
+      RowBox[{"fastPreview", " ", "\[Rule]", " ", "False"}], ",", "\n", "\t", 
+      
+      RowBox[{"interpretChoice", " ", "\[Rule]", " ", "All"}]}], "\n", 
+     "}"}]}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"interpretList", " ", "=", " ", 
+    RowBox[{"{", "\n", "\t", 
+     RowBox[{
+     "\"\<Phone\>\"", ",", " ", "\"\<Email\>\"", ",", " ", "\"\<URL\>\"", ",",
+       " ", "\"\<LatitudeandLongitude\>\"", ",", "\n", "\t", "\"\<Year\>\"", 
+      ",", " ", "\"\<Date\>\"", ",", " ", "\"\<Zip\>\"", ",", " ", 
+      "\"\<City\>\"", ",", " ", "\"\<State\>\"", ",", " ", 
+      "\"\<Country\>\""}], "\n", "}"}]}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"functionCheckList", " ", "=", " ", 
+    RowBox[{"{", "\n", "\t", 
+     RowBox[{
+     "isPhone", ",", " ", "isEmail", ",", " ", "isURL", ",", " ", 
+      "isLatitudeandLongitude", ",", "\n", "\t", "isYear", ",", " ", "isDate",
+       ",", " ", "isZip", ",", " ", "isCity", ",", " ", "isState", ",", " ", 
+      "isCountry"}], "\n", "}"}]}], ";"}], "\n"}], "\n", 
  RowBox[{
   RowBox[{"cleanData", "[", 
    RowBox[{"OptionsPattern", "[", "]"}], "]"}], " ", ":=", " ", 
   RowBox[{"Block", "[", "\n", "\t", 
    RowBox[{
-    RowBox[{"{", 
+    RowBox[{"{", "\n", "\t", 
      RowBox[{
      "file", ",", " ", "headPart", ",", " ", "bodyPart", ",", " ", "bodyType",
        ",", " ", "dataType", ",", " ", "fastInterpretBody", ",", " ", 
-      "slowInterpretBody", ",", " ", "print", ",", " ", "isfastPreview"}], 
-     "}"}], ",", "\n", "\t", "\n", "\t", 
+      "slowInterpretBody", ",", " ", "\n", "\t", "print", ",", " ", 
+      "isfastPreview", ",", "\n", "\t", "isPhone", ",", " ", "isEmail", ",", 
+      " ", "isURL", ",", " ", "isLatitudeandLongitude", ",", "\n", "\t", 
+      "isYear", ",", " ", "isDate", ",", " ", "isZip", ",", " ", "isCity", 
+      ",", " ", "isState", ",", " ", "isCountry", ",", "\n", "\t", 
+      "checkInterpretList", ",", " ", "optionList", ",", " ", 
+      "interpretListAssociation"}], "\n", "\t", "}"}], ",", "\n", "\t", "\n", 
+    "\t", 
     RowBox[{"(*", " ", 
      RowBox[{
       RowBox[{"Open", " ", ".", "csv"}], " ", "file"}], " ", "*)"}], "\n", 
@@ -1182,6 +1300,35 @@ Cell[BoxData[{
        RowBox[{"isfastPreview", " ", "=", " ", "True"}], ",", "\n", "\t\t", 
        RowBox[{"isfastPreview", " ", "=", " ", "False"}]}], "\n", "\t", "]"}],
       ";", "\n", "\t", "\n", "\t", 
+     RowBox[{"(*", " ", 
+      RowBox[{"Set", " ", "interpretList", " ", "option"}], " ", "*)"}], "\n",
+      "\t", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"OptionValue", "[", "interpretChoice", "]"}], " ", "===", " ",
+         "All"}], ",", "\n", "\t\t", 
+       RowBox[{"checkInterpretList", " ", "=", " ", 
+        RowBox[{"ConstantArray", "[", 
+         RowBox[{"True", ",", 
+          RowBox[{"Length", "[", "interpretList", "]"}]}], "]"}]}], ",", "\n",
+        "\t\t", 
+       RowBox[{"(", "\n", "\t\t", 
+        RowBox[{
+         RowBox[{"optionList", " ", "=", " ", 
+          RowBox[{"OptionValue", "[", "interpretChoice", "]"}]}], ";", "\n", 
+         "\t\t", 
+         RowBox[{"checkInterpretList", " ", "=", " ", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"MemberQ", "[", 
+             RowBox[{"optionList", ",", " ", "#"}], "]"}], "&"}], " ", "/@", 
+           " ", "interpretList"}]}], ";"}], "\n", "\t\t", ")"}]}], "\n", "\t",
+       "]"}], ";", "\n", "\t", 
+     RowBox[{"interpretListAssociation", " ", "=", " ", 
+      RowBox[{"AssociationThread", "[", 
+       RowBox[{"functionCheckList", "\[Rule]", "checkInterpretList"}], 
+       "]"}]}], ";", "\n", "\t", "\n", "\t", 
      RowBox[{"(*", " ", 
       RowBox[{"find", " ", "the", " ", "header", " ", "and", " ", "body"}], 
       " ", "*)"}], "\n", "\t", 
@@ -1263,12 +1410,16 @@ Cell[BoxData[{
    3.771530406863349*^9, 3.771530408921908*^9}, {3.771530495661154*^9, 
    3.771530559565119*^9}, {3.771530596525331*^9, 3.771530596685339*^9}, {
    3.771544479761825*^9, 3.771544493608753*^9}, {3.771547744940988*^9, 
-   3.771547747814775*^9}},ExpressionUUID->"0b86dba0-2c34-4349-b31e-\
+   3.771547747814775*^9}, {3.771547778941038*^9, 3.77154778697507*^9}, {
+   3.7715478288231897`*^9, 3.771547844822134*^9}, {3.771547897646192*^9, 
+   3.7715481124853287`*^9}, {3.7715481773251677`*^9, 3.771548366347375*^9}, {
+   3.771548400389051*^9, 3.7715484537885323`*^9}, {3.771549201784782*^9, 
+   3.7715492019172077`*^9}},ExpressionUUID->"0b86dba0-2c34-4349-b31e-\
 9a16092da0e5"]
 }, Open  ]]
 },
-WindowSize->{1253, 755},
-WindowMargins->{{2, Automatic}, {Automatic, 0}},
+WindowSize->{1048, 755},
+WindowMargins->{{Automatic, 112}, {Automatic, 0}},
 DockedCells->{
   Cell[
    TextData[{
@@ -1299,12 +1450,13 @@ Cell[CellGroupData[{
 Cell[580, 22, 213, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd"],
 Cell[796, 28, 364, 6, 35, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[1163, 36, 341, 5, 35, "Text",ExpressionUUID->"b70c649b-a958-4202-9f22-238ea1f9c7d4"],
-Cell[1507, 43, 6105, 125, 585, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
-Cell[7615, 170, 14890, 254, 814, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
-Cell[22508, 426, 4790, 112, 623, "Code",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
-Cell[27301, 540, 11543, 260, 1383, "Code",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
-Cell[38847, 802, 15192, 330, 2048, "Code",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
-Cell[54042, 1134, 6472, 132, 794, "Code",ExpressionUUID->"0b86dba0-2c34-4349-b31e-9a16092da0e5"]
+Cell[1507, 43, 242, 5, 52, "Code",ExpressionUUID->"8fa9d9e4-37c2-4a00-b5fe-412f26c7f724"],
+Cell[1752, 50, 6105, 125, 585, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+Cell[7860, 177, 14890, 254, 814, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
+Cell[22753, 433, 4790, 112, 623, "Code",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
+Cell[27546, 547, 13325, 293, 1535, "Code",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
+Cell[40874, 842, 17667, 381, 2257, "Code",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
+Cell[58544, 1225, 9368, 192, 1307, "Code",ExpressionUUID->"0b86dba0-2c34-4349-b31e-9a16092da0e5"]
 }, Open  ]]
 }
 ]
