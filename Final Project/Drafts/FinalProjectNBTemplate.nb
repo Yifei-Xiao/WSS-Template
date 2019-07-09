@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    246088,       4984]
-NotebookOptionsPosition[    238443,       4847]
-NotebookOutlinePosition[    239303,       4876]
-CellTagsIndexPosition[    239260,       4873]
+NotebookDataLength[    249183,       5053]
+NotebookOptionsPosition[    241531,       4916]
+NotebookOutlinePosition[    242391,       4945]
+CellTagsIndexPosition[    242348,       4942]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -45,10 +45,10 @@ Cell["1. Introduction", "Section",
 Cell["\<\
 \tData analysis is a process of inspecting and transforming raw data with the \
 goal of discovering useful information and supporting decision-making. Most \
-of time raw data is in plain text format such as comma-separated values(CSV) \
-file. Processing huge amount of data usually needs a lot of time and it is \
-hard to get useful information from plain text. Fortunately, Wolfram Database \
-contains numerous information and user can access it easily if the input \
+raw data is in plain text format such as comma-separated values(CSV) file. \
+Processing huge amount of data usually needs a lot of time and it is hard to \
+get useful information from plain text. Fortunately, Wolfram Database \
+contains numerous information and users can access it easily if the input \
 format is in Wolfram Language. Processing data in Wolfram Language is also \
 very convenient. For example:\
 \>", "Text",
@@ -57,8 +57,9 @@ very convenient. For example:\
    3.771581604918283*^9}, {3.771581656715973*^9, 3.771581703858749*^9}, {
    3.7715817372507877`*^9, 3.7715818171443987`*^9}, {3.7715818688958397`*^9, 
    3.771581964241931*^9}, {3.771582055960576*^9, 3.771582119926311*^9}, {
-   3.771582235367776*^9, 3.771582256189391*^9}, 
-   3.7715873136493053`*^9},ExpressionUUID->"8b092ae1-29d3-480c-8e5c-\
+   3.771582235367776*^9, 3.771582256189391*^9}, 3.7715873136493053`*^9, {
+   3.77167417013902*^9, 
+   3.771674195264045*^9}},ExpressionUUID->"8b092ae1-29d3-480c-8e5c-\
 8b125b19e9e4"],
 
 Cell[CellGroupData[{
@@ -92,16 +93,16 @@ Wolfram Language.  By using function ",
  StyleBox["convertData[]", "CodeText"],
  ", users can import any CSV file and convert it to Wolfram Language. This \
 function is able to handle large dataset contains millions of cells. It also \
-provides several options to speed up and help users convert particular data. \
-"
+provides several options to speed up and help users to convert particular \
+data. "
 }], "Text",
  CellChangeTimes->{{3.771582163504184*^9, 3.771582217035796*^9}, {
    3.7715822613610563`*^9, 3.7715822702373333`*^9}, {3.77158239183384*^9, 
    3.771582411874345*^9}, {3.7715824425469637`*^9, 3.7715824684214993`*^9}, {
    3.771582508589847*^9, 3.771582575288789*^9}, {3.7715826308150873`*^9, 
    3.771582639590437*^9}, {3.7715827104145*^9, 3.771582759012979*^9}, 
-   3.771582790394206*^9, 
-   3.7715873126291313`*^9},ExpressionUUID->"559513dd-57b2-4e3c-aa30-\
+   3.771582790394206*^9, 3.7715873126291313`*^9, {3.771674252198977*^9, 
+   3.7716742526517363`*^9}},ExpressionUUID->"559513dd-57b2-4e3c-aa30-\
 c5fb890e2362"]
 }, Open  ]],
 
@@ -116,13 +117,13 @@ Cell[TextData[StyleBox["2. Function Overview", "Section"]], "Section",
 Cell[TextData[{
  "\tThe function ",
  StyleBox["convertData[]", "CodeText"],
- " contains three steps: split raw data; find special type in data; convert \
-it to Wolfram Language. First step finds the structure of the imported file \
-and split it into two parts: header and body. Second step searches any \
-potential special data type from header and body by using regular expression. \
-Third step converts corresponding data to Wolfram Language. All three methods \
-will be discussed in details in section 3. The result of using this function \
-is shown as the following figure:"
+ " contains three steps: split raw data; find special type in data and \
+convert it to Wolfram Language. First step finds the structure of the \
+imported file and splits it into two parts: header and body. Second step \
+searches any potential special data types from header and body by using \
+regular expressions. Third step converts corresponding data to Wolfram \
+Language. All three methods will be discussed in details in section 3. The \
+result of using this function is shown as the following figure:"
 }], "Text",
  CellChangeTimes->{{3.771582933164373*^9, 3.771582955214822*^9}, {
    3.771582999313139*^9, 3.77158308298943*^9}, {3.771583142737595*^9, 
@@ -131,7 +132,8 @@ is shown as the following figure:"
    3.771583421741819*^9}, {3.7715834659208717`*^9, 3.77158362215112*^9}, {
    3.7715836800862923`*^9, 3.7715836865255003`*^9}, {3.771585185281991*^9, 
    3.77158520902849*^9}, 3.771587310798295*^9, {3.771588051424076*^9, 
-   3.771588051540427*^9}},ExpressionUUID->"8e42782e-8bb2-467f-8f8c-\
+   3.771588051540427*^9}, {3.771674270737948*^9, 
+   3.771674335580267*^9}},ExpressionUUID->"8e42782e-8bb2-467f-8f8c-\
 a3aeb73eb25e"],
 
 Cell[BoxData[
@@ -1604,7 +1606,7 @@ Cell["\<\
 \tThe first step is to find the structure of raw data. Generally speaking, a \
 well-organized dataset contains two parts: header and body. Header part \
 contains title of this dataset (if any) and data type of each column in body \
-part. Assuming the length of header part is the same as the body part, we \
+part. Assuming the length of the header part is the same as the body part, we \
 take first up to 100 rows from dataset to avoid long time processing. Then we \
 parse the whole part of selected rows to find data type of each column such \
 as Email address, phone number, etc. \
@@ -1614,7 +1616,8 @@ as Email address, phone number, etc. \
    3.771585553638582*^9}, {3.771585639235682*^9, 3.771585715045278*^9}, {
    3.7715857762314873`*^9, 3.771585944247232*^9}, {3.771586520470681*^9, 
    3.771586522891251*^9}, 3.771587308398109*^9, {3.771588093827085*^9, 
-   3.771588094097454*^9}},ExpressionUUID->"80f49586-dccc-4a5a-8292-\
+   3.771588094097454*^9}, {3.771674461816687*^9, 
+   3.771674462159034*^9}},ExpressionUUID->"80f49586-dccc-4a5a-8292-\
 a67cd59b3865"],
 
 Cell[CellGroupData[{
@@ -1732,14 +1735,15 @@ column is email address.
 and other because these two types may affect the result. Recall that a \
 well-organized dataset has the same height of each column in body part, so \
 exclude some columns will not affect the final result. Then we find the first \
-position where the remaining data types in each column. The commonest \
-position should be the row where body part starts.\
+position of remaining data types in each column. The commonest position \
+should be the row where body part starts.\
 \>", "Text",
  CellChangeTimes->{{3.771586997556261*^9, 3.7715871078251133`*^9}, {
    3.7715871422661123`*^9, 3.771587390505028*^9}, {3.771587424118271*^9, 
    3.7715875211751957`*^9}, 3.7715875996102552`*^9, {3.77158814557095*^9, 
-   3.771588145930016*^9}, {3.771589796877904*^9, 
-   3.77158980666815*^9}},ExpressionUUID->"cece12cb-8fef-4341-b988-\
+   3.771588145930016*^9}, {3.771589796877904*^9, 3.77158980666815*^9}, {
+   3.771674575352665*^9, 
+   3.771674580665251*^9}},ExpressionUUID->"cece12cb-8fef-4341-b988-\
 80e0adc648d9"],
 
 Cell[CellGroupData[{
@@ -1797,24 +1801,82 @@ Cell["\<\
 have also categorized some special data types. Now we need find the rest of \
 them, especially for those which are categorized as (interpret) Other. To \
 approach this, we parse the header part again to find any keyword that \
-indicates this column could be a special data type. We use regular expression \
-to match keywords, the regex rule is very flexible to find any keyword from \
-interpretList such as \[OpenCurlyDoubleQuote]Year\[CloseCurlyDoubleQuote], \
-\[OpenCurlyDoubleQuote]First_Year\[CloseCurlyDoubleQuote] and will exclude \
-similar words but have different meaning such as \
-\[OpenCurlyDoubleQuote]Yearly\[CloseCurlyDoubleQuote].\
+indicates this column could contain a special data type. We use regular \
+expressions to match keywords, the regex rules are very flexible to find any \
+keyword from interpretList such as \[OpenCurlyDoubleQuote]Year\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]First_Year\
+\[CloseCurlyDoubleQuote] and will exclude similar words but have different \
+meaning such as \[OpenCurlyDoubleQuote]Yearly\[CloseCurlyDoubleQuote].\
 \>", "Text",
  CellChangeTimes->{{3.771588164566465*^9, 3.771588308606449*^9}, {
   3.771588341356686*^9, 3.771588348179248*^9}, {3.771588554920541*^9, 
   3.771588639554378*^9}, {3.771588837117157*^9, 3.771588838353096*^9}, {
   3.771589060276987*^9, 3.7715891717057867`*^9}, {3.7715892559810123`*^9, 
-  3.7715894400131607`*^9}, {3.77158947920881*^9, 
-  3.7715895073794737`*^9}},ExpressionUUID->"539b8c9c-3f9f-41ff-85db-\
+  3.7715894400131607`*^9}, {3.77158947920881*^9, 3.7715895073794737`*^9}, {
+  3.771674673282378*^9, 
+  3.771674694753045*^9}},ExpressionUUID->"539b8c9c-3f9f-41ff-85db-\
 3be3551d7739"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[{
+ RowBox[{
+  RowBox[{"interpretList", " ", "=", " ", 
+   RowBox[{"{", "\n", "\t", 
+    RowBox[{
+    "\"\<Phone\>\"", ",", " ", "\"\<Email\>\"", ",", " ", "\"\<URL\>\"", ",", 
+     " ", "\"\<LatitudeandLongitude\>\"", ",", "\n", "\t", "\"\<Year\>\"", 
+     ",", " ", "\"\<Date\>\"", ",", " ", "\"\<Zip\>\"", ",", " ", 
+     "\"\<City\>\"", ",", " ", "\"\<State\>\"", ",", " ", "\"\<Country\>\""}],
+     "\n", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"headParser", "=", 
+   RowBox[{"{", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+      "RegularExpression", "[", 
+       "\"\<(?i)^.*(\\\\b|\\\\_)year(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
+      "\"\<(interpret) Year\>\""}], ",", "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{
+      "RegularExpression", "[", 
+       "\"\<(?i)^.*(\\\\b|\\\\_)city(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
+      "\"\<(interpret) City\>\""}], ",", "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{
+      "RegularExpression", "[", 
+       "\"\<(?i)^.*(\\\\b|\\\\_)country(\\\\b|\\\\_).*$\>\"", "]"}], 
+      "\[Rule]", "\"\<(interpret) Country\>\""}], ",", "\[IndentingNewLine]", 
+     "\t", 
+     RowBox[{
+      RowBox[{
+      "RegularExpression", "[", 
+       "\"\<(?i)^.*(\\\\b|\\\\_)state(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
+      "\"\<(interpret) State\>\""}], ",", "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{
+      "RegularExpression", "[", 
+       "\"\<(?i)^.*(\\\\b|\\\\_)zip(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
+      "\"\<(interpret) Zip\>\""}], ",", "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{
+      "RegularExpression", "[", 
+       "\"\<(?i)^.*(\\\\b|\\\\_)latitude(\\\\b|\\\\_).*$\>\"", "]"}], 
+      "\[Rule]", "\"\<(interpret) Latitude\>\""}], ",", "\[IndentingNewLine]",
+      "\t", 
+     RowBox[{
+      RowBox[{
+      "RegularExpression", "[", 
+       "\"\<(?i)^.*(\\\\b|\\\\_)longitude(\\\\b|\\\\_).*$\>\"", "]"}], 
+      "\[Rule]", "\"\<(interpret) Longitude\>\""}], ",", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{
+      "RegularExpression", "[", 
+       "\"\<(?i)^.*(\\\\b|\\\\_)date(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
+      "\"\<(interpret) Date\>\""}]}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"headToString", " ", "=", " ", 
    RowBox[{"Map", "[", 
@@ -1835,9 +1897,10 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"StringReplace", "[", "headParser", "]"}], "/@", 
    "headMerge"}]}]}], "Input",
- CellChangeTimes->{{3.771589694259693*^9, 3.771589702796255*^9}},
- CellLabel->
-  "In[823]:=",ExpressionUUID->"e96816a8-d9d2-449e-822d-d9f7b92db68b"],
+ CellChangeTimes->{{3.771589694259693*^9, 3.771589702796255*^9}, {
+  3.771674758456706*^9, 
+  3.771674784250564*^9}},ExpressionUUID->"e96816a8-d9d2-449e-822d-\
+d9f7b92db68b"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1850,7 +1913,7 @@ Cell[BoxData[
 }, Open  ]],
 
 Cell["\<\
-\tThe third column is now categorized as (interpret) City, where it was \
+\tThe third column is now categorized as (interpret) City, whereas it was \
 categorized as (interpret) Other during first parsing.
 \tThen we merge result from first parsing and result from second parsing to \
 get the whole list of special data type in the dataset. We also find the \
@@ -1858,8 +1921,9 @@ corresponding indices of these columns.\
 \>", "Text",
  CellChangeTimes->{{3.771589706965198*^9, 3.771589787828843*^9}, {
   3.7715899415191393`*^9, 3.7715900619399443`*^9}, {3.771590203210553*^9, 
-  3.771590261903116*^9}, {3.771590362290348*^9, 
-  3.771590362779344*^9}},ExpressionUUID->"54adf14a-e60c-41d4-b8d0-\
+  3.771590261903116*^9}, {3.771590362290348*^9, 3.771590362779344*^9}, {
+  3.771674838428439*^9, 
+  3.7716748386387157`*^9}},ExpressionUUID->"54adf14a-e60c-41d4-b8d0-\
 52ba7d7a0b6d"],
 
 Cell[CellGroupData[{
@@ -2066,28 +2130,30 @@ Cell[TextData[{
 interpreter may go back to Wolfram Database to search related information. \
 This may cost hours to process data. To avoid this case, ",
  StyleBox["convertData[]", "CodeText"],
- " provides several function options to help user speed up. "
+ " provides several function options to help users speed up. "
 }], "Text",
  CellChangeTimes->{{3.771611310790702*^9, 3.771611411199657*^9}, {
-  3.7716114690275517`*^9, 3.771611539307706*^9}, {3.77161156985633*^9, 
-  3.771611576325684*^9}},ExpressionUUID->"da87a219-f8ca-47ef-bad9-\
+   3.7716114690275517`*^9, 3.771611539307706*^9}, {3.77161156985633*^9, 
+   3.771611576325684*^9}, 
+   3.771675031704208*^9},ExpressionUUID->"da87a219-f8ca-47ef-bad9-\
 d5c81dec9b06"],
 
 Cell[CellGroupData[{
 
-Cell["4.1 Interpretation Type", "Subsection",
+Cell["4.1 Types of interpretation", "Subsection",
  CellChangeTimes->{{3.771611582652137*^9, 3.7716116226039267`*^9}, {
-  3.771612838016488*^9, 
-  3.7716128386012163`*^9}},ExpressionUUID->"8f58809f-2d28-4a16-bc32-\
+  3.771612838016488*^9, 3.7716128386012163`*^9}, {3.771675005459382*^9, 
+  3.7716750112817383`*^9}},ExpressionUUID->"8f58809f-2d28-4a16-bc32-\
 8d2d44418f26"],
 
 Cell["\<\
-\tThere are three different interpretation types which allow users to \
+\tThere are three different types of interpretation which allow users to \
 interpret their data according to their needs.\
 \>", "Text",
  CellChangeTimes->{{3.7716116314213867`*^9, 3.771611761962308*^9}, 
-   3.771612284814357*^9, {3.771612849640669*^9, 
-   3.7716128501033278`*^9}},ExpressionUUID->"6f22c1c3-47ce-4460-9e47-\
+   3.771612284814357*^9, {3.771612849640669*^9, 3.7716128501033278`*^9}, {
+   3.7716750190470552`*^9, 
+   3.7716750267544537`*^9}},ExpressionUUID->"6f22c1c3-47ce-4460-9e47-\
 24d4c63ace3e"],
 
 Cell[CellGroupData[{
@@ -2108,30 +2174,31 @@ data."
 Cell[TextData[{
  StyleBox["\[OpenCurlyDoubleQuote]InterpretType\[CloseCurlyDoubleQuote] -> \
 \[OpenCurlyDoubleQuote]Fast\[CloseCurlyDoubleQuote]", "CodeText"],
- ": Fast Interpretation takes part of Interpretation types: phone number, \
-email address, URL and geolocation. All of these types don\[CloseCurlyQuote]t \
-take long time to interpret. The function ",
+ ": Fast Interpretation only interprets parts of data types: phone number, \
+Email, URL and geolocation. All of these types don\[CloseCurlyQuote]t take \
+long time to interpret. The function ",
  StyleBox["convertData[]", "CodeText"],
  " executes in very short time. "
 }], "Subitem",
  CellChangeTimes->{{3.771611768265748*^9, 3.771612099820876*^9}, {
   3.771612144460001*^9, 3.771612146514461*^9}, {3.771612856856566*^9, 
-  3.771612861472466*^9}},ExpressionUUID->"e226bf0f-a46b-4903-b532-\
+  3.771612861472466*^9}, {3.771675077815844*^9, 
+  3.7716751474516582`*^9}},ExpressionUUID->"e226bf0f-a46b-4903-b532-\
 b0ed9b808147"],
 
 Cell[TextData[{
  StyleBox["\[OpenCurlyDoubleQuote]InterpretType\[CloseCurlyDoubleQuote] -> \
 \[OpenCurlyDoubleQuote]Full\[CloseCurlyDoubleQuote]", "CodeText"],
- ": Full Interpretation takes full Interpretation types. Notice that in this \
-case the function ",
+ ": Full Interpretation interprets all data types. Notice in this case the \
+function ",
  StyleBox["convertData[]", "CodeText"],
  " may take very long time to process data since some entities like city, \
-state, country need interpreter go back to Wolfram Database to find related \
+state, country need interpreters go back to Wolfram Database to find related \
 information."
 }], "Subitem",
  CellChangeTimes->{{3.771611768265748*^9, 3.771612232509604*^9}, {
-  3.7716128692448263`*^9, 
-  3.7716128708236237`*^9}},ExpressionUUID->"2aa09f98-3fdb-41bf-8039-\
+  3.7716128692448263`*^9, 3.7716128708236237`*^9}, {3.771675167256613*^9, 
+  3.7716751879754457`*^9}},ExpressionUUID->"2aa09f98-3fdb-41bf-8039-\
 2e6943b69e09"]
 }, Open  ]]
 }, Open  ]],
@@ -2149,11 +2216,11 @@ False", "CodeText"],
  StyleBox[":", "Text"],
  " Even with ",
  StyleBox["\[OpenCurlyDoubleQuote]Fast\[CloseCurlyDoubleQuote]", "CodeText"],
- " Interpretation type, columns with thousands of data still take very long \
-time to interpret. Fast preview allows users to only interpret parts of data. \
-The default is ",
+ " type of interpretation, columns with thousands of data still take very \
+long time to interpret. Fast preview allows users to only interpret parts of \
+data. The default is ",
  StyleBox["False", "CodeText"],
- ", if it is set as ",
+ ", if it is set to ",
  StyleBox["True", "CodeText"],
  ", ",
  StyleBox["convertData[]", "CodeText"],
@@ -2162,7 +2229,8 @@ can then decide to further interpreting or not."
 }], "Subitem",
  CellChangeTimes->{{3.771612282039177*^9, 3.771612541240506*^9}, {
   3.771612640898252*^9, 3.771612662568928*^9}, {3.771612876943421*^9, 
-  3.771612885427724*^9}},ExpressionUUID->"ee190f5a-9efd-4f5e-b0fb-\
+  3.771612885427724*^9}, {3.771675202046341*^9, 
+  3.771675229023212*^9}},ExpressionUUID->"ee190f5a-9efd-4f5e-b0fb-\
 15b89db92a5c"]
 }, Open  ]],
 
@@ -2179,16 +2247,16 @@ Cell[TextData[{
 All", "CodeText"],
  ": Users can choose specific data type to interpret. The default value is ",
  StyleBox["All", "CodeText"],
- ", which will interpret all types from interpretation list. However, users \
-can specify any particular type of data they want to interpret. For example, ",
+ ", which will interpret all data types. However, users can specify any \
+particular type of data they want to interpret. For example, ",
  StyleBox["\[OpenCurlyDoubleQuote]InterpretChoice\[CloseCurlyDoubleQuote] -> \
 {\[OpenCurlyDoubleQuote]City\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]\
 Date\[CloseCurlyDoubleQuote]}", "CodeText"],
  " will only interpret columns with city and date data types."
 }], "Subitem",
  CellChangeTimes->{{3.771618463331892*^9, 3.7716186654694242`*^9}, {
-  3.771619108852542*^9, 
-  3.771619243574774*^9}},ExpressionUUID->"56e2f461-25d6-48ec-ab0f-\
+  3.771619108852542*^9, 3.771619243574774*^9}, {3.771675281747106*^9, 
+  3.771675284665181*^9}},ExpressionUUID->"56e2f461-25d6-48ec-ab0f-\
 e9eb3276567f"]
 }, Open  ]],
 
@@ -2204,12 +2272,13 @@ Cell[TextData[{
 False", "CodeText"],
  ": The function ",
  StyleBox["convertData[]", "CodeText"],
- " also can show intermediate step if users have questions about certain \
-steps. These steps contain finding header and body part; finding special data \
-type and interpreting data."
+ " can show intermediate step if users have questions about certain steps. \
+These steps contain finding header and body part; finding special data type \
+and interpreting data."
 }], "Subitem",
- CellChangeTimes->{{3.7716194029055367`*^9, 
-  3.771619554691606*^9}},ExpressionUUID->"07059cb3-d680-4246-8984-\
+ CellChangeTimes->{{3.7716194029055367`*^9, 3.771619554691606*^9}, {
+  3.771675298497796*^9, 
+  3.7716752992755423`*^9}},ExpressionUUID->"07059cb3-d680-4246-8984-\
 8dafb4ec6af2"]
 }, Open  ]]
 }, Open  ]],
@@ -3443,16 +3512,16 @@ Cell["6. Potential Problem and Future Work", "Section",
 beae348aadb8"],
 
 Cell[TextData[{
- "\tIf the header part of a dataset is more than body part, the function will \
-not split the dataset correctly, although this case should be rare. In the \
-future, ",
+ "\tIf the header part of a dataset is larger than body part, the function \
+will not split the dataset correctly, although this case should be rare. In \
+the future, ",
  StyleBox["convertData[]", "CodeText"],
  " should interpret more data types such as currency, address, etc. It should \
-have more accurate speculation, especially on numbers."
+also have more accurate speculation, especially on numbers."
 }], "Text",
  CellChangeTimes->{{3.771620671089189*^9, 3.7716207903048067`*^9}, {
-  3.771620839214644*^9, 
-  3.771620956192687*^9}},ExpressionUUID->"2ea3dbbe-e102-4631-bf22-\
+  3.771620839214644*^9, 3.771620956192687*^9}, {3.771675578740247*^9, 
+  3.771675605850863*^9}},ExpressionUUID->"2ea3dbbe-e102-4631-bf22-\
 dacdaa15b0f0"]
 }, Open  ]],
 
@@ -4845,7 +4914,7 @@ Cell[BoxData[{
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{859, 693},
+WindowSize->{884, 693},
 WindowMargins->{{13, Automatic}, {Automatic, 0}},
 DockedCells->{
   Cell[
@@ -4880,110 +4949,110 @@ Cell[580, 22, 280, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3
 Cell[863, 28, 190, 6, 57, "Author",ExpressionUUID->"5101756b-b33d-4e66-995c-d231af972ff7"],
 Cell[CellGroupData[{
 Cell[1078, 38, 211, 4, 67, "Section",ExpressionUUID->"2681c9bb-f2d9-4eef-b661-92fce72d372b"],
-Cell[1292, 44, 1098, 17, 104, "Text",ExpressionUUID->"8b092ae1-29d3-480c-8e5c-8b125b19e9e4"],
+Cell[1292, 44, 1140, 18, 127, "Text",ExpressionUUID->"8b092ae1-29d3-480c-8e5c-8b125b19e9e4"],
 Cell[CellGroupData[{
-Cell[2415, 65, 569, 13, 39, "Input",ExpressionUUID->"45bf2f01-bc6a-4286-b90f-c0c6a6585108"],
-Cell[2987, 80, 249, 5, 38, "Output",ExpressionUUID->"a2706422-d2ec-4f89-b09d-74b64bdbbe4b"]
+Cell[2457, 66, 569, 13, 39, "Input",ExpressionUUID->"45bf2f01-bc6a-4286-b90f-c0c6a6585108"],
+Cell[3029, 81, 249, 5, 38, "Output",ExpressionUUID->"a2706422-d2ec-4f89-b09d-74b64bdbbe4b"]
 }, Open  ]],
-Cell[3251, 88, 895, 16, 58, "Text",ExpressionUUID->"559513dd-57b2-4e3c-aa30-c5fb890e2362"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[4183, 109, 291, 4, 67, "Section",ExpressionUUID->"2fb35216-a0a6-43b7-848a-321ec0769bfd"],
-Cell[4477, 115, 1179, 19, 81, "Text",ExpressionUUID->"8e42782e-8bb2-467f-8f8c-a3aeb73eb25e"],
-Cell[5659, 136, 87972, 1449, 194, "Input",ExpressionUUID->"35713534-2b3f-45d9-96f9-7fdb83126478"]
+Cell[3293, 89, 946, 16, 81, "Text",ExpressionUUID->"559513dd-57b2-4e3c-aa30-c5fb890e2362"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[93668, 1590, 153, 3, 67, "Section",ExpressionUUID->"082d4ddb-5dc0-45a9-981a-24da87e5e5c6"],
-Cell[CellGroupData[{
-Cell[93846, 1597, 164, 3, 54, "Subsection",ExpressionUUID->"df84de1b-b1ba-41b0-a1ee-b41380c6597c"],
-Cell[94013, 1602, 974, 15, 81, "Text",ExpressionUUID->"80f49586-dccc-4a5a-8292-a67cd59b3865"],
-Cell[CellGroupData[{
-Cell[95012, 1621, 666, 16, 94, "Input",ExpressionUUID->"cce3c31f-92da-4419-bb3c-5d632e486648"],
-Cell[95681, 1639, 985, 25, 116, "Output",ExpressionUUID->"09356d6c-b93c-470a-ae67-edd61bf74553"],
-Cell[96669, 1666, 1200, 27, 116, "Output",ExpressionUUID->"1064e916-06c1-4b79-a2ca-8ba00b7985af"]
-}, Open  ]],
-Cell[97884, 1696, 471, 9, 58, "Text",ExpressionUUID->"3221b03a-f3f0-481f-9738-1061fbcdefdf"],
-Cell[CellGroupData[{
-Cell[98380, 1709, 226, 5, 30, "Input",ExpressionUUID->"a0eb8ee2-82e0-48d7-b3ef-6039457616d8"],
-Cell[98609, 1716, 367, 8, 34, "Output",ExpressionUUID->"d1cdd09f-c70f-495d-beae-ed4a458c780a"]
-}, Open  ]],
-Cell[98991, 1727, 908, 15, 104, "Text",ExpressionUUID->"cece12cb-8fef-4341-b988-80e0adc648d9"],
-Cell[CellGroupData[{
-Cell[99924, 1746, 910, 23, 115, "Input",ExpressionUUID->"1450f82a-6722-48de-b830-e1b441f62b9e"],
-Cell[100837, 1771, 175, 3, 34, "Output",ExpressionUUID->"88c5fcd8-37d0-4cb4-b50b-86179821c12c"]
-}, Open  ]],
-Cell[101027, 1777, 263, 6, 35, "Text",ExpressionUUID->"59a1afa1-0ae4-4a4b-b27b-844e1df8690d"]
+Cell[4276, 110, 291, 4, 67, "Section",ExpressionUUID->"2fb35216-a0a6-43b7-848a-321ec0769bfd"],
+Cell[4570, 116, 1235, 20, 127, "Text",ExpressionUUID->"8e42782e-8bb2-467f-8f8c-a3aeb73eb25e"],
+Cell[5808, 138, 87972, 1449, 194, "Input",ExpressionUUID->"35713534-2b3f-45d9-96f9-7fdb83126478"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[101327, 1788, 227, 4, 54, "Subsection",ExpressionUUID->"8751a74b-691e-445e-966e-65cd3c820bb6"],
-Cell[101557, 1794, 1167, 18, 104, "Text",ExpressionUUID->"539b8c9c-3f9f-41ff-85db-3be3551d7739"],
+Cell[93817, 1592, 153, 3, 67, "Section",ExpressionUUID->"082d4ddb-5dc0-45a9-981a-24da87e5e5c6"],
 Cell[CellGroupData[{
-Cell[102749, 1816, 821, 23, 73, "Input",ExpressionUUID->"e96816a8-d9d2-449e-822d-d9f7b92db68b"],
-Cell[103573, 1841, 307, 7, 34, "Output",ExpressionUUID->"1f6c8eeb-975e-4931-8216-81a35c308f76"]
+Cell[93995, 1599, 164, 3, 54, "Subsection",ExpressionUUID->"df84de1b-b1ba-41b0-a1ee-b41380c6597c"],
+Cell[94162, 1604, 1028, 16, 127, "Text",ExpressionUUID->"80f49586-dccc-4a5a-8292-a67cd59b3865"],
+Cell[CellGroupData[{
+Cell[95215, 1624, 666, 16, 94, "Input",ExpressionUUID->"cce3c31f-92da-4419-bb3c-5d632e486648"],
+Cell[95884, 1642, 985, 25, 116, "Output",ExpressionUUID->"09356d6c-b93c-470a-ae67-edd61bf74553"],
+Cell[96872, 1669, 1200, 27, 116, "Output",ExpressionUUID->"1064e916-06c1-4b79-a2ca-8ba00b7985af"]
 }, Open  ]],
-Cell[103895, 1851, 619, 11, 81, "Text",ExpressionUUID->"54adf14a-e60c-41d4-b8d0-52ba7d7a0b6d"],
+Cell[98087, 1699, 471, 9, 58, "Text",ExpressionUUID->"3221b03a-f3f0-481f-9738-1061fbcdefdf"],
 Cell[CellGroupData[{
-Cell[104539, 1866, 1147, 29, 136, "Input",ExpressionUUID->"a708c45e-f8a2-41f1-9f7a-6555b04ccb24"],
-Cell[105689, 1897, 198, 5, 34, "Output",ExpressionUUID->"d2915d76-e9ce-47e6-8483-6aa8e02ebf94"],
-Cell[105890, 1904, 305, 8, 34, "Output",ExpressionUUID->"438ed993-298c-4a7b-a5dc-0b179d274316"]
+Cell[98583, 1712, 226, 5, 30, "Input",ExpressionUUID->"a0eb8ee2-82e0-48d7-b3ef-6039457616d8"],
+Cell[98812, 1719, 367, 8, 34, "Output",ExpressionUUID->"d1cdd09f-c70f-495d-beae-ed4a458c780a"]
 }, Open  ]],
-Cell[106210, 1915, 385, 7, 35, "Text",ExpressionUUID->"74f50f1f-3848-40cd-9b76-bde732e2808b"]
+Cell[99194, 1730, 951, 16, 127, "Text",ExpressionUUID->"cece12cb-8fef-4341-b988-80e0adc648d9"],
+Cell[CellGroupData[{
+Cell[100170, 1750, 910, 23, 115, "Input",ExpressionUUID->"1450f82a-6722-48de-b830-e1b441f62b9e"],
+Cell[101083, 1775, 175, 3, 34, "Output",ExpressionUUID->"88c5fcd8-37d0-4cb4-b50b-86179821c12c"]
+}, Open  ]],
+Cell[101273, 1781, 263, 6, 35, "Text",ExpressionUUID->"59a1afa1-0ae4-4a4b-b27b-844e1df8690d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[106632, 1927, 181, 3, 54, "Subsection",ExpressionUUID->"7a6e03fc-6058-42b4-b217-399659cd224d"],
-Cell[106816, 1932, 1425, 23, 104, "Text",ExpressionUUID->"86e74a28-ca20-4374-92ba-fe2efffda5bb"],
+Cell[101573, 1792, 227, 4, 54, "Subsection",ExpressionUUID->"8751a74b-691e-445e-966e-65cd3c820bb6"],
+Cell[101803, 1798, 1224, 19, 127, "Text",ExpressionUUID->"539b8c9c-3f9f-41ff-85db-3be3551d7739"],
 Cell[CellGroupData[{
-Cell[108266, 1959, 1563, 42, 178, "Input",ExpressionUUID->"10ea713d-58c3-46f0-ba77-2c9fc25d80c9"],
-Cell[109832, 2003, 1966, 48, 148, "Output",ExpressionUUID->"e18e1518-2aa2-4ded-ae04-518fe49039af"]
+Cell[103052, 1821, 3156, 81, 367, "Input",ExpressionUUID->"e96816a8-d9d2-449e-822d-d9f7b92db68b"],
+Cell[106211, 1904, 307, 7, 34, "Output",ExpressionUUID->"1f6c8eeb-975e-4931-8216-81a35c308f76"]
+}, Open  ]],
+Cell[106533, 1914, 672, 12, 104, "Text",ExpressionUUID->"54adf14a-e60c-41d4-b8d0-52ba7d7a0b6d"],
+Cell[CellGroupData[{
+Cell[107230, 1930, 1147, 29, 136, "Input",ExpressionUUID->"a708c45e-f8a2-41f1-9f7a-6555b04ccb24"],
+Cell[108380, 1961, 198, 5, 34, "Output",ExpressionUUID->"d2915d76-e9ce-47e6-8483-6aa8e02ebf94"],
+Cell[108581, 1968, 305, 8, 34, "Output",ExpressionUUID->"438ed993-298c-4a7b-a5dc-0b179d274316"]
+}, Open  ]],
+Cell[108901, 1979, 385, 7, 58, "Text",ExpressionUUID->"74f50f1f-3848-40cd-9b76-bde732e2808b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[109323, 1991, 181, 3, 54, "Subsection",ExpressionUUID->"7a6e03fc-6058-42b4-b217-399659cd224d"],
+Cell[109507, 1996, 1425, 23, 150, "Text",ExpressionUUID->"86e74a28-ca20-4374-92ba-fe2efffda5bb"],
+Cell[CellGroupData[{
+Cell[110957, 2023, 1563, 42, 178, "Input",ExpressionUUID->"10ea713d-58c3-46f0-ba77-2c9fc25d80c9"],
+Cell[112523, 2067, 1966, 48, 148, "Output",ExpressionUUID->"e18e1518-2aa2-4ded-ae04-518fe49039af"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[111859, 2058, 166, 3, 67, "Section",ExpressionUUID->"91e10dd7-0640-42e4-9f6e-4eda615f6d90"],
-Cell[112028, 2063, 557, 10, 58, "Text",ExpressionUUID->"da87a219-f8ca-47ef-bad9-d5c81dec9b06"],
+Cell[114550, 2122, 166, 3, 67, "Section",ExpressionUUID->"91e10dd7-0640-42e4-9f6e-4eda615f6d90"],
+Cell[114719, 2127, 586, 11, 81, "Text",ExpressionUUID->"da87a219-f8ca-47ef-bad9-d5c81dec9b06"],
 Cell[CellGroupData[{
-Cell[112610, 2077, 224, 4, 54, "Subsection",ExpressionUUID->"8f58809f-2d28-4a16-bc32-8d2d44418f26"],
-Cell[112837, 2083, 345, 7, 35, "Text",ExpressionUUID->"6f22c1c3-47ce-4460-9e47-24d4c63ace3e"],
+Cell[115330, 2142, 276, 4, 54, "Subsection",ExpressionUUID->"8f58809f-2d28-4a16-bc32-8d2d44418f26"],
+Cell[115609, 2148, 402, 8, 35, "Text",ExpressionUUID->"6f22c1c3-47ce-4460-9e47-24d4c63ace3e"],
 Cell[CellGroupData[{
-Cell[113207, 2094, 550, 11, 28, "Subitem",ExpressionUUID->"a86031e8-464a-460f-a228-2b31bc7fddc8"],
-Cell[113760, 2107, 670, 12, 49, "Subitem",ExpressionUUID->"e226bf0f-a46b-4903-b532-b0ed9b808147"],
-Cell[114433, 2121, 661, 13, 47, "Subitem",ExpressionUUID->"2aa09f98-3fdb-41bf-8039-2e6943b69e09"]
+Cell[116036, 2160, 550, 11, 47, "Subitem",ExpressionUUID->"a86031e8-464a-460f-a228-2b31bc7fddc8"],
+Cell[116589, 2173, 714, 13, 49, "Subitem",ExpressionUUID->"e226bf0f-a46b-4903-b532-b0ed9b808147"],
+Cell[117306, 2188, 699, 13, 66, "Subitem",ExpressionUUID->"2aa09f98-3fdb-41bf-8039-2e6943b69e09"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[115143, 2140, 164, 3, 54, "Subsection",ExpressionUUID->"fc52ca66-1be1-47e9-8bea-134837adf679"],
-Cell[115310, 2145, 901, 20, 49, "Subitem",ExpressionUUID->"ee190f5a-9efd-4f5e-b0fb-15b89db92a5c"]
+Cell[118054, 2207, 164, 3, 54, "Subsection",ExpressionUUID->"fc52ca66-1be1-47e9-8bea-134837adf679"],
+Cell[118221, 2212, 953, 21, 68, "Subitem",ExpressionUUID->"ee190f5a-9efd-4f5e-b0fb-15b89db92a5c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[116248, 2170, 230, 4, 54, "Subsection",ExpressionUUID->"5caf9093-ff5a-40ff-805f-972147207e6a"],
-Cell[116481, 2176, 837, 15, 68, "Subitem",ExpressionUUID->"56e2f461-25d6-48ec-ab0f-e9eb3276567f"]
+Cell[119211, 2238, 230, 4, 54, "Subsection",ExpressionUUID->"5caf9093-ff5a-40ff-805f-972147207e6a"],
+Cell[119444, 2244, 863, 15, 70, "Subitem",ExpressionUUID->"56e2f461-25d6-48ec-ab0f-e9eb3276567f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[117355, 2196, 176, 3, 54, "Subsection",ExpressionUUID->"8b76f1a8-211b-4f98-ade0-6688ae7dbcde"],
-Cell[117534, 2201, 503, 11, 47, "Subitem",ExpressionUUID->"07059cb3-d680-4246-8984-8dafb4ec6af2"]
+Cell[120344, 2264, 176, 3, 54, "Subsection",ExpressionUUID->"8b76f1a8-211b-4f98-ade0-6688ae7dbcde"],
+Cell[120523, 2269, 549, 12, 47, "Subitem",ExpressionUUID->"07059cb3-d680-4246-8984-8dafb4ec6af2"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[118086, 2218, 158, 3, 67, "Section",ExpressionUUID->"dc6b09e3-f795-43c3-b614-6f9d194e8d54"],
-Cell[118247, 2223, 536, 13, 35, "Text",ExpressionUUID->"33611a3f-d47b-4828-ac07-72c7e8cfc955"],
+Cell[121121, 2287, 158, 3, 67, "Section",ExpressionUUID->"dc6b09e3-f795-43c3-b614-6f9d194e8d54"],
+Cell[121282, 2292, 536, 13, 35, "Text",ExpressionUUID->"33611a3f-d47b-4828-ac07-72c7e8cfc955"],
 Cell[CellGroupData[{
-Cell[118808, 2240, 354, 7, 30, "Input",ExpressionUUID->"2ab7ee83-27cb-4671-8ea2-67ed6318c185"],
-Cell[119165, 2249, 50954, 1184, 686, "Output",ExpressionUUID->"ffdee086-18c1-47d7-80a3-723234333969"]
+Cell[121843, 2309, 354, 7, 30, "Input",ExpressionUUID->"2ab7ee83-27cb-4671-8ea2-67ed6318c185"],
+Cell[122200, 2318, 50954, 1184, 686, "Output",ExpressionUUID->"ffdee086-18c1-47d7-80a3-723234333969"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[170168, 3439, 181, 3, 67, "Section",ExpressionUUID->"ab8e95dc-7447-4199-8aa9-beae348aadb8"],
-Cell[170352, 3444, 548, 11, 81, "Text",ExpressionUUID->"2ea3dbbe-e102-4631-bf22-dacdaa15b0f0"]
+Cell[173203, 3508, 181, 3, 67, "Section",ExpressionUUID->"ab8e95dc-7447-4199-8aa9-beae348aadb8"],
+Cell[173387, 3513, 601, 11, 81, "Text",ExpressionUUID->"2ea3dbbe-e102-4631-bf22-dacdaa15b0f0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[170937, 3460, 210, 4, 67, "Section",ExpressionUUID->"ba2abd4f-eca7-486c-bf72-fc3f3207c880"],
-Cell[171150, 3466, 238, 4, 52, "Code",ExpressionUUID->"8fa9d9e4-37c2-4a00-b5fe-412f26c7f724"],
-Cell[171391, 3472, 7147, 144, 775, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
-Cell[178541, 3618, 14932, 253, 814, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
-Cell[193476, 3873, 4786, 111, 623, "Code",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
-Cell[198265, 3986, 13321, 292, 1535, "Code",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
-Cell[211589, 4280, 17663, 380, 2257, "Code",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
-Cell[229255, 4662, 9160, 181, 1155, "Code",ExpressionUUID->"484e2fc2-df07-475c-ad00-c3de1a209558"]
+Cell[174025, 3529, 210, 4, 67, "Section",ExpressionUUID->"ba2abd4f-eca7-486c-bf72-fc3f3207c880"],
+Cell[174238, 3535, 238, 4, 52, "Code",ExpressionUUID->"8fa9d9e4-37c2-4a00-b5fe-412f26c7f724"],
+Cell[174479, 3541, 7147, 144, 775, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+Cell[181629, 3687, 14932, 253, 814, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
+Cell[196564, 3942, 4786, 111, 623, "Code",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
+Cell[201353, 4055, 13321, 292, 1535, "Code",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
+Cell[214677, 4349, 17663, 380, 2257, "Code",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
+Cell[232343, 4731, 9160, 181, 1155, "Code",ExpressionUUID->"484e2fc2-df07-475c-ad00-c3de1a209558"]
 }, Closed]]
 }, Open  ]]
 }
