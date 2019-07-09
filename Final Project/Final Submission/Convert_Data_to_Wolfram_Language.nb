@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    249564,       5062]
-NotebookOptionsPosition[    241912,       4925]
-NotebookOutlinePosition[    242773,       4954]
-CellTagsIndexPosition[    242730,       4951]
+NotebookDataLength[    205861,       4066]
+NotebookOptionsPosition[    198112,       3928]
+NotebookOutlinePosition[    198972,       3957]
+CellTagsIndexPosition[    198929,       3954]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1835,48 +1835,9 @@ Cell[BoxData[{
    RowBox[{"{", "\[IndentingNewLine]", "\t", 
     RowBox[{
      RowBox[{
-      RowBox[{
-      "RegularExpression", "[", 
-       "\"\<(?i)^.*(\\\\b|\\\\_)year(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
-      "\"\<(interpret) Year\>\""}], ",", "\[IndentingNewLine]", "\t", 
-     RowBox[{
-      RowBox[{
-      "RegularExpression", "[", 
-       "\"\<(?i)^.*(\\\\b|\\\\_)city(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
-      "\"\<(interpret) City\>\""}], ",", "\[IndentingNewLine]", "\t", 
-     RowBox[{
-      RowBox[{
-      "RegularExpression", "[", 
-       "\"\<(?i)^.*(\\\\b|\\\\_)country(\\\\b|\\\\_).*$\>\"", "]"}], 
-      "\[Rule]", "\"\<(interpret) Country\>\""}], ",", "\[IndentingNewLine]", 
-     "\t", 
-     RowBox[{
-      RowBox[{
-      "RegularExpression", "[", 
-       "\"\<(?i)^.*(\\\\b|\\\\_)state(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
-      "\"\<(interpret) State\>\""}], ",", "\[IndentingNewLine]", "\t", 
-     RowBox[{
-      RowBox[{
-      "RegularExpression", "[", 
-       "\"\<(?i)^.*(\\\\b|\\\\_)zip(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
-      "\"\<(interpret) Zip\>\""}], ",", "\[IndentingNewLine]", "\t", 
-     RowBox[{
-      RowBox[{
-      "RegularExpression", "[", 
-       "\"\<(?i)^.*(\\\\b|\\\\_)latitude(\\\\b|\\\\_).*$\>\"", "]"}], 
-      "\[Rule]", "\"\<(interpret) Latitude\>\""}], ",", "\[IndentingNewLine]",
-      "\t", 
-     RowBox[{
-      RowBox[{
-      "RegularExpression", "[", 
-       "\"\<(?i)^.*(\\\\b|\\\\_)longitude(\\\\b|\\\\_).*$\>\"", "]"}], 
-      "\[Rule]", "\"\<(interpret) Longitude\>\""}], ",", 
-     "\[IndentingNewLine]", "\t", 
-     RowBox[{
-      RowBox[{
-      "RegularExpression", "[", 
-       "\"\<(?i)^.*(\\\\b|\\\\_)date(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
-      "\"\<(interpret) Date\>\""}]}], "\[IndentingNewLine]", "}"}]}], 
+     "RegularExpression", "[", 
+      "\"\<(?i)^.*(\\\\b|\\\\_)city(\\\\b|\\\\_).*$\>\"", "]"}], "\[Rule]", 
+     "\"\<(interpret) City\>\""}], "\[IndentingNewLine]", "}"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"headToString", " ", "=", " ", 
@@ -1899,8 +1860,8 @@ Cell[BoxData[{
    RowBox[{"StringReplace", "[", "headParser", "]"}], "/@", 
    "headMerge"}]}]}], "Input",
  CellChangeTimes->{{3.771589694259693*^9, 3.771589702796255*^9}, {
-  3.771674758456706*^9, 
-  3.771674784250564*^9}},ExpressionUUID->"e96816a8-d9d2-449e-822d-\
+  3.771674758456706*^9, 3.771674784250564*^9}, {3.77169277151779*^9, 
+  3.771692777765703*^9}},ExpressionUUID->"e96816a8-d9d2-449e-822d-\
 d9f7b92db68b"],
 
 Cell[BoxData[
@@ -2292,1201 +2253,50 @@ Cell["5. An example", "Section",
 6f9d194e8d54"],
 
 Cell[TextData[{
- "The following result is run convertData[] function on a dataset from ",
- ButtonBox["here",
-  BaseStyle->"Hyperlink",
-  ButtonData->{
-    URL["https://www.kaggle.com/yifeixiao/wss2019"], None},
-  ButtonNote->"https://www.kaggle.com/yifeixiao/wss2019"],
- ":"
+ "Following is part of data from Missing Migrants Project, we can use ",
+ StyleBox["convertData[]", "CodeText"],
+ " to convert it to Wolfram Language."
 }], "Text",
  CellChangeTimes->{{3.7716196197636127`*^9, 3.77161962518058*^9}, {
    3.771620401044073*^9, 3.771620462984062*^9}, {3.771620494427869*^9, 
-   3.771620519988352*^9}, 
-   3.771620550155169*^9},ExpressionUUID->"33611a3f-d47b-4828-ac07-\
+   3.771620519988352*^9}, 3.771620550155169*^9, {3.771691548108006*^9, 
+   3.7716915550409718`*^9}, {3.771691871500042*^9, 3.7716919335061827`*^9}, {
+   3.771692752978278*^9, 
+   3.77169275866085*^9}},ExpressionUUID->"33611a3f-d47b-4828-ac07-\
 72c7e8cfc955"],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
+Cell[BoxData[{
+ RowBox[{"rawData", "//", "TableForm"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"convertData", "[", 
    RowBox[{"\"\<InterpretType\>\"", "\[Rule]", "\"\<Full\>\""}], "]"}], "//", 
-  "TableForm"}]], "Input",
- CellChangeTimes->{{3.771620555776245*^9, 3.771620566076283*^9}, {
-  3.771620604297686*^9, 3.771620612227852*^9}},
- CellLabel->"In[40]:=",ExpressionUUID->"2ab7ee83-27cb-4671-8ea2-67ed6318c185"],
+  "TableForm"}]}], "Input",
+ CellChangeTimes->{{3.771692009420422*^9, 3.771692062132374*^9}},
+ CellLabel->
+  "In[176]:=",ExpressionUUID->"17ddac5e-7726-4021-acc4-701f9af6d52b"],
 
 Cell[BoxData[
  TagBox[GridBox[{
-    {"\<\"User Information\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
-"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\
-\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
-    {"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
-"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\
-\"\>", "\<\"\"\>", "\<\"\"\>"},
-    {"\<\"First Name\"\>", "\<\"Last Name\"\>", "\<\"Phone\"\>", "\<\"Email \
-Address\"\>", "\<\"Personal Web\"\>", "\<\"Address\"\>", "\<\"City\"\>", \
-"\<\"State\"\>", "\<\"Country\"\>", "\<\"ZIP Code\"\>", \
-"\<\"Register_year\"\>", "\<\"Register_date\"\>", "\<\"latitude\"\>", \
-"\<\"longitude\"\>", "\<\"Comment\"\>"},
-    {"\<\"Lilita\"\>", "\<\"Ar-Rahman\"\>", "\<\"+12176055001\"\>", \
-"\<\"dmenons3141@steamgreenlight.ml\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"https://theuselessweb.com/\""},
-       "URLArgument"], "]"}], "\<\"5 Southampton Drive\"\>", 
-     TemplateBox[{"\"Randolph\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"Randolph\"", ",", "\"Massachusetts\"", ",", 
-               "\"UnitedStates\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Randolph\\\", \\\"Massachusetts\\\", \
-\\\"UnitedStates\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Wisconsin, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Wisconsin\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", {\\\"Wisconsin\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Guatemala\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Guatemala\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Guatemala\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"62656\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"62656\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"62656\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2019", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Tue 1 Jan 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "1", ",", "1"}], "}"}], ",", "\"Day\"", ",",
-            "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Mirka\"\>", "\<\"Rickey\"\>", "\<\"+16305453901\"\>", \
-"\<\"kronvold@hotmail.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"http://eelslap.com/\""},
-       "URLArgument"], "]"}], "\<\"33 Trusel Dr.\"\>", 
-     TemplateBox[{"\"Clinton\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"Clinton\"", ",", "\"Massachusetts\"", ",", 
-               "\"UnitedStates\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Clinton\\\", \\\"Massachusetts\\\", \
-\\\"UnitedStates\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Indiana, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Indiana\"", ",", "\"UnitedStates\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"AdministrativeDivision\\\", {\\\"Indiana\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Lithuania\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Lithuania\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Lithuania\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60440\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60440\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60440\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2010\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2010", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Sat 9 Mar 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "3", ",", "9"}], "}"}], ",", "\"Day\"", ",",
-            "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Clara\"\>", "\<\"Nimet\"\>", "\<\"+16305453901\"\>", \
-"\<\"adillon@live.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"http://tinytuba.com/\""},
-       "URLArgument"], "]"}], "\<\"478 Wakehurst Street\"\>", 
-     TemplateBox[{"\"Salt Lake City\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"SaltLakeCity\"", ",", "\"Utah\"", ",", 
-               "\"UnitedStates\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"SaltLakeCity\\\", \\\"Utah\\\", \
-\\\"UnitedStates\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Utah, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Utah\"", ",", "\"UnitedStates\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"AdministrativeDivision\\\", {\\\"Utah\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Tuvalu\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Tuvalu\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Tuvalu\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60139\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60139\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60139\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2018\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2018", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Sat 8 Jun 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "6", ",", "8"}], "}"}], ",", "\"Day\"", ",",
-            "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Roswell\"\>", "\<\"Aeron\"\>", 
-     RowBox[{
-     "Missing", "[", "\<\"NoInput\"\>", 
-      "]"}], "\<\"chaffar@sbcglobal.net\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"http://www.movenowthinklater.com/\""},
-       "URLArgument"], "]"}], "\<\"975 N. Oklahoma St.\"\>", 
-     TemplateBox[{"\"Shenyang\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Shenyang\"", ",", "\"Liaoning\"", ",", "\"China\""}], 
-             "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Shenyang\\\", \\\"Liaoning\\\", \\\"China\
-\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"North Carolina, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"NorthCarolina\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", {\\\"NorthCarolina\\\
-\", \\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Finland\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Finland\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Finland\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60521\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60521\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60521\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2017\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2017", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Fri 1 Mar 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "3", ",", "1"}], "}"}], ",", "\"Day\"", ",",
-            "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Caelia\"\>", "\<\"Aries\"\>", "\<\"+16308566056\"\>", \
-"\<\"dmenons3141@yxbooketo.ru\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"http://www.republiquedesmangues.fr/\""},
-       "URLArgument"], "]"}], "\<\"7092 Gainsway Street\"\>", 
-     TemplateBox[{"\"Rawalpindi\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"Rawalpindi\"", ",", "\"Punjab\"", ",", 
-               "\"Pakistan\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Rawalpindi\\\", \\\"Punjab\\\", \
-\\\"Pakistan\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Illinois, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Illinois\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", {\\\"Illinois\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Martinique\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Martinique\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Martinique\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60525\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60525\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60525\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2000\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2000", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Tue 3 Dec 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "12", ",", "3"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"Can a rising outset fiddle underneath the \
-calm?\"\>"},
-    {"\<\"Til\"\>", "\<\"Cyan\"\>", "\<\"+13092685180\"\>", \
-"\<\"bartlett@optonline.net\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"www.google.com\""},
-       "URLArgument"], "]"}], "\<\"237 Howard Road\"\>", 
-     TemplateBox[{"\"Khartoum\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Khartoum\"", ",", "\"Khartoum\"", ",", "\"Sudan\""}], 
-             "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Khartoum\\\", \\\"Khartoum\\\", \\\"Sudan\
-\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Jiangsu, China\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Jiangsu\"", ",", "\"China\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"AdministrativeDivision\\\", {\\\"Jiangsu\\\", \
-\\\"China\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Cape Verde\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"CapeVerde\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"CapeVerde\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"61761\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"61761\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"61761\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"1995\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "1995", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Mon 21 Oct 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "10", ",", "21"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Anton\"\>", "\<\"Coleman\"\>", "\<\"+17086845010\"\>", \
-"\<\"qmacro@aol.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"http://www.advocatehealth.com/luth-chna-2016\""},
-       "URLArgument"], "]"}], "\<\"551 Lawrence Ave.\"\>", 
-     TemplateBox[{"\"Pyongyang\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"Pyongyang\"", ",", "\"Pyongyang\"", ",", 
-               "\"NorthKorea\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Pyongyang\\\", \\\"Pyongyang\\\", \
-\\\"NorthKorea\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Kentucky, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Kentucky\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", {\\\"Kentucky\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Gabon\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Gabon\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Gabon\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60453\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60453\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60453\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"1990\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "1990", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Tue 3 Dec 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "12", ",", "3"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Luanne\"\>", "\<\"Willamar\"\>", "\<\"+18479905201\"\>", \
-"\<\"bartlett@optonline.net\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"https://trypap.com/\""},
-       "URLArgument"], "]"}], "\<\"984 East Maple Ave.\"\>", 
-     TemplateBox[{"\"Zhongshan\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"Zhongshan\"", ",", "\"Guangdong\"", ",", 
-               "\"China\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Zhongshan\\\", \\\"Guangdong\\\", \
-\\\"China\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Georgia, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Georgia\"", ",", "\"UnitedStates\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"AdministrativeDivision\\\", {\\\"Georgia\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Bouvet Island\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"BouvetIsland\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"BouvetIsland\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60048\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60048\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60048\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"1950\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "1950", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Tue 4 Jun 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "6", ",", "4"}], "}"}], ",", "\"Day\"", ",",
-            "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Jurij\"\>", "\<\"Ofydd\"\>", 
-     RowBox[{
-     "Missing", "[", "\<\"NoInput\"\>", "]"}], "\<\"mwilson@aol.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{
-       "\"http://www.advocatehealth.com/documents/CHNA/SSUBCHNAReport1-14.pdf\
-\""},
-       "URLArgument"], 
-      "]"}], "\<\"53 Purple Finch Court\"\>", "\<\"Yaound\.8e\"\>", 
-     TemplateBox[{"\"Alabama, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Alabama\"", ",", "\"UnitedStates\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"AdministrativeDivision\\\", {\\\"Alabama\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Somalia\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Somalia\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Somalia\\\"]\"","\"country\""},
-      "Entity"], "\<\"61530-0203\"\>", 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"1999\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "1999", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Fri 12 Jul 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "7", ",", "12"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Abdul-Aziz\"\>", "\<\"Jayesh\"\>", 
-     "7891234567", "\<\"hahiss@mac.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"https://trypap.com/\""},
-       "URLArgument"], "]"}], "\<\"9162 North Galvin Ave.\"\>", 
-     TemplateBox[{"\"Tokyo\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Tokyo\"", ",", "\"Tokyo\"", ",", "\"Japan\""}], 
-             "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Tokyo\\\", \\\"Tokyo\\\", \\\"Japan\\\"}]\
-\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"New Hampshire, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"NewHampshire\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", \
-{\\\"NewHampshire\\\", \\\"UnitedStates\\\"}]\"",
-       "\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Turkey\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Turkey\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Turkey\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60515\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60515\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60515\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2014\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2014", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Thu 16 May 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "5", ",", "16"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Fridenot\"\>", "\<\"Gayatri\"\>", "\<\"(123)-456-7890\"\>", \
-"\<\"engelen@outlook.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"\""},
-       "URLArgument"], "]"}], "\<\"5 Southampton Court\"\>", 
-     TemplateBox[{"\"Chittagong\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             RowBox[{
-              "\"Chittagong\"", ",", "\"Chittagong\"", ",", 
-               "\"Bangladesh\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Chittagong\\\", \\\"Chittagong\\\", \
-\\\"Bangladesh\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Mississippi, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Mississippi\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", \
-{\\\"Mississippi\\\", \\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Vietnam\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Vietnam\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Vietnam\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60010\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60010\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60010\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2013\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2013", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Thu 1 Aug 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "8", ",", "1"}], "}"}], ",", "\"Day\"", ",",
-            "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Hagop\"\>", "\<\"Ricarda\"\>", "\<\"+17732967081\"\>", \
-"\<\"mastinfo@optonline.net\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{
-       "\"https://www.luriechildrens.org/en-us/community/community-health-\
-needs-assessment/Documents/chna-2016.pdf\""},
-       "URLArgument"], "]"}], "\<\"5 Tarkiln Hill St.\"\>", 
-     TemplateBox[{"\"Giza\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Giza\"", ",", "\"Giza\"", ",", "\"Egypt\""}], "}"}]}],
-          "]"}],"\"Entity[\\\"City\\\", {\\\"Giza\\\", \\\"Giza\\\", \
-\\\"Egypt\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"South Carolina, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"SouthCarolina\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", {\\\"SouthCarolina\\\
-\", \\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Cuba\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Cuba\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Cuba\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60657\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60657\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60657\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2910\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2910", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Mon 23 Sep 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "9", ",", "23"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"The marriage announces the potato.\"\>"},
-    {"\<\"Cipriano\"\>", "\<\"Mongkut\"\>", "\<\"+18477238446\"\>", \
-"\<\"fbriere@msn.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"www.yahoo.com\""},
-       "URLArgument"], "]"}], "\<\"65 Sulphur Springs Street\"\>", 
-     TemplateBox[{"\"Almaty\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Almaty\"", ",", "\"Almaty\"", ",", "\"Kazakhstan\""}],
-              "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Almaty\\\", \\\"Almaty\\\", \
-\\\"Kazakhstan\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Colorado, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Colorado\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", {\\\"Colorado\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Comoros\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Comoros\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Comoros\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60068\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60068\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60068\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2004\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2004", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Mon 4 Nov 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "11", ",", "4"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Abhishek\"\>", "\<\"Lahja\"\>", "\<\"224-783-8002 Ext 1234\"\>", \
-"\<\"hling@yahoo.ca\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"\""},
-       "URLArgument"], "]"}], "\<\"8760 Arrowhead St.\"\>", 
-     TemplateBox[{"\"Kathmandu\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"Kathmandu\"", ",", "\"Kathmandu\"", ",", 
-               "\"Nepal\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Kathmandu\\\", \\\"Kathmandu\\\", \
-\\\"Nepal\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Arkansas, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Arkansas\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", {\\\"Arkansas\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Serbia\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Serbia\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Serbia\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60123\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60123\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60123\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"2003\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "2003", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Sat 7 Dec 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "12", ",", "7"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Drahom\.92ra\"\>", "\<\"Adrienn\"\>", 
-     RowBox[{
-     "Missing", "[", "\<\"NoInput\"\>", "]"}], "\<\"kostas@yahoo.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"\""},
-       "URLArgument"], "]"}], "\<\"8447 SW. Ridgeview Ave.\"\>", 
-     TemplateBox[{"\"Yekaterinburg\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"Yekaterinburg\"", ",", "\"Sverdlovsk\"", ",", 
-               "\"Russia\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Yekaterinburg\\\", \\\"Sverdlovsk\\\", \\\
-\"Russia\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"New Hampshire, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"NewHampshire\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", \
-{\\\"NewHampshire\\\", \\\"UnitedStates\\\"}]\"",
-       "\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Sri Lanka\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"SriLanka\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"SriLanka\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60429\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60429\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60429\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"1995\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "1995", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Tue 5 Feb 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "2", ",", "5"}], "}"}], ",", "\"Day\"", ",",
-            "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Alexandra\"\>", "\<\"Monika\"\>", 
-     "2349026849", "\<\"henkp@yahoo.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"http://burymewithmymoney.com/\""},
-       "URLArgument"], "]"}], "\<\"10 Hartford Dr.\"\>", 
-     TemplateBox[{"\"Kinshasa\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"Kinshasa\"", ",", "\"Kinshasa\"", ",", 
-               "\"DemocraticRepublicCongo\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Kinshasa\\\", \\\"Kinshasa\\\", \
-\\\"DemocraticRepublicCongo\\\"}]\"","\"city\""},
-      "Entity"], "\<\"Utahhhhh\"\>", 
-     TemplateBox[{"\"United Arab Emirates\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"UnitedArabEmirates\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"UnitedArabEmirates\\\"]\"",
-       "\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60617\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60617\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60617\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"1998\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "1998", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Sat 6 Apr 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "4", ",", "6"}], "}"}], ",", "\"Day\"", ",",
-            "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Chiemeka\"\>", "\<\"Joannes\"\>", "\<\"+15674533958\"\>", \
-"\<\"dbrobins@gmail.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"\""},
-       "URLArgument"], "]"}], "\<\"96 East 8th Court\"\>", 
-     TemplateBox[{"\"Manila\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             
-             RowBox[{"\"Manila\"", ",", "\"Manila\"", ",", 
-               "\"Philippines\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Manila\\\", \\\"Manila\\\", \
-\\\"Philippines\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Alabama, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Alabama\"", ",", "\"UnitedStates\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"AdministrativeDivision\\\", {\\\"Alabama\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Ethiopia\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Ethiopia\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Ethiopia\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60169\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60169\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60169\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"1920\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "1920", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Sat 8 Jun 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "6", ",", "8"}], "}"}], ",", "\"Day\"", ",",
-            "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"Can the profile pencil a blamed salesman?\"\>"},
-    {"\<\"Kenna\"\>", "\<\"Katherina\"\>", "\<\"345-678-1390\"\>", \
-"\<\"mhouston@gmail.com\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"http://www.staggeringbeauty.com/\""},
-       "URLArgument"], "]"}], "\<\"516 Cedar Dr.\"\>", 
-     TemplateBox[{"\"Foshan\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Foshan\"", ",", "\"Guangdong\"", ",", "\"China\""}], 
-             "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Foshan\\\", \\\"Guangdong\\\", \
-\\\"China\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Tennessee, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Tennessee\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],
-       "\"Entity[\\\"AdministrativeDivision\\\", {\\\"Tennessee\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Guernsey\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"Guernsey\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"Guernsey\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"60007\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"60007\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"60007\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"1900\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "1900", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Mon 11 Nov 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "11", ",", "11"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Alexius\"\>", "\<\"Na'amah\"\>", "\<\"476-204-2903\"\>", \
-"\<\"garyjb@comcast.net\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"\""},
-       "URLArgument"], "]"}], "\<\"7304 Cedar Street\"\>", 
-     TemplateBox[{"\"Kharkiv\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Kharkiv\"", ",", "\"Harkov\"", ",", "\"Ukraine\""}], 
-             "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Kharkiv\\\", \\\"Harkov\\\", \
-\\\"Ukraine\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Colorado, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Colorado\"", ",", "\"UnitedStates\""}], "}"}]}], 
-         "]"}],"\"Entity[\\\"AdministrativeDivision\\\", {\\\"Colorado\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{"\"Isle of Man\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"IsleOfMan\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"IsleOfMan\\\"]\"","\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"62002\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"62002\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"62002\\\"]\"","\"ZIP Code\""},
-      "Entity"], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Year: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"1202\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", "1202", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", 
-           ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Wed 22 May 1202\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"1202", ",", "5", ",", "22"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"},
-    {"\<\"Riku\"\>", "\<\"Navin\"\>", "\<\"+16183916406\"\>", \
-"\<\"sthomas@att.net\"\>", 
-     RowBox[{"URL", "[", 
-      TemplateBox[{"\"https://thatsthefinger.com/\""},
-       "URLArgument"], "]"}], "\<\"7648 Grandrose Court\"\>", 
-     TemplateBox[{"\"Ibadan\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"City\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Ibadan\"", ",", "\"Oyo\"", ",", "\"Nigeria\""}], 
-             "}"}]}], "]"}],
-       "\"Entity[\\\"City\\\", {\\\"Ibadan\\\", \\\"Oyo\\\", \
-\\\"Nigeria\\\"}]\"","\"city\""},
-      "Entity"], 
-     TemplateBox[{"\"Alabama, United States\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"AdministrativeDivision\"", ",", 
-           RowBox[{"{", 
-             RowBox[{"\"Alabama\"", ",", "\"UnitedStates\""}], "}"}]}], "]"}],
-       "\"Entity[\\\"AdministrativeDivision\\\", {\\\"Alabama\\\", \
-\\\"UnitedStates\\\"}]\"","\"administrative division\""},
-      "Entity"], 
-     TemplateBox[{
-      "\"Saint Vincent and the Grenadines\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"Country\"", ",", "\"SaintVincentGrenadines\""}], "]"}],
-       "\"Entity[\\\"Country\\\", \\\"SaintVincentGrenadines\\\"]\"",
-       "\"country\""},
-      "Entity"], 
-     TemplateBox[{"\"62062\"",RowBox[{"Entity", "[", 
-         RowBox[{"\"ZIPCode\"", ",", "\"62062\""}], "]"}],
-       "\"Entity[\\\"ZIPCode\\\", \\\"62062\\\"]\"","\"ZIP Code\""},
-      "Entity"], "\<\"3203\"\>", 
-     TemplateBox[{RowBox[{
-         StyleBox[
-         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
-         "\"Wed 2 Oct 2019\""}],RowBox[{"DateObject", "[", 
-         RowBox[{
-           RowBox[{"{", 
-             RowBox[{"2019", ",", "10", ",", "2"}], "}"}], ",", "\"Day\"", 
-           ",", "\"Gregorian\"", ",", 
-           RowBox[{"-", "4.`"}]}], "]"}]},
-      "DateObject",
-      Editable->False], 
-     TemplateBox[{
-      "40.72525`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], 
-     TemplateBox[{
-      RowBox[{"-", "74.00788889`"}],
-       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
-       "\"AngularDegrees\""},
-      "QuantityPostfix"], "\<\"\"\>"}
+    {"\<\"Missing Migrants\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>"},
+    {"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"Web ID\"\>", "\<\"Reported Date\"\>", "\<\"Total Missing\"\>", \
+"\<\"Latitude\"\>", "\<\"Longitude\"\>", "\<\"URL\"\>"},
+    {"51591", "\<\"28-Mar-19\"\>", "2", "38.362`", "26.173`", "\<\"\"\>"},
+    {"51588", "\<\"26-Mar-19\"\>", "4", "39.442`", 
+     "26.379`", "\<\"http://bit.ly/2YmiPAN\"\>"},
+    {"51589", "\<\"26-Mar-19\"\>", "1", "35.872`", 
+     RowBox[{"-", "5.343`"}], "\<\"http://bit.ly/2uyj7qO\"\>"},
+    {"51590", "\<\"26-Mar-19\"\>", "1", "35.635`", 
+     RowBox[{"-", "5.276`"}], "\<\"http://bit.ly/2uwj5zC\"\>"},
+    {"51587", "\<\"25-Mar-19\"\>", "1", "19.334`", 
+     RowBox[{"-", "98.07`"}], "\<\"http://bit.ly/2uvDIvH\"\>"},
+    {"51580", "\<\"23-Mar-19\"\>", "1", "32.057`", 
+     RowBox[{"-", "111.666`"}], "\<\"http://www.humaneborders.info/\"\>"},
+    {"51581", "\<\"23-Mar-19\"\>", "1", "32.057`", 
+     RowBox[{"-", "111.666`"}], "\<\"http://www.humaneborders.info/\"\>"}
    },
    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
    GridBoxSpacings->{"Columns" -> {
@@ -3498,10 +2308,198 @@ needs-assessment/Documents/chna-2016.pdf\""},
        Offset[0.2]}}],
   Function[BoxForm`e$, 
    TableForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{3.771620619297718*^9},
+ CellChangeTimes->{3.771692062570085*^9, 3.771692120931488*^9, 
+  3.77169271650636*^9},
  CellLabel->
-  "Out[40]//TableForm=",ExpressionUUID->"ffdee086-18c1-47d7-80a3-\
-723234333969"]
+  "Out[176]//TableForm=",ExpressionUUID->"bae3360d-0094-4b9e-af5f-\
+abe9ee05485f"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Missing Migrants\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>"},
+    {"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"Web ID\"\>", "\<\"Reported Date\"\>", "\<\"Total Missing\"\>", \
+"\<\"Latitude\"\>", "\<\"Longitude\"\>", "\<\"URL\"\>"},
+    {"51591", 
+     TemplateBox[{RowBox[{
+         StyleBox[
+         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+         "\"Thu 28 Mar 2019\""}],RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2019", ",", "3", ",", "28"}], "}"}], ",", "\"Day\"", 
+           ",", "\"Gregorian\"", ",", 
+           RowBox[{"-", "4.`"}]}], "]"}]},
+      "DateObject",
+      Editable->False], "2", 
+     TemplateBox[{
+      "38.362`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     TemplateBox[{
+      "26.173`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     RowBox[{"URL", "[", 
+      TemplateBox[{"\"\""},
+       "URLArgument"], "]"}]},
+    {"51588", 
+     TemplateBox[{RowBox[{
+         StyleBox[
+         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+         "\"Tue 26 Mar 2019\""}],RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2019", ",", "3", ",", "26"}], "}"}], ",", "\"Day\"", 
+           ",", "\"Gregorian\"", ",", 
+           RowBox[{"-", "4.`"}]}], "]"}]},
+      "DateObject",
+      Editable->False], "4", 
+     TemplateBox[{
+      "39.442`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     TemplateBox[{
+      "26.379`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     RowBox[{"URL", "[", 
+      TemplateBox[{"\"http://bit.ly/2YmiPAN\""},
+       "URLArgument"], "]"}]},
+    {"51589", 
+     TemplateBox[{RowBox[{
+         StyleBox[
+         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+         "\"Tue 26 Mar 2019\""}],RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2019", ",", "3", ",", "26"}], "}"}], ",", "\"Day\"", 
+           ",", "\"Gregorian\"", ",", 
+           RowBox[{"-", "4.`"}]}], "]"}]},
+      "DateObject",
+      Editable->False], "1", 
+     TemplateBox[{
+      "35.872`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     TemplateBox[{
+      RowBox[{"-", "5.343`"}],RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],
+       "degrees","\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     RowBox[{"URL", "[", 
+      TemplateBox[{"\"http://bit.ly/2uyj7qO\""},
+       "URLArgument"], "]"}]},
+    {"51590", 
+     TemplateBox[{RowBox[{
+         StyleBox[
+         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+         "\"Tue 26 Mar 2019\""}],RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2019", ",", "3", ",", "26"}], "}"}], ",", "\"Day\"", 
+           ",", "\"Gregorian\"", ",", 
+           RowBox[{"-", "4.`"}]}], "]"}]},
+      "DateObject",
+      Editable->False], "1", 
+     TemplateBox[{
+      "35.635`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     TemplateBox[{
+      RowBox[{"-", "5.276`"}],RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],
+       "degrees","\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     RowBox[{"URL", "[", 
+      TemplateBox[{"\"http://bit.ly/2uwj5zC\""},
+       "URLArgument"], "]"}]},
+    {"51587", 
+     TemplateBox[{RowBox[{
+         StyleBox[
+         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+         "\"Mon 25 Mar 2019\""}],RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2019", ",", "3", ",", "25"}], "}"}], ",", "\"Day\"", 
+           ",", "\"Gregorian\"", ",", 
+           RowBox[{"-", "4.`"}]}], "]"}]},
+      "DateObject",
+      Editable->False], "1", 
+     TemplateBox[{
+      "19.334`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     TemplateBox[{
+      RowBox[{"-", "98.07`"}],RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],
+       "degrees","\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     RowBox[{"URL", "[", 
+      TemplateBox[{"\"http://bit.ly/2uvDIvH\""},
+       "URLArgument"], "]"}]},
+    {"51580", 
+     TemplateBox[{RowBox[{
+         StyleBox[
+         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+         "\"Sat 23 Mar 2019\""}],RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2019", ",", "3", ",", "23"}], "}"}], ",", "\"Day\"", 
+           ",", "\"Gregorian\"", ",", 
+           RowBox[{"-", "4.`"}]}], "]"}]},
+      "DateObject",
+      Editable->False], "1", 
+     TemplateBox[{
+      "32.057`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     TemplateBox[{
+      RowBox[{"-", "111.666`"}],
+       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     RowBox[{"URL", "[", 
+      TemplateBox[{"\"http://www.humaneborders.info/\""},
+       "URLArgument"], "]"}]},
+    {"51581", 
+     TemplateBox[{RowBox[{
+         StyleBox[
+         "\"Day: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+         "\"Sat 23 Mar 2019\""}],RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2019", ",", "3", ",", "23"}], "}"}], ",", "\"Day\"", 
+           ",", "\"Gregorian\"", ",", 
+           RowBox[{"-", "4.`"}]}], "]"}]},
+      "DateObject",
+      Editable->False], "1", 
+     TemplateBox[{
+      "32.057`",RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     TemplateBox[{
+      RowBox[{"-", "111.666`"}],
+       RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}],"degrees",
+       "\"AngularDegrees\""},
+      "QuantityPostfix"], 
+     RowBox[{"URL", "[", 
+      TemplateBox[{"\"http://www.humaneborders.info/\""},
+       "URLArgument"], "]"}]}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.771692062570085*^9, 3.771692120931488*^9, 
+  3.771692721243188*^9},
+ CellLabel->
+  "Out[177]//TableForm=",ExpressionUUID->"9a3dd806-15fc-4321-ab38-\
+be74ebb713e0"]
 }, Open  ]]
 }, Open  ]],
 
@@ -3538,7 +2536,8 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Code",
  CellChangeTimes->{{3.771549144113089*^9, 3.771549161381157*^9}},
- CellLabel->"In[89]:=",ExpressionUUID->"8fa9d9e4-37c2-4a00-b5fe-412f26c7f724"],
+ CellLabel->
+  "In[121]:=",ExpressionUUID->"8fa9d9e4-37c2-4a00-b5fe-412f26c7f724"],
 
 Cell[BoxData[
  RowBox[{
@@ -3684,7 +2683,8 @@ Cell[BoxData[
    3.771580991031179*^9, 3.7715809930586567`*^9}, {3.7715810509684687`*^9, 
    3.771581051301381*^9}, {3.771594712861462*^9, 3.771594720280942*^9}, {
    3.771618620089621*^9, 3.771618622099004*^9}},
- CellLabel->"In[90]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+ CellLabel->
+  "In[162]:=",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
 
 Cell[BoxData[
  RowBox[{
@@ -3706,7 +2706,7 @@ Cell[BoxData[
          RowBox[{"elem", ",", "dataParser"}], "]"}], ",", "\n", "\t\t", "_", 
         ",", " ", 
         RowBox[{"ToString", "[", "head", "]"}]}], "\n", "\t", "]"}]}], "\n", 
-     "]"}]}], "\n", "\[IndentingNewLine]", 
+     "]"}]}], "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{"findHeader", "[", "file_", "]"}], " ", ":=", " ", 
     RowBox[{"Block", "[", "\[IndentingNewLine]", "\t", 
@@ -3939,7 +2939,8 @@ Cell[BoxData[
    3.771520341027713*^9}, {3.771520422659527*^9, 3.771520427213811*^9}, {
    3.7715210525687857`*^9, 3.771521054036087*^9}, {3.7715213003893547`*^9, 
    3.771521300554264*^9}, {3.771580996220356*^9, 3.771580997574247*^9}},
- CellLabel->"In[95]:=",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
+ CellLabel->
+  "In[160]:=",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
 
 Cell[BoxData[
  RowBox[{
@@ -4052,7 +3053,8 @@ Cell[BoxData[
   3.771413621021749*^9, 3.771413627338073*^9}, {3.771415460699695*^9, 
   3.771415484368325*^9}, {3.771416172279963*^9, 3.7714161744438343`*^9}, {
   3.771521126353561*^9, 3.771521126482526*^9}},
- CellLabel->"In[97]:=",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
+ CellLabel->
+  "In[159]:=",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
 
 Cell[BoxData[
  RowBox[{
@@ -4321,15 +3323,13 @@ Cell[BoxData[
              RowBox[{"fastBody", "[", 
               RowBox[{"[", 
                RowBox[{"amount", ",", "latiPosition"}], "]"}], "]"}], "=", 
-             RowBox[{"latiResult", "[", 
-              RowBox[{"[", "1", "]"}], "]"}]}], ";", "\n", "\t\t\t", 
+             "latiResult"}], ";", "\n", "\t\t\t", 
             RowBox[{
              RowBox[{"fastBody", "[", 
               RowBox[{"[", 
                RowBox[{"amount", ",", "longiPosition"}], "]"}], "]"}], "=", 
-             RowBox[{"longiResult", "[", 
-              RowBox[{"[", "1", "]"}], "]"}]}]}]}], "\n", "\t\t", "]"}], 
-         ";"}]}], "\n", "\t", "]"}], ";", "\t", "\n", "\t", "\n", "\t", 
+             "longiResult"}], ";"}]}], "\n", "\t\t", "]"}], ";"}]}], "\n", 
+       "\t", "]"}], ";", "\t", "\n", "\t", "\n", "\t", 
       RowBox[{"Return", "[", 
        RowBox[{"{", "fastBody", "}"}], "]"}], ";"}]}], "\n", 
     "]"}]}]}]], "Code",
@@ -4345,8 +3345,10 @@ Cell[BoxData[
    3.771419107595562*^9, 3.7714191391136637`*^9}, {3.771521132077989*^9, 
    3.771521164512788*^9}, {3.771529963416052*^9, 3.771530066986767*^9}, 
    3.7715305729316196`*^9, {3.771548497616865*^9, 3.771548562871903*^9}, {
-   3.771548754857568*^9, 3.771548859591177*^9}},
- CellLabel->"In[98]:=",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
+   3.771548754857568*^9, 3.771548859591177*^9}, {3.7716926881659803`*^9, 
+   3.7716926920686007`*^9}},
+ CellLabel->
+  "In[174]:=",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
 
 Cell[BoxData[
  RowBox[{
@@ -4728,7 +3730,8 @@ Cell[BoxData[
    3.771529785578179*^9, 3.771529893718485*^9}, {3.771530078498304*^9, 
    3.7715301044825573`*^9}, 3.771530566944283*^9, {3.771548948562317*^9, 
    3.771549119211182*^9}},
- CellLabel->"In[99]:=",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
+ CellLabel->
+  "In[157]:=",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
 
 Cell[BoxData[{
  RowBox[{
@@ -4919,12 +3922,12 @@ Cell[BoxData[{
    3.771592808394334*^9}, 3.771592923710004*^9, {3.771619772752202*^9, 
    3.771619782215302*^9}, {3.7716771862871103`*^9, 3.7716772085529127`*^9}},
  CellLabel->
-  "In[102]:=",ExpressionUUID->"484e2fc2-df07-475c-ad00-c3de1a209558"]
+  "In[155]:=",ExpressionUUID->"484e2fc2-df07-475c-ad00-c3de1a209558"]
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{1117, 693},
-WindowMargins->{{13, Automatic}, {Automatic, 0}},
+WindowSize->{1019, 693},
+WindowMargins->{{7, Automatic}, {Automatic, 7}},
 DockedCells->{
   Cell[
    TextData[{
@@ -4994,74 +3997,75 @@ Cell[101319, 1782, 263, 6, 35, "Text",ExpressionUUID->"59a1afa1-0ae4-4a4b-b27b-8
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[101619, 1793, 227, 4, 54, "Subsection",ExpressionUUID->"8751a74b-691e-445e-966e-65cd3c820bb6"],
-Cell[101849, 1799, 1224, 19, 104, "Text",ExpressionUUID->"539b8c9c-3f9f-41ff-85db-3be3551d7739"],
+Cell[101849, 1799, 1224, 19, 127, "Text",ExpressionUUID->"539b8c9c-3f9f-41ff-85db-3be3551d7739"],
 Cell[CellGroupData[{
-Cell[103098, 1822, 3156, 81, 367, "Input",ExpressionUUID->"e96816a8-d9d2-449e-822d-d9f7b92db68b"],
-Cell[106257, 1905, 307, 7, 34, "Output",ExpressionUUID->"1f6c8eeb-975e-4931-8216-81a35c308f76"]
+Cell[103098, 1822, 1662, 42, 220, "Input",ExpressionUUID->"e96816a8-d9d2-449e-822d-d9f7b92db68b"],
+Cell[104763, 1866, 307, 7, 34, "Output",ExpressionUUID->"1f6c8eeb-975e-4931-8216-81a35c308f76"]
 }, Open  ]],
-Cell[106579, 1915, 672, 12, 81, "Text",ExpressionUUID->"54adf14a-e60c-41d4-b8d0-52ba7d7a0b6d"],
+Cell[105085, 1876, 672, 12, 81, "Text",ExpressionUUID->"54adf14a-e60c-41d4-b8d0-52ba7d7a0b6d"],
 Cell[CellGroupData[{
-Cell[107276, 1931, 1147, 29, 136, "Input",ExpressionUUID->"a708c45e-f8a2-41f1-9f7a-6555b04ccb24"],
-Cell[108426, 1962, 198, 5, 34, "Output",ExpressionUUID->"d2915d76-e9ce-47e6-8483-6aa8e02ebf94"],
-Cell[108627, 1969, 305, 8, 34, "Output",ExpressionUUID->"438ed993-298c-4a7b-a5dc-0b179d274316"]
+Cell[105782, 1892, 1147, 29, 136, "Input",ExpressionUUID->"a708c45e-f8a2-41f1-9f7a-6555b04ccb24"],
+Cell[106932, 1923, 198, 5, 34, "Output",ExpressionUUID->"d2915d76-e9ce-47e6-8483-6aa8e02ebf94"],
+Cell[107133, 1930, 305, 8, 34, "Output",ExpressionUUID->"438ed993-298c-4a7b-a5dc-0b179d274316"]
 }, Open  ]],
-Cell[108947, 1980, 385, 7, 35, "Text",ExpressionUUID->"74f50f1f-3848-40cd-9b76-bde732e2808b"]
+Cell[107453, 1941, 385, 7, 58, "Text",ExpressionUUID->"74f50f1f-3848-40cd-9b76-bde732e2808b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[109369, 1992, 181, 3, 54, "Subsection",ExpressionUUID->"7a6e03fc-6058-42b4-b217-399659cd224d"],
-Cell[109553, 1997, 1425, 23, 127, "Text",ExpressionUUID->"86e74a28-ca20-4374-92ba-fe2efffda5bb"],
+Cell[107875, 1953, 181, 3, 54, "Subsection",ExpressionUUID->"7a6e03fc-6058-42b4-b217-399659cd224d"],
+Cell[108059, 1958, 1425, 23, 127, "Text",ExpressionUUID->"86e74a28-ca20-4374-92ba-fe2efffda5bb"],
 Cell[CellGroupData[{
-Cell[111003, 2024, 1563, 42, 178, "Input",ExpressionUUID->"10ea713d-58c3-46f0-ba77-2c9fc25d80c9"],
-Cell[112569, 2068, 1966, 48, 148, "Output",ExpressionUUID->"e18e1518-2aa2-4ded-ae04-518fe49039af"]
+Cell[109509, 1985, 1563, 42, 178, "Input",ExpressionUUID->"10ea713d-58c3-46f0-ba77-2c9fc25d80c9"],
+Cell[111075, 2029, 1966, 48, 148, "Output",ExpressionUUID->"e18e1518-2aa2-4ded-ae04-518fe49039af"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[114596, 2123, 166, 3, 67, "Section",ExpressionUUID->"91e10dd7-0640-42e4-9f6e-4eda615f6d90"],
-Cell[114765, 2128, 586, 11, 58, "Text",ExpressionUUID->"da87a219-f8ca-47ef-bad9-d5c81dec9b06"],
+Cell[113102, 2084, 166, 3, 67, "Section",ExpressionUUID->"91e10dd7-0640-42e4-9f6e-4eda615f6d90"],
+Cell[113271, 2089, 586, 11, 58, "Text",ExpressionUUID->"da87a219-f8ca-47ef-bad9-d5c81dec9b06"],
 Cell[CellGroupData[{
-Cell[115376, 2143, 276, 4, 54, "Subsection",ExpressionUUID->"8f58809f-2d28-4a16-bc32-8d2d44418f26"],
-Cell[115655, 2149, 402, 8, 35, "Text",ExpressionUUID->"6f22c1c3-47ce-4460-9e47-24d4c63ace3e"],
+Cell[113882, 2104, 276, 4, 54, "Subsection",ExpressionUUID->"8f58809f-2d28-4a16-bc32-8d2d44418f26"],
+Cell[114161, 2110, 402, 8, 35, "Text",ExpressionUUID->"6f22c1c3-47ce-4460-9e47-24d4c63ace3e"],
 Cell[CellGroupData[{
-Cell[116082, 2161, 550, 11, 28, "Subitem",ExpressionUUID->"a86031e8-464a-460f-a228-2b31bc7fddc8"],
-Cell[116635, 2174, 714, 13, 49, "Subitem",ExpressionUUID->"e226bf0f-a46b-4903-b532-b0ed9b808147"],
-Cell[117352, 2189, 699, 13, 47, "Subitem",ExpressionUUID->"2aa09f98-3fdb-41bf-8039-2e6943b69e09"]
+Cell[114588, 2122, 550, 11, 28, "Subitem",ExpressionUUID->"a86031e8-464a-460f-a228-2b31bc7fddc8"],
+Cell[115141, 2135, 714, 13, 49, "Subitem",ExpressionUUID->"e226bf0f-a46b-4903-b532-b0ed9b808147"],
+Cell[115858, 2150, 699, 13, 47, "Subitem",ExpressionUUID->"2aa09f98-3fdb-41bf-8039-2e6943b69e09"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[118100, 2208, 164, 3, 54, "Subsection",ExpressionUUID->"fc52ca66-1be1-47e9-8bea-134837adf679"],
-Cell[118267, 2213, 953, 21, 68, "Subitem",ExpressionUUID->"ee190f5a-9efd-4f5e-b0fb-15b89db92a5c"]
+Cell[116606, 2169, 164, 3, 54, "Subsection",ExpressionUUID->"fc52ca66-1be1-47e9-8bea-134837adf679"],
+Cell[116773, 2174, 953, 21, 68, "Subitem",ExpressionUUID->"ee190f5a-9efd-4f5e-b0fb-15b89db92a5c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[119257, 2239, 230, 4, 54, "Subsection",ExpressionUUID->"5caf9093-ff5a-40ff-805f-972147207e6a"],
-Cell[119490, 2245, 863, 15, 49, "Subitem",ExpressionUUID->"56e2f461-25d6-48ec-ab0f-e9eb3276567f"]
+Cell[117763, 2200, 230, 4, 54, "Subsection",ExpressionUUID->"5caf9093-ff5a-40ff-805f-972147207e6a"],
+Cell[117996, 2206, 863, 15, 68, "Subitem",ExpressionUUID->"56e2f461-25d6-48ec-ab0f-e9eb3276567f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[120390, 2265, 176, 3, 54, "Subsection",ExpressionUUID->"8b76f1a8-211b-4f98-ade0-6688ae7dbcde"],
-Cell[120569, 2270, 549, 12, 47, "Subitem",ExpressionUUID->"07059cb3-d680-4246-8984-8dafb4ec6af2"]
+Cell[118896, 2226, 176, 3, 54, "Subsection",ExpressionUUID->"8b76f1a8-211b-4f98-ade0-6688ae7dbcde"],
+Cell[119075, 2231, 549, 12, 47, "Subitem",ExpressionUUID->"07059cb3-d680-4246-8984-8dafb4ec6af2"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[121167, 2288, 158, 3, 67, "Section",ExpressionUUID->"dc6b09e3-f795-43c3-b614-6f9d194e8d54"],
-Cell[121328, 2293, 536, 13, 35, "Text",ExpressionUUID->"33611a3f-d47b-4828-ac07-72c7e8cfc955"],
+Cell[119673, 2249, 158, 3, 67, "Section",ExpressionUUID->"dc6b09e3-f795-43c3-b614-6f9d194e8d54"],
+Cell[119834, 2254, 578, 11, 35, "Text",ExpressionUUID->"33611a3f-d47b-4828-ac07-72c7e8cfc955"],
 Cell[CellGroupData[{
-Cell[121889, 2310, 354, 7, 30, "Input",ExpressionUUID->"2ab7ee83-27cb-4671-8ea2-67ed6318c185"],
-Cell[122246, 2319, 50954, 1184, 672, "Output",ExpressionUUID->"ffdee086-18c1-47d7-80a3-723234333969"]
+Cell[120437, 2269, 376, 8, 52, "Input",ExpressionUUID->"17ddac5e-7726-4021-acc4-701f9af6d52b"],
+Cell[120816, 2279, 1670, 35, 204, "Output",ExpressionUUID->"bae3360d-0094-4b9e-af5f-abe9ee05485f"],
+Cell[122489, 2316, 6950, 185, 282, "Output",ExpressionUUID->"9a3dd806-15fc-4321-ab38-be74ebb713e0"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[173249, 3509, 181, 3, 67, "Section",ExpressionUUID->"ab8e95dc-7447-4199-8aa9-beae348aadb8"],
-Cell[173433, 3514, 601, 11, 58, "Text",ExpressionUUID->"2ea3dbbe-e102-4631-bf22-dacdaa15b0f0"]
+Cell[129488, 2507, 181, 3, 67, "Section",ExpressionUUID->"ab8e95dc-7447-4199-8aa9-beae348aadb8"],
+Cell[129672, 2512, 601, 11, 81, "Text",ExpressionUUID->"2ea3dbbe-e102-4631-bf22-dacdaa15b0f0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[174071, 3530, 210, 4, 67, "Section",ExpressionUUID->"ba2abd4f-eca7-486c-bf72-fc3f3207c880"],
-Cell[174284, 3536, 238, 4, 52, "Code",ExpressionUUID->"8fa9d9e4-37c2-4a00-b5fe-412f26c7f724"],
-Cell[174525, 3542, 7147, 144, 775, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
-Cell[181675, 3688, 14932, 253, 814, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
-Cell[196610, 3943, 4786, 111, 623, "Code",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
-Cell[201399, 4056, 13321, 292, 1535, "Code",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
-Cell[214723, 4350, 17663, 380, 2257, "Code",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
-Cell[232389, 4732, 9495, 189, 1212, "Code",ExpressionUUID->"484e2fc2-df07-475c-ad00-c3de1a209558"]
+Cell[130310, 2528, 210, 4, 67, "Section",ExpressionUUID->"ba2abd4f-eca7-486c-bf72-fc3f3207c880"],
+Cell[130523, 2534, 242, 5, 52, "Code",ExpressionUUID->"8fa9d9e4-37c2-4a00-b5fe-412f26c7f724"],
+Cell[130768, 2541, 7151, 145, 775, "Code",ExpressionUUID->"36b1d01f-c9a7-4696-94e9-f6f5acecf4ad"],
+Cell[137922, 2688, 14936, 254, 814, "Code",ExpressionUUID->"508d6289-ca04-4680-bf55-cec08b5171ff"],
+Cell[152861, 2944, 4790, 112, 623, "Code",ExpressionUUID->"c5a222cb-f44c-454d-9415-151e268d20cf"],
+Cell[157654, 3058, 13262, 292, 1535, "Code",ExpressionUUID->"890be9d1-9147-4884-807d-f192c3a5cc20"],
+Cell[170919, 3352, 17667, 381, 2257, "Code",ExpressionUUID->"6c23c3cf-a478-4e18-af89-3eb61ad0085b"],
+Cell[188589, 3735, 9495, 189, 1212, "Code",ExpressionUUID->"484e2fc2-df07-475c-ad00-c3de1a209558"]
 }, Closed]]
 }, Open  ]]
 }
