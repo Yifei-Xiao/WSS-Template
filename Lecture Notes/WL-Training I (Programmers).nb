@@ -1,0 +1,3366 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    142529,       3358]
+NotebookOptionsPosition[     92358,       2335]
+NotebookOutlinePosition[    125638,       3078]
+CellTagsIndexPosition[    125558,       3073]
+WindowTitle->Assignments, Definitions, and Scoping
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar", "FirstSlide",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"60bc568f-b20e-4b9a-b496-b94f48bda20e"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJzt3T9M3EyfwPFXd1dceVX6a9NScGWygPJnwwaWhH+bB4lX99zLNZxETjqh
+SGlokBAFSBSkiBDFFigpghRpCyIkkCKQHhqaNDQUNBQUaSgofre7BLBnxvZ4
+157xw/O19HmiJ9m1vTPjmZ/H45l///v/VP/rn/72t7+9/dfmf6rT//d4bm56
+fuTfmv/zevbtf/9j9vf/fDb7v7//4/e5//j7Pzf/crrppPn5f2n+KWxsbGxs
+bGxsbGxs+W1//AYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAIAC+7lXC7H7XvOzu3ffuTy0PN5hTS4Cx7pKcZ4X
+jVHZX3spG+/Lsjp/bX2hIo0Pr+R0x/a8g97c/YbdFL/Bdp+d+P6mq31eHpq+
+n96V1XmlTItWGmd1PtblNG35qoTK18ZiRb7VR+V8L8XvPwyfZ5oyfuPSOu19
+pbHPvM3jGku336yuM2dlMi79v0/Ij3pVthcHb4+xOv9C6ivDcvx1wnI/3del
+9mU+Kb2ybCN8HC+PdgmAb1dfKvLg4aOAJ3JicX2ff3gW+l7P2xGL49XkU+1R
+6HvbX5Pq1ZocrbyQqd5HynnqespPpP5x1Dq+OV7oD32/f/5V1+mp7jO13rL8
+7HafvSWZmn4mGysjcv69g99xOCoz2j6fy3kGaTGzMtZBuo7JnPY7++RoL5tr
+4HSzYlW+qtNl2f8ymfy73/eFvrdaT/5OyPdXUrUsl77S2Gfe5nGNebnOHJZJ
+k4svVVma7kv+naWBdr0aW+a7rUuVMv+g9MKYR2b5tRE+jpdHuwSgAJr13FSo
+jijJt53k732bLSl1clkuEo83LkuhOqpfjmLaqaudEZmzqNM0I2U5sWj/jt+H
+67VqFvH2+y5jgbLeznS3z8eytPI61W+4qJeN+0m+N7I4b8PvS/Jz64XhfPrk
+oOt4e1I+zZRSp+nU26HY36D+7k7i7eA1GVcufaWxz7zN4xrzcZ25LJPqMbZn
+LeJsRU9tUM4i+mK6rkvVdsiyLOXdRvg4Xh7tEoAimJT1UrhuSI4PxmVBq3P6
+ZH834Vh7I1ofRlSMfvl1SPq7aVMfDshBwvkUMt7u1e9but5n+7fZPH9oeSON
+mcfmNn0hXTxhPu/H0miki9u1e7tf5a27/u3o32mlXJYzy9/tPN52kMY+8zaP
+a8z9dea2TN46HJPVcjdp91R+GPIm83jbon/bRRvh43jE28D9dfA23OZNvU+I
+qxpD0mOoT5Y248f6XSp9Wf1RY1B2quG4PNAOry5X2+Pirlr9LK2x4I1R+bb4
+PKIefCLHMX0KTuLtkRdytPVKDjZtjDQ/O649e1T32TNdaabBuJx+Hbt11hiT
+k+ZxthfLMlMypcUjWbeJ+74bxpLctrXpxpRExS+p4nbT2JZfZaGbePti09SH
+3y8ba6/k/Nf44aub8rVcNpTHAflh2dfnPt7OP4195m0e15jz68xxmbw2ERlr
+z72tyNGX8dtx05d7k3JSH5KFETX+75P9Hf2eynm87aiN8HE84m3g/jpTxmI/
+qFVi3306W3tqrLMj4+dfThYHQp9f+DBu+FxNNgxtQqvti431vo/J+oihfpt+
+GTl2zkW8XU26d8lpn+dbL/X2weIZ7cXm88B3SrIwG86zTynGlNyet/ospPdZ
+cj+c8XyyircNZSyxb7Am+++f/Pp8a2xN9LtQXuJtx2nsM2/zuMZcX2euy2TL
+wbxhDEnpmRzvxl/TJ2t3+VT/bD6G23jbXRvh43jE28D9dfX1Zbi/OrbNDDzz
+1NrauP7P1veC/ejm8cA/6/p4zp5m/WQ398GksX6rf8mpjSj4PvW0TBrz3Myj
+6UB/VqnZ3jeGQ2UjTWwT93x+I6LdVs9nezrq+XoX8fb310q/6mNpWLyz0HL2
+sSKfEp7jFKF/O+809pm3ecUj7q4z92VSdgzPJG3Gn/xy0byvqH+Mfh/WZbzt
+so3wcTzibeAe057r9sWMMxuTd4HPTk0H64a4dy0nZDX0/HVAfmjP1WpSV+um
+Zux/mua3aO1Wqz9hyOr58X2Lt1vpua70y8TGfs20C7Z5188rJsPvuKYYUxI6
+71K/VHuD+64m70Md759ZvK3MhZC2jKXML2fxtsM09pm3RYu3U19nHsrkvjZO
+fsBuHEXuaWcu89Hxtts2wv3xiLeB+02vU9a3zPffV41gX3ifNOpDoXZi4WNE
+P4vanpQH9frU0AcTub8YJ8tPwnVbxP1DsWLjPPY5KavKM4i4OODiY/j5/urm
+9WcP3oafQ3+K6ZuJPu9+WZgJ7id53snQuKXeAVmd7Q/laTfxdnhOnv5cYw93
+/dvu0thn3hYv3k53nTkvk3vqvh/JXEdzN+aYJ7bxtuM2wvnxcizfAIpBnTN4
+ZtE83+rpSrCdfCbnh+OyEPhe/6y5b+vy82BiHXKq1Ul2c4FrDH1nprHixYqN
+89hnLcXcM+rz/bu5GtU522yPHz7vAdmvV0Jt1008H3XuGyPBcjUsR6Hx/1nG
+2834I6K8Z5Ff7uJtd2nsM2+LF2+nuc7cl0l1rYSs+7YzyRPLeNt1G+H6eHmW
+bwDFoL4b3zNjet6ljO+dftn+++1a4O96nxvHBJ6uhOutJa2PQJ8Lq/O5tfR9
+md7lLFZsnMc+J2QpFAfEzKGttne1yl3+q+ONLN+JU/tAj/eUMUVx7w3tDIfe
+71/fmlD62bt7X1J9/t+ObxaqHa+RGJdfLvu3XaWxz7wtXryd4jrzUCb3lfmn
+ovpE/KSducyb423XbYT7NinP8g2gIJQ20DxONzx2+6YP/Eeob8o8hjs8ftA0
+T68+D3jUmBYb2hwqhrm+ixUbZ79PfR6Z6DjmXBlL8m4t2PeitxVx7/uYz7t5
+7MPf5GQhHKdFnc/JcrBMPZFTbY6ALucDNK7p86g9tuHTx9GuYhx/8ba7NPaZ
+t87mJ8nhOnNfJvU4fr2e/brmep6k7Js/fG0Rb7tuI9y3Sd2UQwB/FmPKGjZ6
+m9GaxyRYD9zMQ6COFdGfk6n1luGZnOF5ajd1mzrXt2m8eJFi46z3ebY5qM9H
+EDnP4xvZrgU/W9LWLlLjcZtz0GKy1jNsZTxkOK6/Ky/BvtLr/rhs4+3ktUX6
+ZGmxKmcdPHf3Gm87SmOfeavNjdL7ROorFakvJliuploXNPvrzEOZNMynn7o8
+dlDmW/cI64uDsrFgaV6PRbW8ct1GeGiTOi2HAP5M9Pm5NpS6JTwmJDAGUJnX
+omdmOLxv5d8fjBjaI61u6y6e+qn1FenzobhaX7K/3CfVWCXpKT0zzNdi3mcr
+Rrlq5tfl99ovb9rrYPzcHZfjjy/lnbZGxbXI9xz3LN5lVT/zMHlMiRaTtfNT
+ia0MZcF8X6f203Ubb1+fS8NiXeuZ2UE5bti3s17jbUdp7DNvO18HspRqnfjM
+rzMfZVK7bjuYq7CDMt81q3g75zbCQ5tkSkvibeD++aGsRzO3HHwmqMTjobZU
+md9EGd97+aUSrj9Mz38zrtu08TGGdqZY67lHt4NZtGXvlqOf76rvU5nfldXn
+sEmaZ9kck6nPVfXxR6Hv3ZalrPu375zVX8pcxFqBofIx04xxdtKOo/ERb+ef
+xj7zNo9rzMV15qVMZl2v5ph2IQ7i7cQ2wkObZEpL4m3g/rncCo8Lac0bcPvv
+h6MyF/i3qYVwu/IjNHYzPD5bXb/SGH9kXLddfg7H+MWPt6P73rpryx7Lesw6
+Fa1Y51Mt/PltbWz9tdDcNA+T1xONisnUd/XD8f14aFzT3frg+cXb197IaT26
+zzJoISGmKkK8nXca+8zbzq+H+Hk58r3OPJVJ4u1IiW2EhzbJlJbE28A9pM5Z
+FHifQ12DUu3bjBvDfRRaR1gfG3x9bPW5Z/Nzluurmahz2JnmTXETb/fL0nxZ
+lt4+j7UwX5GziHmmOmvL+mR1cVjOk8Z6GvI8coyrNqfV09h1HyJjMvVZSal8
+V85Cz0KC9215x9t3Lr6+ko3Z+DSfi4m5CxFv55zGPvNWG/eRcN93c17pr90M
+rzNfZdJQr0avSda5zvIkeJ4W9ZDrNsJDm2RKS+Jt4D5S14C8W3PhbO2Z8e9v
+qWsT3s45pbSlUWtzKf3nHcUpAVrdZqi/nbzbmPY9fYt9Phh5IcefR+V463Xb
+j62qvFPW22itX2azb/XZQ8vU9IDM1AwM/WxxY0qiYzJ1/sm7PvWj4Dzw5WCe
+uYu3b1ztjcn2vDr/bjBetMuv1PNBNIZCz507i7fzTWOfeetqPsAsrzNvZTLj
+ejW3PLGZD9B1G+GhTcqzfAMolm/KvH0388iG5vMzvletjO+96ddS66xa1Ly8
+apubtGZGPHUsuundraLMJZJ6n4bx7/q7ODZxnmGt4pTi+rHiYjLz+KSJ0HiD
+8Bp47uPtW3ujsl4zPNOPmGNaza+plPPVqXnZabydZxr7zFtn829ndp35LJN6
+vbrURb2aW55Yzb/tuo1w3yblWb4BFIs6Rve6bg7P4RUVP/xYCK8R1x6btlsN
+9dWp476DDuaV9/KDa66kEl6/Lqrt/NPG28Z9GmLniOeVtwxrnqUXPaYkNiZr
+5XdwHY5m+3oaGrOkjm30GG9HlKmo+XOPlLVa05aBNOt5+kpjn3nrd72bDq4z
+z2UyvJbQoy7mK8wxTyzXl3TdRrg+Xp7lG0CxXGlziYy21yIIxmVRc5CqY7jX
+t97I1ecXyt9F9wWpczx3PHdV46U2J66pD+p+xdvm3z0TM85YXX+hp/zUYq7c
+skwpz9Sj8jQpJrtUxvP2lwL9ddpzEN/xtv4OQ9SaLtp7pSnXpNPmOn/febyd
+Vxr7zFvv60umvM58l0l9PfeId2hcpF0Uy3jbdRvh+nh5lm8ABaPOlT39Us5D
+bWf0unGt7wbXVmjNTXASmrM7oa5Sj/0wvj88yoGyfrFxfZ0/7mG8bfztUfml
+99PZruVwrPTfRq0PnRSTtdfBVsfD/qI/8/Yfb+vl01ye1fvOqPJnps4XE/8M
+21ca+8xb7/F2quusAGVyT1+3Jas1OTPLE8t423Ub4fx4OZZvAEWjrD1RLktj
+MRAzR6yJdfPdYAzXMz0o2/PB+XZNa8SHhdd9v24/0vTF6P090fWV79g4l30a
+1kTrmR3WP6eM82mvvWAZE9rGk8kxmTqP5N3+9HPJNt4+/VCRRsL84Ylp1vtU
+Ti3baOsxs7vqHL3x80n4SmOfeVuEeNv6OitImdTr1fTzlFzuTESOQ3EWbxt/
+S35thI/jEW8Dfx3h+fvCz4Ljnm23hMZw95akP9DH1TMzlDz2rTGkr49ceh47
+79ytZpyjvk8e9+zUe2yc0z5PlvX5C9Q179QxD628sT+nMXmn7D95vE5EDLWj
+57e5vzy7ePuifjPG6bGsb5rWHLe5LuJiAn2tVnUNKDPDet5l8xhx32nsM28L
+EW9bXmeFKZOmevXh08g1bfXzu77H7n9r8ywr33jbZRvh43jE28Bfhz5m7c5q
+wrv4et/no9u6ynaM47727K1Vvz2T493oOXQvG9XQWBab+wMXc/f5ieHD64rc
+xG2h+deUsSRLmxOpzknt8zH17VnFZIY5AMxzDGYTb19+MfQ1zVbkdC9+fuaT
+Nf2auFuvxXCcLf06eFAbjJxjvfX79uf1/uDgPPbJZcNdGvvM2zyu23yus2KV
+Se3dv7YB2f8aV6fX5GgxfG8+s5jDu+dp4u0/3LURPo6XV/kGUEDGvhDLGEcZ
+w53c1pqMy1LEWsYzs4NysDUm5zsTbSf1YVmfiVgHYmQwRd9gU+8TqS9XpL6Y
+rPXuYGNLj1GLEW+b5y27jd20sST9cpRyvY4Lbf/6mBK7mEx9b/NZxJijbOLt
+sw/R95JT02VpfHwtp40J+blXk4vdcTn+WJF3ZdPn49f6McWaN+e9ujwsP76O
+N/c/KeeNUTlYq5jX7raY98JXGvvM226u2+trtyLHO3qclPl1VrgyOSGrxu81
+f+v0c2lsvpazncnmcZrl8uuofFt+ob0b3WYYU+g63nbVRvg4Xh7tEoCCMszz
+f1MHJtdNUXM6p4yPmuewEFG/WSm/SBmrpNdjmHu6KPG2OR+uY+LTFeU5eCdz
+XBnGKKtrQdjGZHJYk7PGeNv5btQ9WXbjSc7rgxH3k/bqNveOzfuazudbbM19
+n3wMX2nsM2+zWDvcNJ4+6+uskGWyGTdGxdxWSs/lxHBv7j7e/s1JG+HjeHm0
+SwCKqtmG1PTr2LYO1eb1b9efZct+hKAJ+TRjegYab+rtkNUzXXWejbRM6aHu
+M5t4u7N9Gt/TeV8Nvw/b9G4tXX/cNX2Msjo+P3zeHc6jFSiT60pM1tX+dl/L
+qmm9kET90kgzRndnROYi5umI1md9DF9p7DNvu71uW0zrBGZ7nXVw3bsqk830
+bhjGLiXWdzOVyDq863rv+yttPXe79iLfNsLH8fJolwAU17FhbgHbtWwvP1e0
+70a9Z2Pj/HNVVqeT66CpmRdyYNEneMP0vlOqOtQwVlLdZ9x4yk7PM80+tbUu
+Hg7IROj/m7FNh3PxauP8m/dU55Hn3e18aeo94IAcpxwDY/wNX0ZkfXYguW+x
+t0+WFqsd3DO2TMr+4nOpJsbdJXk3/1LOUvwuX2nsM2+7vW5bNgxzX2Z7nZnm
+YSlSmfxNfn59JRsWx+mvPZdvn+PHKHRd76nPy0bi5sEypFlObYSP4+XRLgFA
+Kt8n5fTzK9lfG5LGh6rsf7j+8/jLuPzssG0D2g5r7TGrBx+HZXtlSPY3q9Jo
+//laTneyWv/6jfzcGZPj231f//lt85WcNCY7XLcO95aTMnl9nLMvreMMyfba
+8O2fR1ujcp7wzmbhuG4jaJMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAMBfARsbGxsbGxsbGxsbGxsbGxsbGxsbG9ufcPt/3USN
+BA==
+    "], {{0, 97}, {732, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1: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
+tS6evSR+6VgLa8u+Vqg1uXW2LaRt7LLX5UftNu3dHbodLVcUrpzuFO4sv8p+
+9eA1+mvZ11avp1yfvxF9Y6YruGui27f7+U3Pm497nHr6b9ne6r1tcfvmHeM7
+13v1ezvv6txtv6d1r+2+xv3WPvW+lgfqD1r6NfpbH2o+vDygPdDxSO/RtUHD
+wa4hs6Hbj60f33/i8OTRsNvwyNNtT8dGAkemR8NHvzxLeLb0POMF5sW+l8wv
+i17xvap6Lf26eUxj7Oobszd94y7jzycCJj6+jX37azL7HfFd0ZTgVP20ynTn
+e4v3Ax+2fpj8GP1xaSbnE8unY5+lPl/6y+ivvlnP2ckvtC+rc/u/cn89/U3t
+W/e84/yr7xHflxb2/eD+UbeotXjnp8fPqaXEX7hfJcvSyx0rtisvViNWV6PJ
+NPL6UQCFXHBQEABzpwEgegHAOgAAPeNG7rVZUNBayrGmS0TOMHrISasQ9EMk
+yBOqg2E4Ap5AUVBz6DyMEmYMW4ELxZvRSdAzEmAGFJGFUZbJmpnGcpL0kk2A
+3Z/jAhea24/nBp8gf67AFyEf4fuiOmKnJNgkM6SmZBxkm+UZFQIULyotqeiq
+xqodV+/ReKO5qM2gw6Mro6elb2bgYOhtFGKcYJJjWmRWZ95hcc/ymdW09YIt
+2o7Zns9Bcouyo46TibO1i4Ors5ubu4eHp6eXl7e391bvbd4+3ts9fd39nMn2
+/hYBBoHqFJkgwWDWEFzIEvVz6Juwx+F3kFV5Jqoi+kBMMo0caxzHHfc5viuh
+ODEqySZZNHk55emO5p17U/3SNNMZkbV1JbMgK2SXfjZr9vTuazmFe0L26uVy
+5C7nofcbHGg6qHXowuHlQsEjskcVipSKlUtUS9XK1MvVj2lU6FRaHKecKDk5
+Us1eY3zKpzbydEpdTv3hhvIzpxqbm9rP3mwePPfpgvDF6EsDrdJt4ZdL2ls7
+Hl6Z6ly5xnFd+YZ7V0H3dI/VrfLbD+686Z29h70v3mf5ILA/9mH4gNsjzUGB
+IfqhxccTTx4MX3/aMdI5ev1Z1/NrL5pfHn4V/tpkjHts7s3AePtE3dvyyUPv
+dk8lT0e89/tg/1F1hjTz8dPtzzV/5cyGfnGYU/sq8k163uf7tR9Ki0d+vv7F
+vey5UrO6uuYngAB4kVOiM5LnNIJ3kCQUBd2AeeEseA4VjfqB3osRxtzCxuEU
+cF/x3XQV9KmEQAZPogujJ5M/czxLHqmOdYDtB4ckpw9XIfdDXiKfHf9+gX4h
+orCTyGHRAXGChLlkglSt9COZb3LM8lIKaoraStrKqirSqgJqzOqQ+jeNSWS3
+6tVu16nXLdPL099hEGq41cjB2MRE01TBTMycx4LZEmu5ZDVrPWkzYttnd83+
+nEPVlkLHbKdYZ7KLo6uBm6w7lwfG44vnC69e74tbj2/L9Ynd7uNr7idHZiX/
+8H8Z0BVYQ9kbFBZsH6JIZaF+DX0S1hpeEpEc6RmlEU2Kfh9znVYYGxinHo+J
+H044lRifZJ7MljyRcmFHxk6HVL7UD2kd6QcyQjOds8wQz9DZrZGjtEd2r3iu
+4D7uPNJ+wgH0geX87we/HJo7vFiIO8J1VKpIs9isxLF0a1lwOe1YasWeyoLj
+x06cPnm5arB68ZR07bbTeXUt9c8aVhqFm8zPhjQfONd2/vNF9Uu7Wx61ES/r
+t1M7Sq/c71y9pn49/EZN14ubLD1Gt6i38+409PbefX+f2Kf6wLs/62HjwNNB
+7JDaY98n2cM1T3tG3j2jf674wvVl8qvK13fGFsaVJ2hvL07OTclNB7+v/vB6
+hveT5+djf81+SfgqP09aoF+Ef378dWWFujn/9IATyAErJNspBvcgLGQJHYYm
+YH34JIqI2o3GoQswEpgb2EAcCXcXv5fOgV6QfpHwmOEy8RRjKVMB80GWAlIZ
+6ym2VvZejleci9wkHnleCz4y/06BYsGzQt3Cj0UmRT+JzYnPIqemEalu6VMy
+u2S95RTlIflBhRrFRCUbZSHlBZV+1Vq1NHU3DTlNWHNEq0k7S8ddV0Z3WW9A
+v9og0dDGSNBo3rjP5JRpmpm7uYIFxuKF5SWrfdZ+Nhq2BNsxuxb7XAcfJFJg
+HEedGp0zXFxcxV2/u/W6l3mEeep6Ebyee5/ZmrLNyofD5+32877pfrZkTvKE
+/9mAlEALCgvleVBtcEyILhVN7Q8tDvMLlw7/EnE5MiPKIpouui9mP80mFh97
+Ky4r3iB+KaEtMTZJIel9ck2K7w6eHY935qdapcFp19LTMqwy+TOXssZ29Waf
+312ek70nYq97rsE+iTxi3vz+Fwdu5jccPHIo83BiAa0w+ghyLCiKKY4piS6N
+LKOW+x1zqbCptDvucyL5ZEXVrerPp9hrNU/b1TnXOzVsPbOj8VLTUrPlucLz
+ry/KXkpo6WojXHZpL+l43il8Nfza1RusXaHdN3t4b8Xd7u+VuJt673GfzIOs
+/okB90fDQwGP54f3jvCMNj03ejH8KmPMftzl7aF3C++PzNz64rowujb/G7/B
+rRWsBgCnLABwPwKAizaC8wEQr0P2Dz0AHIkAuGoDmLsUQFejAbRN6s/+IQCM
+kb1jF6gBt5DogUXihzUUBh2AmpFc7xvMCevCvvAuuA7uh7+ieFDGqBDUIST7
+HkcT0BpoMvoAuh09hWHHmGPikaxrBMuANcYmYs9ip3EiOF9cJe4VXgQfgj+H
+X6azoztB953ekb6JQCREEgYZtBhOEgnEBOIEoxNjF5MKUw0zN/MhFjqW3SSY
+lMWKYc1lY2YrZRdnv8hhxjHCGcWF56rhNuV+y7OHV573CV86vxz/C4F8QTPB
+ZaEO4RQRA1GM6EOxY+JhEvqSJMkPUj3SVTJZshQ5O3ltBQVFRSUDZTeVcNVd
+SMhv0RjS/K7Nr2Opm6BXr//akNvIw7jU5LWZlHm8xW0rHutgm6O2xXYJ9kb2
+qw5dW/Y7hjpRnbNdzrm+defxcPHM9+rbStzm5FO0fcSPiazqbxngFhhISQ86
+EzxNVQ7NDBuKkEI871mMJq0o9ke8R0Jj4qdkzhSlHSY7vVLT09oz6DJDsh5k
+a+yu2sO0Ny13Ks94f/aBlvyxQ4yHHQrOHVE7eqvYoeRBmVX57Qqnyh8nequu
+1VyoLa5LaaA2bj1rfI79/JuLTS3pbdvbva/svNp2fbFbuyfi9r7e0ns1fc39
+1wYeDU49wT/VHz3w/Nsr77GWCcIkearjA35G8jP4q+KLwFzJN7751oWIRfWf
+v361rviuxw8xYAtiQBHoBOMQHlKAXKEUqArJ9L/A3LAJHAYfhW/AH5Gc3RTZ
+TSpQfagltCx6Gzof3YWex8hgyJgSzCMsAWuJ3Y3twWFxNriDuBG8GD4Wf4uO
+jy6Rbphem/4EgZ6QSJhi8GR4QDQldjJqMbYyaTC1Mxsy30Zy1FEShTTHmsXG
+xlbHbsg+yhHPycbZyuXNDXM38njx0vF28sUicz0tcFqQKqQg9F24S+SgqK+Y
+qji9+FuJbskaqVzpWBk/WSc5c3k9BU1FdSUNZR0VE1V7ta3qkRo5mrVaD7VX
+dNX0ovTPGswZaRtnmwyZSZqnWzy30rWusFm2c7QvdLi35ZeTgnOgS6XrM2SO
+t3me9PqwVX3bLp8hX3G/WHKn/0qgPiU1qCuEjuoeeipsIcIusjrqV4wX7XIc
+d/zOhGdJSsk7Uq7u+Jmqk5aZ3p8pkpW8a2i3Uk7+ns+5Dvsa8pYOGOXvPNhy
+aL7ArLDqKF0RrXik1KCs+hi+Iqpy+IT+ydpqtprcWuzp/HqBhkuN9k0TzUnn
+CReOX1Jrudfmd3m+Y28n39WW6x5dcHdLD/U2353+uxn31fo+9FcPbB1kGbr+
+JOApGCl/pv385cs9r1XGXo/vf6s7OTNV+d7hw/zM3k+Lf1nP7v5yfq7/6/S3
+1e9cC6o/XBd3/mxY+rCstXJ0ff6lgStIB/VgCKxA0sjsZ0CN0AiMhdVgf/gw
+3IWcIkRR7qhc1FXUV7Q02g9dih7CMGHsMHmY+1gi1hlbih3HyeNScQ/xEvhM
+/Bs6S7oL9GL05QQOwlEGDoYyoiCxllGJsZPJjuk1ct5gYmkk2ZO+sJaymbHN
+sVdzuHMSOLu4Urg1uL/ztPOm81nzcyJzfVXwqBANOYGoifKIoZG9Z0JiVHJQ
+6iGSmT+RfSX3Uf6XIklJTtkGWdGFatfUP2kKaXloF+gM6rHr+xg0GC4ZO5o0
+mNGZR1g8tbKxvm1rZzfiQHUETuUueq7j7vmehl7zW8/70Hw1/Ob8ywNlKU3B
+MiG1oRJh9RGKke3RljEjsRHx2ISqJOPk1zuSUrFp+RlsmaW7RLKbcnT3PMgN
+yIP2n8nfdgh7uLxQ4MjRIlxxYslUmXf5UIVn5bcT9VWUGtypfbXf6zzrW86w
+NcY1DTdrn6u8gLkYeWm01bKtvV2po6FT7Gr5dcYbqV0fbnr09NxWuXPyLule
+9v2FB+H9bwd8Ho0OeTx+Ouz69O6oyrOC5x9fGrzKf/3yjfx42sTApOi7pKkH
+70U/JHy8MbPyWfkvm1mvL15zDl/1vonO4+bHv3csZPzQ/zG7mPmT9PPEEt1S
+zNLoL5Nfpb+mlzWXdy8/XhFdoa40rcyuqq0mrV5Zm//YIFWV9e0DYjABAPNq
+dfWrBAC4AgCWD6+uLlWtri5XI0nGCwBuhG/8r7O+1zADcOzmGrqdMpHx7/9X
+/guSk9IK
+      "], "RGB", "XYZ"], Interleaving -> True],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSize->{669.59765625, Automatic},
+  ImageSizeRaw->{732, 97},
+  PlotRange->{{0, 732}, {0, 97}}]], "WSSBanner",
+ CellMargins:>
+  Dynamic[{{0, 0.01 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {
+    0.01059602649006623 FrontEnd`AbsoluteCurrentValue[{WindowSize, 2}], 
+     0.11986754966887417` FrontEnd`AbsoluteCurrentValue[{WindowSize, 2}]}}],
+ CellChangeTimes->{
+  3.730589179683115*^9},ExpressionUUID->"3bb2d191-b234-4a2e-a519-\
+8cc81e1dbc97"],
+
+Cell[CellGroupData[{
+
+Cell["Learning the Wolfram Language - exercises", "Title",ExpressionUUID->"a2952f0e-0dad-4d25-91aa-a3ff0c5ccc18"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Assignments", ",", " ", "Definitions", ",", " ", 
+   RowBox[{"and", " ", "Scoping"}]}], "Subtitle"]], "Input",ExpressionUUID->\
+"c6c7462f-4ea1-40a2-b920-9f177cf4c6d5"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1: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
+/w/qQILY
+    "], {{0, 100}, {450, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSize->{250.08984375, Automatic},
+  ImageSizeRaw->{450, 100},
+  PlotRange->{{0, 450}, {0, 100}}]], "WolframULogo",ExpressionUUID->"6449e467-\
+a376-40cc-9cce-4930ea4aeb69"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"59a5919a-5257-4f71-beb3-6384747a4598"],
+
+Cell[BoxData["Quit"], "Input",
+ CellLabel->"In[6]:=",ExpressionUUID->"792af5db-51bf-420c-b9e3-c51f37dd010d"],
+
+Cell[CellGroupData[{
+
+Cell["Symbols", "Section",ExpressionUUID->"c300173b-bfe8-461b-92a5-d968980bffb0"],
+
+Cell[CellGroupData[{
+
+Cell["A matrix is a list  of lists with identical length", "Item",ExpressionUUID->"409e1046-e3c4-42b4-8a26-139ffd35c8ff"],
+
+Cell["write a matrix of 3 by 2 real numbers", "Subitem",ExpressionUUID->"1c381536-6b57-42ff-b7e3-8faae6901dba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Transpose", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3.", ",", "4.", ",", "5."}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3.", ",", "1.", ",", "2."}], "}"}]}], "}"}], "]"}], "//", 
+  "MatrixForm"}]], "Input",
+ CellLabel->
+  "In[224]:=",ExpressionUUID->"1ffa3d9d-3446-430a-9fb2-8b357b1101ff"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"3.`", "3.`"},
+     {"4.`", "1.`"},
+     {"5.`", "2.`"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellLabel->
+  "Out[224]//MatrixForm=",ExpressionUUID->"e8087867-11ba-4a8e-8bb4-\
+3ea23ca1722d"]
+}, Open  ]],
+
+Cell["Write a polynomial expression of degree 3 in x and y", "Item",ExpressionUUID->"73ee490f-aa4a-4aad-b008-8055d809cb28"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"x", "^", "3"}]], "Input",
+ CellLabel->
+  "In[225]:=",ExpressionUUID->"da6e10cc-1d6f-4c3c-845a-46e18a0cec25"],
+
+Cell[BoxData[
+ SuperscriptBox["x", "3"]], "Output",
+ CellLabel->
+  "Out[225]=",ExpressionUUID->"05892c83-101b-4de0-9f12-e1e9fc82994d"]
+}, Open  ]],
+
+Cell["\<\
+write an expression with head \[OpenCurlyDoubleQuote]square\
+\[CloseCurlyDoubleQuote] representing the geometrical square in the 2D plan \
+that pass by (0, 0), (\[Sqrt]2,\[Sqrt]2 ) and (0, 2)\
+\>", "Item",ExpressionUUID->"75359c9c-58ab-4ff7-8d79-40651ff742b4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"myrectangle", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}], ",", 
+   RowBox[{"Pi", "/", "4"}], ",", " ", 
+   RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+   RowBox[{"Sqrt", "[", "2", "]"}]}], "]"}]], "Input",
+ CellLabel->
+  "In[226]:=",ExpressionUUID->"2347284a-32e3-4afa-9ce3-1d629246364b"],
+
+Cell[BoxData[
+ RowBox[{"myrectangle", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}], ",", 
+   FractionBox["\[Pi]", "4"], ",", 
+   SqrtBox["2"], ",", 
+   SqrtBox["2"]}], "]"}]], "Output",
+ CellLabel->
+  "Out[226]=",ExpressionUUID->"92f751c4-7a55-4d26-b51d-60c6f2e8006d"]
+}, Open  ]],
+
+Cell["Get the name of a symbol as a string", "Item",ExpressionUUID->"3d8656aa-0d76-4876-bff4-4736b6431162"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SymbolName", "[", "x", "]"}]], "Input",
+ CellLabel->
+  "In[228]:=",ExpressionUUID->"f8709431-b635-4e97-9d14-860035436ceb"],
+
+Cell[BoxData["\<\"x\"\>"], "Output",
+ CellLabel->
+  "Out[228]=",ExpressionUUID->"321622a7-0172-455c-8632-00a97e216953"]
+}, Open  ]],
+
+Cell["Get a reference to a symbol from its name as a string", "Item",ExpressionUUID->"ebc7b00a-0421-4ed6-8134-71e9cfaa51f7"],
+
+Cell[BoxData[
+ RowBox[{"Symbol", "[", "\"\<x\>\"", "]"}]], "Input",ExpressionUUID->"538279ab-cc0a-45dc-a2f0-5154c62cb01f"],
+
+Cell["Get the list of all the symbols existing in this session", "Item",ExpressionUUID->"d8967899-da7f-4e0f-b8f4-8cc66e40f552"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Names", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellLabel->
+  "In[356]:=",ExpressionUUID->"f8e748f9-dcd2-4da3-9ccc-e23d2bbcc354"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"a\"\>", ",", "\<\"AlphaDateObject\"\>", ",", "\<\"arg\"\>", 
+   ",", "\<\"arg$\"\>", ",", "\<\"b\"\>", ",", "\<\"B\"\>", ",", "\<\"c\"\>", 
+   ",", "\<\"coladata\"\>", ",", "\<\"colaData\"\>", 
+   ",", "\<\"colaRawData\"\>", ",", "\<\"continue\"\>", ",", "\<\"count\"\>", 
+   ",", "\<\"d\"\>", ",", "\<\"data\"\>", ",", "\<\"dataset\"\>", 
+   ",", "\<\"f\"\>", ",", "\<\"first\"\>", ",", "\<\"first$\"\>", 
+   ",", "\<\"fun\"\>", ",", "\<\"g\"\>", ",", "\<\"i\"\>", ",", "\<\"kv\"\>", 
+   ",", "\<\"LineForm\"\>", ",", "\<\"m\"\>", ",", "\<\"m11\"\>", 
+   ",", "\<\"m12\"\>", ",", "\<\"m13\"\>", ",", "\<\"m21\"\>", 
+   ",", "\<\"m22\"\>", ",", "\<\"m23\"\>", ",", "\<\"myrectangle\"\>", 
+   ",", "\<\"name\"\>", ",", "\<\"pepsidata\"\>", ",", "\<\"pepsiData\"\>", 
+   ",", "\<\"pepsiRawData\"\>", ",", "\<\"PointForm\"\>", 
+   ",", "\<\"rawData1\"\>", ",", "\<\"RealBlockForm\"\>", ",", "\<\"s\"\>", 
+   ",", "\<\"second\"\>", ",", "\<\"second$\"\>", ",", "\<\"str\"\>", 
+   ",", "\<\"t\"\>", ",", "\<\"TemplateBoxOptionsDisplayFunction\"\>", 
+   ",", "\<\"TemplateBoxOptionsEditable\"\>", 
+   ",", "\<\"TemplateBoxOptionsInterpretationFunction\"\>", 
+   ",", "\<\"toadd\"\>", ",", "\<\"WholeCellGroupOpener\"\>", 
+   ",", "\<\"x\"\>", ",", "\<\"x$\"\>", ",", "\<\"y\"\>", ",", "\<\"y$\"\>", 
+   ",", "\<\"z\"\>"}], "}"}]], "Output",
+ CellLabel->
+  "Out[356]=",ExpressionUUID->"57f2f0db-d345-4752-a704-2ebe2ed11da2"]
+}, Open  ]],
+
+Cell["\<\
+remove all traces of an existing symbol you generated previously, try on a \
+system symbol\
+\>", "Item",ExpressionUUID->"94f378a4-6f19-4731-ad5b-067e15ac82ea"],
+
+Cell[BoxData[
+ RowBox[{"Remove", "[", "x", "]"}]], "Input",
+ CellLabel->
+  "In[232]:=",ExpressionUUID->"a7d7cc7e-c8f2-4a1c-972c-b489648f47dc"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"f9d7357b-95f4-4138-b932-40cb8fbc4ad0"],
+
+Cell[CellGroupData[{
+
+Cell["Pure functions", "Section",ExpressionUUID->"8aa3a725-b84f-4f7a-85e0-0c063c41355f"],
+
+Cell[CellGroupData[{
+
+Cell["Express operation on the input", "Item",ExpressionUUID->"1b8dd284-7f9d-4cbe-b62e-b7a691f441bf"],
+
+Cell[CellGroupData[{
+
+Cell["write a pure function", "Subitem",ExpressionUUID->"37835139-3ace-4acc-9641-d3f866121e9d"],
+
+Cell["that adds 3 to its argument", "Subsubitem",ExpressionUUID->"d0cfc0c6-520e-4b98-8fdb-57f6e54286a0"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"#", "+", "3"}], "&"}], "\[IndentingNewLine]", 
+ RowBox[{"Function", "[", 
+  RowBox[{"arg", ",", 
+   RowBox[{"arg", "+", "3"}]}], "]"}]}], "Input",ExpressionUUID->"719aa187-\
+4217-4ed2-a2d9-d69539c44376"],
+
+Cell["\<\
+ that uses its argument to create a pure function adding it to its own\
+\>", "Subsubitem",ExpressionUUID->"0ed89854-1212-484a-9b87-eacecdaad16c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Function", "[", 
+   RowBox[{"toadd", ",", 
+    RowBox[{"Function", "[", 
+     RowBox[{"arg", ",", 
+      RowBox[{"arg", "+", "toadd"}]}], "]"}]}], "]"}], "[", "3", 
+  "]"}]], "Input",
+ CellLabel->
+  "In[245]:=",ExpressionUUID->"adf5b2c2-e2bf-4552-926f-ec626abff4b4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Function", "[", 
+   RowBox[{"arg$", ",", 
+    RowBox[{"arg$", "+", "3"}]}], "]"}], "[", "4", "]"}]], "Input",
+ CellLabel->
+  "In[246]:=",ExpressionUUID->"b071ea9b-a59c-4130-a4ce-fff69eac670c"],
+
+Cell[BoxData["7"], "Output",
+ CellLabel->
+  "Out[246]=",ExpressionUUID->"63866443-72b2-4154-8266-09e433494ec1"]
+}, Open  ]],
+
+Cell["that return a list of its arguments in reverse order", "Subsubitem",ExpressionUUID->"98fa069a-181e-4d59-9f34-fe5afb0963a3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"##", " ", "=", " ", "#1"}], ",", " ", "#2", ",", " ", "#3"}], 
+   " ", "*)"}], " "}]], "Input",ExpressionUUID->"bc972920-77f2-4466-b566-\
+396c6e5c7ada"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Function", "[", 
+   RowBox[{"Reverse", "[", 
+    RowBox[{"{", "##", "}"}], "]"}], "]"}], "[", 
+  RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "]"}]], "Input",
+ CellLabel->
+  "In[247]:=",ExpressionUUID->"b8e52bee-8121-4db0-9997-ea4a6067c662"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"4", ",", "3", ",", "2", ",", "1"}], "}"}]], "Output",
+ CellLabel->
+  "Out[247]=",ExpressionUUID->"0a380004-51d4-4e4c-9ec7-6638b43db26c"]
+}, Open  ]],
+
+Cell["Create a list of square roots of first 10 odd integers", "Subitem",ExpressionUUID->"01f5f1a1-dfba-40a5-84b6-4bdc6cf5be46"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Map", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sqrt", "[", 
+     RowBox[{
+      RowBox[{"2", "*", "#"}], "+", "1"}], "]"}], "&"}], ",", 
+   RowBox[{"Range", "[", 
+    RowBox[{"0", ",", "10"}], "]"}]}], "]"}]], "Input",
+ CellLabel->
+  "In[248]:=",ExpressionUUID->"dfd71e8a-0b4e-4ca7-a044-c65c42781673"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", 
+   SqrtBox["3"], ",", 
+   SqrtBox["5"], ",", 
+   SqrtBox["7"], ",", "3", ",", 
+   SqrtBox["11"], ",", 
+   SqrtBox["13"], ",", 
+   SqrtBox["15"], ",", 
+   SqrtBox["17"], ",", 
+   SqrtBox["19"], ",", 
+   SqrtBox["21"]}], "}"}]], "Output",
+ CellLabel->
+  "Out[248]=",ExpressionUUID->"4e31ad45-5d89-4955-837c-6b7d7fb4a96e"]
+}, Open  ]],
+
+Cell["\<\
+select members of WordList[] that contains the letter \
+\[OpenCurlyDoubleQuote]a\[CloseCurlyDoubleQuote] and are longer than 4 \
+characters\
+\>", "Subitem",ExpressionUUID->"7572bb41-7743-408f-aab5-d935ef5ee48b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Select", "[", 
+  RowBox[{
+   RowBox[{"WordList", "[", "]"}], ",", 
+   RowBox[{"Function", "[", 
+    RowBox[{
+     RowBox[{"StringContainsQ", "[", 
+      RowBox[{"#", ",", "\"\<a\>\""}], "]"}], "&&", 
+     RowBox[{
+      RowBox[{"StringLength", "[", "#", "]"}], ">", "4"}]}], "]"}]}], 
+  "]"}]], "Input",
+ CellLabel->
+  "In[250]:=",ExpressionUUID->"12f1354c-0634-42cd-9d4c-6a4e21f0ae9b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          
+          RowBox[{"\<\"aardvark\"\>", ",", "\<\"aback\"\>", 
+           ",", "\<\"abacus\"\>", ",", "\<\"abaft\"\>", 
+           ",", "\<\"abalone\"\>", ",", "\<\"abandon\"\>", 
+           ",", "\<\"abandoned\"\>", ",", "\<\"abandonment\"\>", 
+           ",", "\<\"abase\"\>", ",", "\<\"abasement\"\>", 
+           ",", "\<\"abash\"\>", ",", "\<\"abashed\"\>", 
+           ",", "\<\"abashment\"\>", ",", "\<\"abate\"\>", 
+           ",", "\<\"abatement\"\>", ",", "\<\"abattoir\"\>", ",", 
+           TemplateBox[{"19781"},
+            "OutputSizeLimit`Skeleton"], ",", "\<\"yucca\"\>", 
+           ",", "\<\"zapper\"\>", ",", "\<\"zealot\"\>", 
+           ",", "\<\"zealotry\"\>", ",", "\<\"zealous\"\>", 
+           ",", "\<\"zealously\"\>", ",", "\<\"zebra\"\>", 
+           ",", "\<\"zeugma\"\>", ",", "\<\"zigzag\"\>", 
+           ",", "\<\"zinfandel\"\>", ",", "\<\"zinnia\"\>", 
+           ",", "\<\"zodiac\"\>", ",", "\<\"zodiacal\"\>", 
+           ",", "\<\"zonal\"\>", ",", "\<\"zoological\"\>", 
+           ",", "\<\"zwieback\"\>"}], "}"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          PaneBox[
+           TagBox[
+            TooltipBox[
+             StyleBox[
+              StyleBox[
+               DynamicBox[ToBoxes[
+                 FEPrivate`FrontEndResource[
+                 "FEStrings", "sizeBriefExplanation"], StandardForm],
+                ImageSizeCache->{58., {2., 8.}}],
+               StripOnInput->False,
+               DynamicUpdating->True,
+               LineSpacing->{1, 2},
+               LineIndent->0,
+               LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLText",
+              StripOnInput->False],
+             StyleBox[
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+                StandardForm]], DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[
+              Dynamic[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+              DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}], "Tooltip"]& ],
+           Alignment->Center,
+           BaselinePosition->Baseline,
+           ImageSize->{Automatic, {25, Full}}], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, {25, Full}}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 250, 29200332607063328256, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, {25, Full}}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 250, 29200332607063328256, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, {25, Full}}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 250, 29200332607063328256, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, {25, Full}}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[29200332607063328256 === $SessionID, 
+   Out[250], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellLabel->
+  "Out[250]=",ExpressionUUID->"aaaabb47-de23-418f-8386-dd90f617e4ca"]
+}, Open  ]],
+
+Cell["\<\
+evaluate your previously written polynomial on several different values\
+\>", "Subitem",ExpressionUUID->"a6a6cf27-6dcb-4a27-a1ae-ba5c1e1608fe"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Function", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"x", ",", "y"}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"x", "^", "3"}], "+", "y"}]}], "]"}], "[", 
+  RowBox[{"1", ",", "2"}], "]"}]], "Input",
+ CellLabel->
+  "In[251]:=",ExpressionUUID->"229b71a1-ce69-498d-816f-d46891d4ffe8"],
+
+Cell[BoxData["3"], "Output",
+ CellLabel->
+  "Out[251]=",ExpressionUUID->"84025e8b-db27-4db9-8d5a-0c6a1ad1c17d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Function", "[", 
+   RowBox[{
+    RowBox[{"{", "x", "}"}], ",", 
+    RowBox[{"x", "^", "3"}], ",", "Listable"}], "]"}], "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], "]"}]], "Input",
+ CellLabel->
+  "In[255]:=",ExpressionUUID->"d45db5ac-faa8-47d4-9773-8b7e8cd6c52d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "8", ",", "27", ",", "64"}], "}"}]], "Output",
+ CellLabel->
+  "Out[255]=",ExpressionUUID->"8446eb9d-5081-4a6c-bb8a-ea9303dca7c2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Function", "[", 
+   RowBox[{
+    RowBox[{"{", "x", "}"}], ",", 
+    RowBox[{"x", "^", "3"}]}], "]"}], "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], "]"}]], "Input",
+ CellLabel->
+  "In[254]:=",ExpressionUUID->"53dd295e-3b5d-4fd8-a41b-351b2edae0d8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "8", ",", "27", ",", "64"}], "}"}]], "Output",
+ CellLabel->
+  "Out[254]=",ExpressionUUID->"881f77c3-eba6-4831-9eb3-c59bacf2f0fc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Function", "[", 
+   RowBox[{
+    RowBox[{"{", "x", "}"}], ",", 
+    RowBox[{"t", "[", "x", "]"}], ",", "Listable"}], "]"}], "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], "]"}]], "Input",
+ CellLabel->
+  "In[256]:=",ExpressionUUID->"7155fb55-a460-4fa2-b860-bbd4da89a726"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"t", "[", "1", "]"}], ",", 
+   RowBox[{"t", "[", "2", "]"}], ",", 
+   RowBox[{"t", "[", "3", "]"}], ",", 
+   RowBox[{"t", "[", "4", "]"}]}], "}"}]], "Output",
+ CellLabel->
+  "Out[256]=",ExpressionUUID->"aa4b4719-adb9-42af-92d7-7fc2000f341d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Function", "[", 
+   RowBox[{
+    RowBox[{"{", "x", "}"}], ",", 
+    RowBox[{"t", "[", "x", "]"}]}], "]"}], "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], "]"}]], "Input",
+ CellLabel->
+  "In[257]:=",ExpressionUUID->"c7c0276f-4d75-4c68-96aa-72fe4207a7c0"],
+
+Cell[BoxData[
+ RowBox[{"t", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], "]"}]], "Output",
+ CellLabel->
+  "Out[257]=",ExpressionUUID->"8ae560d2-8f98-4704-84f9-a7d3d3907025"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"66e169f7-8e6c-4db3-a7de-890808e6c333"],
+
+Cell[CellGroupData[{
+
+Cell["Assignment (Set, SetDelayed, Unset, Clear)", "Section",ExpressionUUID->"cde72dd7-2153-4c3a-934d-35640a9bd713"],
+
+Cell[CellGroupData[{
+
+Cell["Immediate assignment:", "Item",ExpressionUUID->"1bf962d7-6042-46cc-8e5a-965eaa93dbac"],
+
+Cell["\<\
+assign to symbol m the value of the matrix you wrote previously.\
+\>", "Subitem",ExpressionUUID->"12c3b335-2c72-45cb-8036-1ef23d58be24"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"m", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"3.", ",", "4.", ",", "5."}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"3.", ",", "1.", ",", "2."}], "}"}]}], "}"}]}]], "Input",
+ CellLabel->
+  "In[283]:=",ExpressionUUID->"0799a753-591d-4e4f-a8b3-f4af2a7ba8d4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"3.`", ",", "4.`", ",", "5.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3.`", ",", "1.`", ",", "2.`"}], "}"}]}], "}"}]], "Output",
+ CellLabel->
+  "Out[283]=",ExpressionUUID->"0466e2ee-739f-4972-bd1c-7d51e17db91b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "m"}]], "Input",
+ CellLabel->
+  "In[284]:=",ExpressionUUID->"ecffab26-f502-4432-8908-11b217ed94a9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = True, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\"Global`m\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False, False, False, False, 
+                False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Assignment\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"OwnValues\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "OwnValues", "Tooltip"]& ], GridBox[{
+                    {
+                    RowBox[{"m", "=", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"3.`", ",", "4.`", ",", "5.`"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"3.`", ",", "1.`", ",", "2.`"}], "}"}]}], 
+                    "}"}]}]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"Global`m\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->6], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"],
+               ImageSizeCache->{10., {2., 8.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"],
+               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\"Global`m\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[
+   Association[
+   "ObjectType" -> "Symbol", "Usage" -> "Global`m", "Documentation" -> None, 
+    "OwnValues" -> 
+    Information`InformationValueForm[
+     OwnValues, $CellContext`m, {$CellContext`m -> {{3., 4., 5.}, {3., 1., 
+        2.}}}], "UpValues" -> None, "DownValues" -> None, "SubValues" -> None,
+     "DefaultValues" -> None, "NValues" -> None, "FormatValues" -> None, 
+    "Options" -> None, "Attributes" -> {}, "FullName" -> "Global`m"], 
+   False]]], "Output",
+ CellLabel->
+  "Out[284]=",ExpressionUUID->"c13dd2f6-bcdf-4ac6-97be-b91affff6643"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"m", "[", 
+  RowBox[{"[", 
+   RowBox[{"2", ",", "3"}], "]"}], "]"}]], "Input",
+ CellLabel->
+  "In[285]:=",ExpressionUUID->"800c2aaa-98f3-4637-a9f4-cdcecdfe5b50"],
+
+Cell[BoxData["2.`"], "Output",
+ CellLabel->
+  "Out[285]=",ExpressionUUID->"b2ea19e2-c623-48fa-9c8b-2ebbabdbe4f6"]
+}, Open  ]],
+
+Cell["\<\
+assign in one operation each matrix coefficient to symbols of the form mij \
+where (i, j) are row and column numbers\
+\>", "Subitem",ExpressionUUID->"67f10ca6-6994-47ba-9c3e-50b040a3b389"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"m11", ",", "m12", ",", "m13"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"m21", ",", "m22", ",", "m23"}], "}"}]}], "}"}], "=", 
+  "m"}]], "Input",
+ CellLabel->
+  "In[286]:=",ExpressionUUID->"26445cb6-fec3-4a0e-8318-d0d7d1785d07"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"3.`", ",", "4.`", ",", "5.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3.`", ",", "1.`", ",", "2.`"}], "}"}]}], "}"}]], "Output",
+ CellLabel->
+  "Out[286]=",ExpressionUUID->"e29607fe-23d9-4cb6-8538-b3ec42ab6561"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["m11"], "Input",
+ CellLabel->
+  "In[287]:=",ExpressionUUID->"d4eeef84-92f2-48d8-ba3c-6ba715b79d34"],
+
+Cell[BoxData["3.`"], "Output",
+ CellLabel->
+  "Out[287]=",ExpressionUUID->"f38fe871-16bf-461c-bf7e-6390c5aa0dd6"]
+}, Open  ]],
+
+Cell["name a pure function and call it on several arguments", "Subitem",ExpressionUUID->"85c470ce-8e65-4530-b174-8b3c687f4759"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"fun", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"#", "+", "3"}], "&"}]}], "\[IndentingNewLine]", 
+ RowBox[{"fun", "[", "4", "]"}]}], "Input",
+ CellLabel->
+  "In[288]:=",ExpressionUUID->"a93d406c-8937-486e-acdd-08625f4e624a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"#1", "+", "3"}], "&"}]], "Output",
+ CellLabel->
+  "Out[288]=",ExpressionUUID->"0da18f3e-07ac-45a2-87c6-d148e7238d53"],
+
+Cell[BoxData["7"], "Output",
+ CellLabel->
+  "Out[289]=",ExpressionUUID->"a352d8ae-b29c-41f5-ac72-06e1865bf047"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fun", "[", 
+  RowBox[{"{", 
+   RowBox[{"2", ",", "3", ",", "4"}], "}"}], "]"}]], "Input",
+ CellLabel->
+  "In[290]:=",ExpressionUUID->"4e363a76-fcc5-4cdd-9bb0-3b4bc8493110"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"5", ",", "6", ",", "7"}], "}"}]], "Output",
+ CellLabel->
+  "Out[290]=",ExpressionUUID->"0d056ac8-ad68-4f88-bfbf-fa335b59616b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Delayed assignment:", "Item",ExpressionUUID->"590034af-2d4b-4f2c-835e-807b612547a6"],
+
+Cell["\<\
+assign m a different random matrix value each time you evaluate it.\
+\>", "Subitem",ExpressionUUID->"0e2b95b2-0119-4a6c-8045-913462bad036"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"m", ":=", 
+  RowBox[{"RandomReal", "[", 
+   RowBox[{"1.", ",", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "2"}], "}"}]}], "]"}]}]], "Input",
+ CellLabel->
+  "In[291]:=",ExpressionUUID->"714f4e2d-3e0b-47f1-b784-81cdd38878a2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["m"], "Input",
+ CellLabel->
+  "In[293]:=",ExpressionUUID->"88cc2892-58c8-4caf-88d9-797143f3fe0b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0.15149026073638994`", ",", "0.809594520521266`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.256489501167795`", ",", "0.23227001623548094`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.21683911766141506`", ",", "0.36042693006138005`"}], "}"}]}], 
+  "}"}]], "Output",
+ CellLabel->
+  "Out[293]=",ExpressionUUID->"f66dc5fe-df4d-43e4-94f4-bfb3067bfece"]
+}, Open  ]],
+
+Cell["check difference between ConstantArray[m, 3] and Table[x,3]", "Subitem",ExpressionUUID->"1a72c948-d573-47c6-91f6-faff79e8d637"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ConstantArray", "[", 
+  RowBox[{"m", ",", "3"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Table", "[", 
+  RowBox[{"m", ",", "3"}], "]"}]}], "Input",
+ CellLabel->
+  "In[296]:=",ExpressionUUID->"2ea95b7a-64cd-46ac-9ab4-e57b45aac602"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0.25217059687784715`", ",", "0.007799540569135344`"}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"0.231565175731147`", ",", "0.35614725788542745`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0.6215577477840488`", ",", "0.8352770795949958`"}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0.25217059687784715`", ",", "0.007799540569135344`"}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"0.231565175731147`", ",", "0.35614725788542745`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0.6215577477840488`", ",", "0.8352770795949958`"}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0.25217059687784715`", ",", "0.007799540569135344`"}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"0.231565175731147`", ",", "0.35614725788542745`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0.6215577477840488`", ",", "0.8352770795949958`"}], "}"}]}], 
+    "}"}]}], "}"}]], "Output",
+ CellLabel->
+  "Out[296]=",ExpressionUUID->"a92d078d-1db2-42f4-8641-03be408b4191"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0.15007972199032515`", ",", "0.006114592625856341`"}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"0.2978255219967274`", ",", "0.5394294267179831`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0.11509907651668838`", ",", "0.37254899162230326`"}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0.721903755735499`", ",", "0.6695459964792694`"}], "}"}], ",", 
+     
+     RowBox[{"{", 
+      RowBox[{"0.0732219768741682`", ",", "0.951659867534562`"}], "}"}], ",", 
+     
+     RowBox[{"{", 
+      RowBox[{"0.9838274499300335`", ",", "0.399980944830052`"}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0.8937953157754921`", ",", "0.17234906731439925`"}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"0.7979381768064746`", ",", "0.42778242090499075`"}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"0.7117859335139534`", ",", "0.8443456680845096`"}], "}"}]}], 
+    "}"}]}], "}"}]], "Output",
+ CellLabel->
+  "Out[297]=",ExpressionUUID->"9a2ac49f-5348-4ab0-93f4-a8b5e0ea87a8"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Find out about a symbol\[CloseCurlyQuote]s definitions with ",
+ StyleBox[ButtonBox["Information",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Information"],
+  FontWeight->"Bold"],
+ " (?):"
+}], "Item",ExpressionUUID->"a2d049d3-e746-4110-968c-ca0d0c403c17"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "m"}]], "Input",
+ CellLabel->
+  "In[302]:=",ExpressionUUID->"fc6581fb-71ff-48ed-91f7-c017cb24365b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = True, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\"Global`m\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False, False, False, False, 
+                False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"Global`m\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->6], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"],
+               ImageSizeCache->{10., {2., 8.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"],
+               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\"Global`m\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[
+   Association[
+   "ObjectType" -> "Symbol", "Usage" -> "Global`m", "Documentation" -> None, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, "Attributes" -> {}, "FullName" -> 
+    "Global`m"], False]]], "Output",
+ CellLabel->
+  "Out[302]=",ExpressionUUID->"5d815106-65bb-4da5-bbe0-8f40f1892af8"]
+}, Open  ]],
+
+Cell["clear all definitions attached to m and show it worked", "Item",ExpressionUUID->"9ea486c5-4818-4cd4-ba7a-855236242e9d"],
+
+Cell[BoxData[
+ RowBox[{"m", " ", "=."}]], "Input",
+ CellLabel->
+  "In[301]:=",ExpressionUUID->"c56e3068-75aa-4411-8586-f50c0b77732f"],
+
+Cell[TextData[{
+ "Or with ",
+ StyleBox[ButtonBox["OwnValues",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/OwnValues"],
+  FontWeight->"Bold"],
+ ":"
+}], "Item",ExpressionUUID->"7d699a35-2e6a-434b-b5c7-6970904c1a66"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OwnValues", "[", "m", "]"}]], "Input",
+ CellLabel->
+  "In[304]:=",ExpressionUUID->"8fe71b59-2af3-463a-8726-f2e612773601"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellLabel->
+  "Out[304]=",ExpressionUUID->"ccc69ce5-7e54-4390-baa5-86b40e11811a"]
+}, Open  ]],
+
+Cell["\<\
+Make a function that take a symbol and double its value if it already has one \
+or set it to 1 if not.\
+\>", "Subitem",ExpressionUUID->"6c08ccfd-579b-4b22-a969-2de9a23f257c"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"'", "===", 
+   RowBox[{
+   "'", " ", "is", " ", "the", " ", "same", " ", "as", " ", "SameQ"}]}], " ", 
+  "*)"}]], "Input",ExpressionUUID->"0e4ae797-90b9-431f-9145-cf3fff6041c0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "=", 
+  RowBox[{"Function", "[", 
+   RowBox[{"x", ",", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"OwnValues", "[", "x", "]"}], "===", 
+       RowBox[{"{", "}"}]}], ",", 
+      RowBox[{"x", "=", "1"}], ",", 
+      RowBox[{"x", "=", 
+       RowBox[{"x", "*", "2"}]}]}], "]"}], ",", "HoldAll"}], "]"}]}]], "Input",\
+
+ CellLabel->
+  "In[305]:=",ExpressionUUID->"73e089c5-499a-4a3b-b7bf-74196f943245"],
+
+Cell[BoxData[
+ RowBox[{"Function", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"OwnValues", "[", "x", "]"}], "===", 
+      RowBox[{"{", "}"}]}], ",", 
+     RowBox[{"x", "=", "1"}], ",", 
+     RowBox[{"x", "=", 
+      RowBox[{"x", " ", "2"}]}]}], "]"}], ",", "HoldAll"}], "]"}]], "Output",
+ CellLabel->
+  "Out[305]=",ExpressionUUID->"6afc810e-6222-4895-a490-dfb7ba7581d3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "[", "x", "]"}]], "Input",
+ CellLabel->
+  "In[306]:=",ExpressionUUID->"76bccd22-05e5-4b41-83c8-68662109e032"],
+
+Cell[BoxData["1"], "Output",
+ CellLabel->
+  "Out[306]=",ExpressionUUID->"5b6c9535-d03e-4682-aa6d-cf2c00a3f39a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "[", "x", "]"}]], "Input",
+ CellLabel->
+  "In[307]:=",ExpressionUUID->"ff2e0530-8bda-44b5-81ce-5be839ef87d5"],
+
+Cell[BoxData["2"], "Output",
+ CellLabel->
+  "Out[307]=",ExpressionUUID->"14456661-6bb2-493f-a4a9-92837839985b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["x"], "Input",
+ CellLabel->
+  "In[308]:=",ExpressionUUID->"74516101-8b65-4c16-8084-11ceb26507b1"],
+
+Cell[BoxData["2"], "Output",
+ CellLabel->
+  "Out[308]=",ExpressionUUID->"68345058-2d28-448a-b997-fdb420837967"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"05696fa3-7fb5-4894-9e32-8fa3eea05604"],
+
+Cell[CellGroupData[{
+
+Cell["Patterns, Rules", "Section",ExpressionUUID->"7c8e59b4-d314-425d-9a4e-3925bc6d6e77"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+One very characteristic feature of the language is pattern \
+matching/transformation\
+\>", "Item",ExpressionUUID->"6f42bf96-4dde-4a11-b4dc-12b099ea5c17"],
+
+Cell[CellGroupData[{
+
+Cell["write a pattern:", "Subitem",ExpressionUUID->"132a6916-2e86-4c43-81fd-d129e369bb3c"],
+
+Cell[CellGroupData[{
+
+Cell["matching any string", "Subsubitem",ExpressionUUID->"295d8433-5704-4d65-a111-b25ca84648aa"],
+
+Cell["matching a lower case string", "Subsubitem",ExpressionUUID->"36106daa-ce66-437b-a060-db8966f89445"],
+
+Cell["matching any myrectangle instance", "Subsubitem",ExpressionUUID->"0d408dcd-a34f-4320-9fac-20d1a4f922ec"],
+
+Cell["matching any \[OpenCurlyDoubleQuote]valid\[CloseCurlyDoubleQuote] \
+myrectangle instance", "Subsubitem",ExpressionUUID->"2a67c894-5f08-461d-bc09-\
+7fd0f258fc16"],
+
+Cell["matching a list of name value couples (list)", "Subsubitem",ExpressionUUID->"a664e92b-a294-4fd9-862a-c156c439c5e9"],
+
+Cell["Matching anything !", "Subsubitem",ExpressionUUID->"e9cb570e-adae-4829-be6d-9de1a131cad9"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Patterns represent expression and their parts", "Item",ExpressionUUID->"89d61695-72da-4fb8-887e-5c4a9358ef10"],
+
+Cell["\<\
+write a pattern that reference the first and last diagonal element of a matrix\
+\>", "Subitem",ExpressionUUID->"01341fdc-207a-4bb2-9c57-34f37b04767a"],
+
+Cell["\<\
+Transformation of expression (computation) can be expressed through rules on \
+pattern \
+\>", "Item",ExpressionUUID->"56306ae0-4a13-4394-b724-66f3908c3efb"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Make a pure function returning valid myrectangle input and ",
+ ButtonBox["Replace",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Replace"],
+ " non valid one by $Failed"
+}], "Subitem",ExpressionUUID->"740d90a9-7721-42ae-b67e-50838c1c7005"],
+
+Cell[TextData[{
+ ButtonBox["Replace all",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/ReplaceAll"],
+ " non string element in a list by \[OpenCurlyDoubleQuote]NotAString\
+\[CloseCurlyDoubleQuote]"
+}], "Subitem",ExpressionUUID->"e5dc66fb-5830-469d-8789-87545bb7ce35"],
+
+Cell["\<\
+Evaluate your previously written polynomial on several different values\
+\>", "Subitem",ExpressionUUID->"d87264b3-2925-46e2-bf3c-f5461a2302d0"],
+
+Cell["Replace a matrix by the list of its first and last element", "Subitem",ExpressionUUID->"ba2ccd22-c9b2-4805-bba0-e504bfa40e00"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"592a7ca1-61fe-4286-895c-3383d55ceb2f"],
+
+Cell[CellGroupData[{
+
+Cell["Function Definitions", "Section",ExpressionUUID->"9f04368b-46f5-4845-a0e0-06886c6273f6"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+The Wolfram language create functions attaching pattern transformation rule \
+to symbols \
+\>", "Item",ExpressionUUID->"c0635f79-a4e3-447d-b9bd-8580c7762423"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Create a function \[OpenCurlyDoubleQuote]ReverseRange\
+\[CloseCurlyDoubleQuote] that returns the ",
+ Cell[BoxData[
+  FormBox[
+   ButtonBox["reverse",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/Reverse"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b79575a6-0363-480e-8a57-7b8298d7e99f"],
+ " of the ",
+ ButtonBox["range",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Range"],
+ " of its integer argument"
+}], "Subitem",ExpressionUUID->"feba1438-fc02-4635-9604-eb54a9e6ad7d"],
+
+Cell["Set a definition for the Real case, for the Complex Case", "Subitem",ExpressionUUID->"81bb98ca-861a-470b-973a-b2e924cf05be"],
+
+Cell["\<\
+Create a \[OpenCurlyDoubleQuote]mysquare\[CloseCurlyDoubleQuote] function \
+that evaluate to a \[OpenCurlyDoubleQuote]myrectangle\[CloseCurlyDoubleQuote] \
+symbolic object\
+\>", "Subitem",ExpressionUUID->"e50952dc-2611-4007-9647-7e4c5534d419"]
+}, Open  ]],
+
+Cell[TextData[{
+ "The Wolfram Language stores function definitions in ",
+ StyleBox[ButtonBox["DownValues",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/DownValues"],
+  FontWeight->"Bold"],
+ ":"
+}], "Item",ExpressionUUID->"2a31bb61-ed5c-473f-a815-47fb7a9e4b6f"],
+
+Cell["\<\
+definitions rules are very liberal: polymorphism (depending on data type...), \
+arity, ect... RISKY !\
+\>", "Item",ExpressionUUID->"a6f081e9-b275-443b-b58f-fa8117eba6f0"],
+
+Cell["\<\
+DownValues gets reordered by a heuristic from less general to more general\
+\>", "Item",ExpressionUUID->"4c178d71-21cd-4e7a-9525-259885669cee"],
+
+Cell["\<\
+Add a very specific case to be on top of ReverseRange OwnValues list.\
+\>", "Subitem",ExpressionUUID->"04fcc6d3-045e-4bf4-bc76-547f4ac0da01"],
+
+Cell["\<\
+Unevaluated expression are also a classic cause of problem...\
+\>", "Item",ExpressionUUID->"75b22371-c5ac-44ac-9076-693683810e55"],
+
+Cell["Make sure it ReverseRange in other cases.", "Subitem",ExpressionUUID->"c2bd5dc9-cc24-4dd9-9ebf-2557949876bf"],
+
+Cell["\<\
+Make ReverseRange recurse over a list at all level as argument.\
+\>", "Item",ExpressionUUID->"d04fbf55-c07a-4523-8ac3-e114cf1b6c72"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"838cf2e7-8d97-4e5f-8b4e-f6b8ffcca94d"],
+
+Cell[CellGroupData[{
+
+Cell["Faking Objects", "Section",ExpressionUUID->"3000aaf3-ad83-4821-ac84-84cd0593a312"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+How to avoid tampering with systems definitions, keep definition attached to \
+their related object...\
+\>", "Item",ExpressionUUID->"9df55137-c49b-4963-a7e7-65875d5fb089"],
+
+Cell["\<\
+The Wolfram language can attach definition to symbols at level 1.\
+\>", "Item",ExpressionUUID->"2f00814b-7f80-446a-aaff-a76596eeae39"],
+
+Cell[CellGroupData[{
+
+Cell["Overload Area built in for \[OpenCurlyDoubleQuote]myrectangle\
+\[CloseCurlyDoubleQuote]", "Subitem",ExpressionUUID->"35b3d325-f5d5-4704-b52a-\
+5319a0afdc7c"],
+
+Cell["define DiagonalLength for rectangle", "Subitem",ExpressionUUID->"0eac1050-8bc5-4d16-ba1c-41a78806ff50"]
+}, Open  ]],
+
+Cell[TextData[{
+ "These definitions get added to ",
+ StyleBox[ButtonBox["UpValues",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/UpValues"],
+  FontWeight->"Bold"],
+ ":"
+}], "Item",ExpressionUUID->"0e437fe7-5525-4c08-bf59-61688fd966cd"],
+
+Cell["You can also emulate properties or methods for a myrectangle", "Item",ExpressionUUID->"4c69de07-525a-4d43-be17-85f384f016c3"],
+
+Cell[CellGroupData[{
+
+Cell["These definitions get added to SubValues", "Subitem",ExpressionUUID->"19bf2c58-b79c-4efb-a351-42a18e1382b3"],
+
+Cell["\<\
+create a properties \[OpenCurlyDoubleQuote]DiagonalLength\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]Perimeter\
+\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]Area\[CloseCurlyDoubleQuote], ... for you object \
+\[OpenCurlyDoubleQuote]myrectangle\[CloseCurlyDoubleQuote]\
+\>", "Subitem",ExpressionUUID->"5e717e4b-9d7f-42c8-a38f-6d9881637d19"],
+
+Cell["create a \[OpenCurlyDoubleQuote]Rotate\[CloseCurlyDoubleQuote], and \
+\[OpenCurlyDoubleQuote]Translate\[CloseCurlyDoubleQuote] methods for \
+\[OpenCurlyDoubleQuote]myrectangle\[CloseCurlyDoubleQuote]", "Subitem",Express\
+ionUUID->"ae7c4d05-e588-414c-9a5f-a2f5c135bce7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"33e2f340-4011-4bf1-8032-9c8abf498056"],
+
+Cell[CellGroupData[{
+
+Cell["Scoping", "Section",ExpressionUUID->"9cfe39aa-b054-4a06-b06b-ee31ab376443"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Write a function that takes a \[OpenCurlyDoubleQuote]myrectangle\
+\[CloseCurlyDoubleQuote] and returns a \[OpenCurlyDoubleQuote]mycircle\
+\[CloseCurlyDoubleQuote] representing the circumscribed circle to this \
+rectangle\
+\>", "Item",ExpressionUUID->"8530da9d-7b0c-45b9-8bc4-46bac3689773"],
+
+Cell["Write a function that check wether two segments intersect", "Item",ExpressionUUID->"b5c72aa2-2e75-4ddd-8209-d01995c4c025"],
+
+Cell["\<\
+Add a \[OpenCurlyDoubleQuote]Overlap\[CloseCurlyDoubleQuote] function for \
+myrectangle that tells wether two of them interact, set up a Method option \
+which let you choose a \[OpenCurlyDoubleQuote]CircumscribedCircle\
+\[CloseCurlyDoubleQuote] (fast - default - approximate) or \
+\[OpenCurlyDoubleQuote]Intersect\[CloseCurlyDoubleQuote] method (long - on \
+demand - exact)\
+\>", "Item",ExpressionUUID->"40d13939-fb87-4cf2-978d-a4a07450f3fa"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{840, 755},
+WindowMargins->{{Automatic, 145}, {Automatic, 0}},
+WindowTitle->"Assignments, Definitions, and Scoping",
+Visible->True,
+TaggingRules->{"SlideshowSettings" -> {"Toolbar" -> True}},
+TrackCellChangeTimes->False,
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 11, 2019)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]], 
+   Cell[
+    CellGroupData[{
+      Cell["Styles for Title and Section Cells", "Section"], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["WSSBanner"], CellFrameMargins -> {{0, 8}, {10, 20}}, 
+          CellFrameLabels -> {{None, None}, {None, None}}, FontFamily -> 
+          "Source Sans Pro", FontSize -> 42, FontWeight -> "Regular", 
+          FontSlant -> "Plain", FontVariations -> {"CapsType" -> "AllCaps"}, 
+          PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}], 
+         Cell[
+          StyleData["WSSBanner", "SlideShow"], LineSpacing -> {1, 2}, 
+          FontSize -> 42], 
+         Cell[
+          StyleData[
+          "WSSBanner", "Slideshow Working", StyleDefinitions -> 
+           StyleData["WSSBanner", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "WSSBanner", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["WSSBanner", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "WSSBanner", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["WSSBanner", "Slideshow Working"]], 
+          CellFrameLabels -> {{None, None}, {None, None}}]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["WolframULogo"], CellGroupingRules -> "GraphicsGrouping", 
+          PageBreakWithin -> False, GeneratedCell -> True, CellAutoOverwrite -> 
+          True, ShowCellLabel -> False, DefaultFormatType -> 
+          DefaultOutputFormatType, LanguageCategory -> "NaturalLanguage", 
+          FormatType -> StandardForm, ShowStringCharacters -> False, 
+          FrontFaceColor -> GrayLevel[0], BackFaceColor -> GrayLevel[0], 
+          FrontFaceOpacity -> 1, GraphicsColor -> GrayLevel[0], PointSize -> 
+          Absolute[3], Thickness -> Medium, Opacity -> 1, DrawEdges -> False, 
+          StyleMenuListing -> None, FontFamily -> "Arial", FontSize -> 10, 
+          FontWeight -> "Plain", FontColor -> GrayLevel[0], FontOpacity -> 
+          1, $CellContext`StripStyleOnPaste -> 
+          False, $CellContext`BackFaceOpacity -> 1], 
+         Cell[
+          StyleData["WolframULogo", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.04 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {
+            0.2, 0.02 FrontEnd`AbsoluteCurrentValue[{WindowSize, 2}]}}], 
+         Cell[
+          StyleData[
+          "WolframULogo", "Slideshow Working", StyleDefinitions -> 
+           StyleData["WolframULogo", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "WolframULogo", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["WolframULogo", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "WolframULogo", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["WolframULogo", "Slideshow Working"]], 
+          CellFrameLabels -> {{None, None}, {None, None}}]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell["Title", "Subsection"], 
+         Cell[
+          CellGroupData[{
+            Cell[
+             StyleData["Title"], FontFamily -> "Source Sans Pro", FontSize -> 
+             81, FontWeight -> "Regular", FontSlant -> "Plain", 
+             PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, 
+             FontColor -> 
+             RGBColor[
+              0.09019607843137255, 0.1607843137254902, 0.25882352941176473`]], 
+            Cell[
+             StyleData["Title", "SlideShow"], 
+             CellMargins -> {{
+               0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.04 
+                FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {
+               12, 0.08 FrontEnd`AbsoluteCurrentValue[{WindowSize, 2}]}}, 
+             LineSpacing -> {1, 2}, FontSize -> 81], 
+            Cell[
+             StyleData[
+             "Title", "Slideshow Working", StyleDefinitions -> 
+              StyleData["Title", "SlideShow"]]], 
+            Cell[
+             StyleData[
+             "Title", "Slideshow Presentation", StyleDefinitions -> 
+              StyleData["Title", "Slideshow Working"]]], 
+            Cell[
+             StyleData[
+             "Title", "Scrolling Presentation", StyleDefinitions -> 
+              StyleData["Title", "Slideshow Working"]], 
+             CellFrameLabels -> {{None, None}, {None, None}}]}, Closed]], 
+         Cell[
+          CellGroupData[{
+            Cell[
+             StyleData["Subtitle"], FontFamily -> "Source Sans Pro", FontSize -> 
+             40, FontWeight -> "Light", FontSlant -> "Italic", 
+             PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, 
+             FontColor -> 
+             RGBColor[
+              0.25098039215686274`, 0.25098039215686274`, 
+               0.25098039215686274`]], 
+            Cell[
+             StyleData["Subtitle", "SlideShow"], 
+             CellMargins -> {{
+               0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.04 
+                FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {50, 12}}, 
+             LineSpacing -> {1, 2}, FontSize -> 48], 
+            Cell[
+             StyleData[
+             "Subtitle", "Slideshow Working", StyleDefinitions -> 
+              StyleData["Subtitle", "SlideShow"]]], 
+            Cell[
+             StyleData[
+             "Subtitle", "Slideshow Presentation", StyleDefinitions -> 
+              StyleData["Subtitle", "Slideshow Working"]]], 
+            Cell[
+             StyleData[
+             "Subtitle", "Scrolling Presentation", StyleDefinitions -> 
+              StyleData["Subtitle", "Slideshow Working"]]]}, Open]]}, 
+        Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell["Section", "Subsection"], 
+         Cell[
+          CellGroupData[{
+            Cell[
+             StyleData["Section"], CellFrame -> {{0, 0}, {0, 0}}, FontFamily -> 
+             "Source Sans Pro", FontSize -> 70, FontWeight -> "Regular", 
+             FontSlant -> "Plain", 
+             PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, 
+             FontColor -> RGBColor[1., 0.42745098039215684`, 0.]], 
+            Cell[
+             StyleData["Section", "SlideShow"], 
+             CellMargins -> {{
+               0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.04 
+                FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {
+               26, 0.06 FrontEnd`AbsoluteCurrentValue[{WindowSize, 2}]}}, 
+             LineSpacing -> {1, 2}, FontSize -> 40], 
+            Cell[
+             StyleData[
+             "Section", "Slideshow Working", StyleDefinitions -> 
+              StyleData["Section", "SlideShow"]]], 
+            Cell[
+             StyleData[
+             "Section", "Slideshow Presentation", StyleDefinitions -> 
+              StyleData["Section", "SlideShow"]]], 
+            Cell[
+             StyleData[
+             "Section", "Scrolling Presentation", StyleDefinitions -> 
+              StyleData["Section", "SlideShow"]], 
+             CellFrameLabels -> {{None, None}, {None, None}}]}, Closed]], 
+         Cell[
+          CellGroupData[{
+            Cell[
+             StyleData["Subsection"], FontFamily -> "Source Sans Pro", 
+             FontSize -> 40, FontWeight -> "Regular", FontSlant -> "Plain", 
+             PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, 
+             FontColor -> 
+             RGBColor[1., 0.592156862745098, 0.10196078431372549`]], 
+            Cell[
+             StyleData["Subsection", "SlideShow"], 
+             CellMargins -> {{
+               0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.04 
+                FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {
+               12, 0.04 FrontEnd`AbsoluteCurrentValue[{WindowSize, 2}]}}, 
+             LineSpacing -> {1, 2}, FontSize -> 32], 
+            Cell[
+             StyleData[
+             "Subsection", "Slideshow Working", StyleDefinitions -> 
+              StyleData["Subsection", "SlideShow"]]], 
+            Cell[
+             StyleData[
+             "Subsection", "Slideshow Presentation", StyleDefinitions -> 
+              StyleData["Subsection", "Slideshow Working"]]], 
+            Cell[
+             StyleData[
+             "Subsection", "Scrolling Presentation", StyleDefinitions -> 
+              StyleData["Subsection", "Slideshow Working"]]]}, Closed]], 
+         Cell[
+          CellGroupData[{
+            Cell[
+             StyleData["Subsubsection"], FontFamily -> "Source Sans Pro", 
+             FontSize -> 20, FontWeight -> "Regular", FontSlant -> "Plain", 
+             PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, 
+             FontColor -> RGBColor[1., 0.42745098039215684`, 0.]], 
+            Cell[
+             StyleData["Subsubsection", "SlideShow"], 
+             CellMargins -> {{
+               0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.04 
+                FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {
+               12, 0.04 FrontEnd`AbsoluteCurrentValue[{WindowSize, 2}]}}, 
+             LineSpacing -> {1, 2}, FontSize -> 32], 
+            Cell[
+             StyleData[
+             "Subsubsection", "Slideshow Working", StyleDefinitions -> 
+              StyleData["Subsubsection", "SlideShow"]]], 
+            Cell[
+             StyleData[
+             "Subsubsection", "Slideshow Presentation", StyleDefinitions -> 
+              StyleData["Subsubsection", "Slideshow Working"]]], 
+            Cell[
+             StyleData[
+             "Subsubsection", "Scrolling Presentation", StyleDefinitions -> 
+              StyleData["Subsubsection", "Slideshow Working"]]]}, Closed]]}, 
+        Open]]}, Closed]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+      "Styles for Body Content", "Section", 
+       CellChangeTimes -> {{3.727532504641029*^9, 3.727532505736285*^9}}], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Text"], LineSpacing -> {1, 3}, TabSpacings -> {2.5}, 
+          CounterIncrements -> "Text", MenuSortingValue -> 1400, 
+          MenuCommandKey :> "7", FontFamily -> "Source Sans Pro", FontSize -> 
+          15, FontWeight -> "Regular", FontSlant -> "Plain", 
+          PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}], 
+         Cell[
+          StyleData["Text", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 10}}, 
+          FontSize -> 22], 
+         Cell[
+          StyleData[
+          "Text", "Slideshow Working", StyleDefinitions -> 
+           StyleData["Text", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "Text", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["Text", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "Text", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["Text", "Slideshow Working"]]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["CodeText"], LineSpacing -> {1, 3}, TabSpacings -> {2.5}, 
+          CounterIncrements -> "CodeText", MenuSortingValue -> 1540, 
+          FontColor -> GrayLevel[0.45]], 
+         Cell[
+          StyleData["CodeText", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 10}}, 
+          FontSize -> 18], 
+         Cell[
+          StyleData[
+          "CodeText", "Slideshow Working", StyleDefinitions -> 
+           StyleData["CodeText", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "CodeText", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["CodeText", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "CodeText", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["CodeText", "Slideshow Working"]]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Note"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 10}}, 
+          CellOpen -> True, LineSpacing -> {1, 3}, CounterIncrements -> 
+          "Note", MenuSortingValue -> 8, FontFamily -> "Source Sans Pro", 
+          FontSize -> 12, FontSlant -> "Italic", Background -> 
+          GrayLevel[0.85]], 
+         Cell[
+          StyleData["Note", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 10}}, 
+          CellOpen -> False, 
+          HyphenationOptions -> {"HyphenationCharacter" -> "-"}, 
+          ParagraphSpacing -> {0, 6}, ParagraphIndent -> -10, 
+          StyleMenuListing -> None, FontSize -> 18], 
+         Cell[
+          StyleData[
+          "Note", "Slideshow Working", StyleDefinitions -> 
+           StyleData["Note"]]], 
+         Cell[
+          StyleData[
+          "Note", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["Note", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "Note", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["Note", "Slideshow Working"]]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Item"], CellDingbat -> 
+          StyleBox["\[FilledSmallCircle]", Alignment -> Baseline, 
+            RGBColor[1., 0.42745098039215684`, 0.]]], 
+         Cell[
+          StyleData["Item", "SlideShow"], 
+          CellMargins -> {{
+            0.165 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 10}}, 
+          CellFrameLabelMargins -> 8, FontSize -> 22], 
+         Cell[
+          StyleData[
+          "Item", "Slideshow Working", StyleDefinitions -> 
+           StyleData["Item", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "Item", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["Item", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "Item", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["Item", "Slideshow Working"]]]}, Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["ItemParagraph"], CellMargins -> {{81, 10}, {4, 1}}, 
+          ReturnCreatesNewCell -> True, 
+          StyleKeyMapping -> {"Tab" -> "SubitemParagraph"}, 
+          CellGroupingRules -> {"GroupTogetherNestedGrouping", 15000}, 
+          DefaultNewCellStyle -> "Item", MenuSortingValue -> 1600, FontFamily -> 
+          Dynamic[
+            CurrentValue[{StyleHints, "FontSet", "Text1"}]], FontSize -> 14, 
+          FontColor -> Dynamic[
+            FrontEnd`CurrentValue[{StyleHints, "ColorSet", "Text1"}], None]], 
+         
+         Cell[
+          StyleData["ItemParagraph", "SlideShow"], ShowGroupOpener -> False, 
+          CellMargins -> {{
+            0.18 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 2}}, 
+          FontSize -> 22], 
+         Cell[
+          StyleData[
+          "ItemParagraph", "Slideshow Working", StyleDefinitions -> 
+           StyleData["ItemParagraph", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "ItemParagraph", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["ItemParagraph", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "ItemParagraph", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["ItemParagraph", "Slideshow Working"]]], 
+         Cell[
+          StyleData["ItemParagraph", "Printout"], 
+          CellMargins -> {{65, Inherited}, {Inherited, 0.5 Inherited}}]}, 
+        Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Subitem"], CellDingbat -> 
+          StyleBox["\[FilledSmallCircle]", Alignment -> Baseline, 
+            RGBColor[1., 0.592156862745098, 0.10196078431372549`]]], 
+         Cell[
+          StyleData["Subitem", "SlideShow"], 
+          CellMargins -> {{
+            0.185 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 10}}, 
+          CellFrameLabelMargins -> 8, FontSize -> 22], 
+         Cell[
+          StyleData[
+          "Subitem", "Slideshow Working", StyleDefinitions -> 
+           StyleData["Subitem", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "Subitem", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["Subitem", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "Subitem", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["Subitem", "Slideshow Working"]]]}, Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["SubitemParagraph"], CellMargins -> {{105, 12}, {4, 1}}, 
+          ReturnCreatesNewCell -> True, 
+          StyleKeyMapping -> {
+           "Tab" -> "SubsubitemParagraph", "Backspace" -> 
+            "ItemParagraph", $CellContext`KeyEvent[
+             "Tab", $CellContext`Modifiers -> {$CellContext`Shift}] -> 
+            "ItemParagraph"}, 
+          CellGroupingRules -> {"GroupTogetherNestedGrouping", 15100}, 
+          CellFrameLabelMargins -> 4, DefaultNewCellStyle -> "Subitem", 
+          MenuSortingValue -> 1610, FontFamily -> Dynamic[
+            CurrentValue[{StyleHints, "FontSet", "Text1"}]], FontSize -> 13.5,
+           FontColor -> Dynamic[
+            CurrentValue[{StyleHints, "ColorSet", "Text1"}]]], 
+         Cell[
+          StyleData["SubitemParagraph", "SlideShow"], 
+          CellMargins -> {{
+            0.2 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 2}}, 
+          FontSize -> 22], 
+         Cell[
+          StyleData[
+          "SubitemParagraph", "Slideshow Working", StyleDefinitions -> 
+           StyleData["SubitemParagraph", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "SubitemParagraph", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["SubitemParagraph", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "SubitemParagraph", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["SubitemParagraph", "Slideshow Working"]]], 
+         Cell[
+          StyleData["SubitemParagraph", "Printout"], 
+          CellMargins -> {{92, Inherited}, {Inherited, 0.1 Inherited}}]}, 
+        Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["ItemNumbered"], CellDingbat -> Cell[
+            TextData[{
+              CounterBox["ItemNumbered"], "."}], FontWeight -> "Bold"], 
+          CellMargins -> {{81, 10}, {4, 8}}, ReturnCreatesNewCell -> True, 
+          StyleKeyMapping -> {"Tab" -> "SubitemNumbered"}, 
+          CellGroupingRules -> {"GroupTogetherNestedGrouping", 15000}, 
+          CellFrameLabelMargins -> 4, CounterIncrements -> "ItemNumbered", 
+          CounterAssignments -> {{"SubitemNumbered", 0}, {
+            "SubsubitemNumbered", 0}}, MenuSortingValue -> 1630, FontFamily -> 
+          "Source Sans Pro", FontSize -> 15], 
+         Cell[
+          StyleData["ItemNumbered", "SlideShow"], 
+          CellMargins -> {{
+            0.17 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 10}}, 
+          CellFrameLabelMargins -> 6, FontSize -> 22], 
+         Cell[
+          StyleData[
+          "ItemNumbered", "Slideshow Working", StyleDefinitions -> 
+           StyleData["ItemNumbered", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "ItemNumbered", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["ItemNumbered", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "ItemNumbered", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["ItemNumbered", "Slideshow Working"]]]}, Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["SubitemNumbered"], CellDingbat -> Cell[
+            TextData[{
+              CounterBox["ItemNumbered"], ".", 
+              CounterBox["SubitemNumbered"], "."}], FontWeight -> "Bold"], 
+          CellMargins -> {{105, 12}, {4, 4}}, ReturnCreatesNewCell -> True, 
+          StyleKeyMapping -> {
+           "Tab" -> "SubsubitemNumbered", "Backspace" -> 
+            "ItemNumbered", $CellContext`KeyEvent[
+             "Tab", $CellContext`Modifiers -> {$CellContext`Shift}] -> 
+            "ItemNumbered"}, 
+          CellGroupingRules -> {"GroupTogetherNestedGrouping", 15100}, 
+          CellFrameLabelMargins -> 4, DefaultNewCellStyle -> "Item", 
+          CounterIncrements -> "SubitemNumbered", 
+          CounterAssignments -> {{"SubsubitemNumbered", 0}}, MenuSortingValue -> 
+          1640, FontFamily -> Dynamic[
+            CurrentValue[{StyleHints, "FontSet", "Text1"}]], FontSize -> 
+          13.5], 
+         Cell[
+          StyleData["SubitemNumbered", "SlideShow"], 
+          CellMargins -> {{
+            0.195 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 10}}, 
+          CellFrameLabelMargins -> 6, FontSize -> 22], 
+         Cell[
+          StyleData[
+          "SubitemNumbered", "Slideshow Working", StyleDefinitions -> 
+           StyleData["SubitemNumbered", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "SubitemNumbered", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["SubitemNumbered", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "SubitemNumbered", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["SubitemNumbered", "Slideshow Working"]]], 
+         Cell[
+          StyleData["SubitemNumbered", "Printout"], 
+          CellMargins -> {{92, Inherited}, {Inherited, Inherited}}]}, 
+        Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Graphics"], CellMargins -> {{27, Inherited}, {15, 15}}, 
+          CellGroupingRules -> "GraphicsGrouping", PageBreakWithin -> False, 
+          GeneratedCell -> True, CellAutoOverwrite -> True, ShowCellLabel -> 
+          False, DefaultFormatType -> DefaultOutputFormatType, ContextMenu -> 
+          FEPrivate`FrontEndResource["ContextMenus", "Graphics"], 
+          AutoStyleOptions -> {"HighlightMisspelledWords" -> False}, 
+          LanguageCategory -> "NaturalLanguage", FormatType -> StandardForm, 
+          ShowStringCharacters -> False, NumberMarks -> False, 
+          CounterIncrements -> "Graphics", 
+          ImageMargins -> {{43, Inherited}, {Inherited, 0}}, Arrowheads -> 
+          0.04, Dashing -> None, CapForm -> "Square", 
+          JoinForm -> {"Miter", 3.25}, LineColor -> GrayLevel[0], LineOpacity -> 
+          1, EdgeColor -> GrayLevel[0], EdgeOpacity -> 1, EdgeThickness -> 
+          Medium, EdgeDashing -> None, EdgeCapForm -> "Square", 
+          EdgeJoinForm -> {"Miter", 3.25}, FrontFaceColor -> GrayLevel[0], 
+          BackFaceColor -> GrayLevel[0], FrontFaceOpacity -> 1, GraphicsColor -> 
+          GrayLevel[0], PointSize -> Absolute[3], Thickness -> Medium, 
+          Opacity -> 1, DrawEdges -> False, StyleMenuListing -> None, 
+          FontFamily -> "Arial", FontSize -> 10, FontWeight -> "Plain", 
+          FontColor -> GrayLevel[0], FontOpacity -> 
+          1, $CellContext`StripStyleOnPaste -> 
+          False, $CellContext`BackFaceOpacity -> 1], 
+         Cell[
+          StyleData["Graphics", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.03 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {12, 12}}], 
+         Cell[
+          StyleData[
+          "Graphics", "Slideshow Working", StyleDefinitions -> 
+           StyleData["Graphics", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "Graphics", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["Graphics", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "Graphics", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["Graphics", "Slideshow Working"]]]}, Closed]], 
+      Cell[
+       StyleData["Hyperlink"], FontColor -> 
+       RGBColor[0.269993, 0.308507, 0.6]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["KeyEvent"], CellFrame -> {{1, 1}, {1, 1}}, 
+          CellFrameMargins -> {{2, 2}, {2, 2}}, CellFrameColor -> 
+          GrayLevel[0.8], FontFamily -> "Source Sans Pro", FontColor -> 
+          GrayLevel[0.360784], Background -> GrayLevel[0.964706]], 
+         Cell[
+          StyleData["KeyEvent", "SlideShow"]], 
+         Cell[
+          StyleData[
+          "KeyEvent", "Slideshow Working", StyleDefinitions -> 
+           StyleData["KeyEvent", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "KeyEvent", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["KeyEvent", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "KeyEvent", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["KeyEvent", "Slideshow Working"]]]}, Closed]]}, Closed]], 
+   Cell[
+    CellGroupData[{
+      Cell["Styles for Input and Output Cells", "Section"], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Input"], CellMargins -> {{66, 10}, {5, 8}}, 
+          StyleKeyMapping -> {"=" -> "WolframAlphaShort", "*" -> "Item"}, 
+          FontSize -> 13], 
+         Cell[
+          StyleData["Input", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.01 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {8, 15}}, 
+          LinebreakAdjustments -> {1, 2., 12., 1., 1.}, FontSize -> 20], 
+         Cell[
+          StyleData[
+          "Input", "Slideshow Working", StyleDefinitions -> 
+           StyleData["Input", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "Input", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["Input", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "Input", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["Input", "Slideshow Working"]]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData[
+          "ExperimentalInput", StyleDefinitions -> StyleData["Input"]], 
+          CellFrame -> True, CellMargins -> {{66, 10}, {5, 8}}, 
+          StyleKeyMapping -> {"=" -> "WolframAlphaShort", "*" -> "Item"}, 
+          CellFrameColor -> 
+          RGBColor[1., 0.592156862745098, 0.10196078431372549`], 
+          CellFrameLabels -> {{
+             Cell[
+              BoxData[
+               InterpretationBox[
+                Cell[
+                 BoxData[
+                  RotationBox[
+                  "Experimental", BoxRotation -> 1.5707963267948966`]], 
+                 "Text", LineColor -> 
+                 RGBColor[1., 0.592156862745098, 0.10196078431372549`], 
+                 FrontFaceColor -> 
+                 RGBColor[1., 0.592156862745098, 0.10196078431372549`], 
+                 BackFaceColor -> 
+                 RGBColor[1., 0.592156862745098, 0.10196078431372549`], 
+                 GraphicsColor -> 
+                 RGBColor[1., 0.592156862745098, 0.10196078431372549`], 
+                 FontSize -> 10, FontColor -> 
+                 RGBColor[1., 0.592156862745098, 0.10196078431372549`]], 
+                TextCell[
+                 Rotate["Experimental", 90 Degree], "Text", 10, 
+                 RGBColorRGBColor[
+                 1., 0.592156862745098, 0.10196078431372549`]]]]], None}, {
+            None, None}}, FontSize -> 13], 
+         Cell[
+          StyleData["ExperimentalInput", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.01 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {8, 15}}, 
+          LinebreakAdjustments -> {1, 2., 12., 1., 1.}, FontSize -> 20], 
+         Cell[
+          StyleData[
+          "ExperimentalInput", "Slideshow Working", StyleDefinitions -> 
+           StyleData["Input", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "ExperimentalInput", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["Input", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "ExperimentalInput", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["Input", "Slideshow Working"]]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["InputOnly"], CellMargins -> {{66, 10}, {7, 8}}, FontSize -> 
+          13], 
+         Cell[
+          StyleData["InputOnly", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.01 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 15}}, 
+          LinebreakAdjustments -> {1, 2., 12., 1., 1.}], 
+         Cell[
+          StyleData[
+          "InputOnly", "Slideshow Working", StyleDefinitions -> 
+           StyleData["InputOnly", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "InputOnly", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["InputOnly", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "InputOnly", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["InputOnly", "Slideshow Working"]]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Code"]], 
+         Cell[
+          StyleData["Code", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.01 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {8, 15}}, 
+          LinebreakAdjustments -> {1, 2., 12., 1., 1.}, FontSize -> 20], 
+         Cell[
+          StyleData[
+          "Code", "Slideshow Working", StyleDefinitions -> 
+           StyleData["Code", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "Code", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["Code", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "Code", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["Code", "Slideshow Working"]]]}, Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Output"], CellMargins -> {{66, 10}, {12, 5}}, FontSize -> 
+          13], 
+         Cell[
+          StyleData["Output", "SlideShow"], 
+          CellMargins -> {{
+            0.15 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.01 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {15, 8}}, 
+          LinebreakAdjustments -> {1, 2., 12., 1., 1.}, FontSize -> 20], 
+         Cell[
+          StyleData[
+          "Output", "Slideshow Working", StyleDefinitions -> 
+           StyleData["Output", "SlideShow"]]], 
+         Cell[
+          StyleData[
+          "Output", "Slideshow Presentation", StyleDefinitions -> 
+           StyleData["Output", "Slideshow Working"]]], 
+         Cell[
+          StyleData[
+          "Output", "Scrolling Presentation", StyleDefinitions -> 
+           StyleData["Output", "Slideshow Working"]]]}, Closed]]}, Closed]]}, 
+  Visible -> False, FrontEndVersion -> 
+  "12.0 for Mac OS X x86 (64-bit) (April 11, 2019)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[631, 23, 136, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"60bc568f-b20e-4b9a-b496-b94f48bda20e",
+   CellTags->"SlideShowHeader"],
+  Cell[32637, 575, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"59a5919a-5257-4f71-beb3-6384747a4598",
+   CellTags->"SlideShowHeader"],
+  Cell[38448, 744, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"f9d7357b-95f4-4138-b932-40cb8fbc4ad0",
+   CellTags->"SlideShowHeader"],
+  Cell[55284, 1245, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"66e169f7-8e6c-4db3-a7de-890808e6c333",
+   CellTags->"SlideShowHeader"],
+  Cell[83773, 2084, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"05696fa3-7fb5-4894-9e32-8fa3eea05604",
+   CellTags->"SlideShowHeader"],
+  Cell[86440, 2162, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"592a7ca1-61fe-4286-895c-3383d55ceb2f",
+   CellTags->"SlideShowHeader"],
+  Cell[89052, 2242, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"838cf2e7-8d97-4e5f-8b4e-f6b8ffcca94d",
+   CellTags->"SlideShowHeader"],
+  Cell[91180, 2304, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"33e2f340-4011-4bf1-8032-9c8abf498056",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 124372, 3053}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[631, 23, 136, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"60bc568f-b20e-4b9a-b496-b94f48bda20e",
+ CellTags->"SlideShowHeader"],
+Cell[770, 27, 16465, 277, 188, "WSSBanner",ExpressionUUID->"3bb2d191-b234-4a2e-a519-8cc81e1dbc97"],
+Cell[CellGroupData[{
+Cell[17260, 308, 113, 0, 250, "Title",ExpressionUUID->"a2952f0e-0dad-4d25-91aa-a3ff0c5ccc18"],
+Cell[CellGroupData[{
+Cell[17398, 312, 203, 4, 128, "Input",ExpressionUUID->"c6c7462f-4ea1-40a2-b920-9f177cf4c6d5"],
+Cell[17604, 318, 14972, 250, 64, "WolframULogo",ExpressionUUID->"6449e467-a376-40cc-9cce-4930ea4aeb69"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32637, 575, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"59a5919a-5257-4f71-beb3-6384747a4598",
+ CellTags->"SlideShowHeader"],
+Cell[32762, 579, 108, 1, 30, "Input",ExpressionUUID->"792af5db-51bf-420c-b9e3-c51f37dd010d"],
+Cell[CellGroupData[{
+Cell[32895, 584, 81, 0, 115, "Section",ExpressionUUID->"c300173b-bfe8-461b-92a5-d968980bffb0"],
+Cell[CellGroupData[{
+Cell[33001, 588, 121, 0, 32, "Item",ExpressionUUID->"409e1046-e3c4-42b4-8a26-139ffd35c8ff"],
+Cell[33125, 590, 111, 0, 27, "Subitem",ExpressionUUID->"1c381536-6b57-42ff-b7e3-8faae6901dba"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33273, 595, 362, 11, 30, "Input",ExpressionUUID->"1ffa3d9d-3446-430a-9fb2-8b357b1101ff"],
+Cell[33638, 608, 608, 19, 76, "Output",ExpressionUUID->"e8087867-11ba-4a8e-8bb4-3ea23ca1722d"]
+}, Open  ]],
+Cell[34261, 630, 123, 0, 32, "Item",ExpressionUUID->"73ee490f-aa4a-4aad-b008-8055d809cb28"],
+Cell[CellGroupData[{
+Cell[34409, 634, 132, 3, 30, "Input",ExpressionUUID->"da6e10cc-1d6f-4c3c-845a-46e18a0cec25"],
+Cell[34544, 639, 134, 3, 34, "Output",ExpressionUUID->"05892c83-101b-4de0-9f12-e1e9fc82994d"]
+}, Open  ]],
+Cell[34693, 645, 270, 4, 62, "Item",ExpressionUUID->"75359c9c-58ab-4ff7-8d79-40651ff742b4"],
+Cell[CellGroupData[{
+Cell[34988, 653, 333, 9, 30, "Input",ExpressionUUID->"2347284a-32e3-4afa-9ce3-1d629246364b"],
+Cell[35324, 664, 292, 9, 47, "Output",ExpressionUUID->"92f751c4-7a55-4d26-b51d-60c6f2e8006d"]
+}, Open  ]],
+Cell[35631, 676, 107, 0, 32, "Item",ExpressionUUID->"3d8656aa-0d76-4876-bff4-4736b6431162"],
+Cell[CellGroupData[{
+Cell[35763, 680, 146, 3, 30, "Input",ExpressionUUID->"f8709431-b635-4e97-9d14-860035436ceb"],
+Cell[35912, 685, 119, 2, 34, "Output",ExpressionUUID->"321622a7-0172-455c-8632-00a97e216953"]
+}, Open  ]],
+Cell[36046, 690, 124, 0, 32, "Item",ExpressionUUID->"ebc7b00a-0421-4ed6-8134-71e9cfaa51f7"],
+Cell[36173, 692, 122, 1, 30, "Input",ExpressionUUID->"538279ab-cc0a-45dc-a2f0-5154c62cb01f"],
+Cell[36298, 695, 127, 0, 32, "Item",ExpressionUUID->"d8967899-da7f-4e0f-b8f4-8cc66e40f552"],
+Cell[CellGroupData[{
+Cell[36450, 699, 156, 3, 30, "Input",ExpressionUUID->"f8e748f9-dcd2-4da3-9ccc-e23d2bbcc354"],
+Cell[36609, 704, 1461, 23, 119, "Output",ExpressionUUID->"57f2f0db-d345-4752-a704-2ebe2ed11da2"]
+}, Open  ]],
+Cell[38085, 730, 169, 3, 32, "Item",ExpressionUUID->"94f378a4-6f19-4731-ad5b-067e15ac82ea"],
+Cell[38257, 735, 142, 3, 30, "Input",ExpressionUUID->"a7d7cc7e-c8f2-4a1c-972c-b489648f47dc"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38448, 744, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"f9d7357b-95f4-4138-b932-40cb8fbc4ad0",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[38595, 750, 88, 0, 115, "Section",ExpressionUUID->"8aa3a725-b84f-4f7a-85e0-0c063c41355f"],
+Cell[CellGroupData[{
+Cell[38708, 754, 101, 0, 32, "Item",ExpressionUUID->"1b8dd284-7f9d-4cbe-b62e-b7a691f441bf"],
+Cell[CellGroupData[{
+Cell[38834, 758, 95, 0, 27, "Subitem",ExpressionUUID->"37835139-3ace-4acc-9641-d3f866121e9d"],
+Cell[38932, 760, 104, 0, 25, "Subsubitem",ExpressionUUID->"d0cfc0c6-520e-4b98-8fdb-57f6e54286a0"]
+}, Open  ]]
+}, Open  ]],
+Cell[39063, 764, 239, 6, 52, "Input",ExpressionUUID->"719aa187-4217-4ed2-a2d9-d69539c44376"],
+Cell[39305, 772, 155, 2, 25, "Subsubitem",ExpressionUUID->"0ed89854-1212-484a-9b87-eacecdaad16c"],
+Cell[39463, 776, 301, 9, 30, "Input",ExpressionUUID->"adf5b2c2-e2bf-4552-926f-ec626abff4b4"],
+Cell[CellGroupData[{
+Cell[39789, 789, 227, 6, 30, "Input",ExpressionUUID->"b071ea9b-a59c-4130-a4ce-fff69eac670c"],
+Cell[40019, 797, 111, 2, 34, "Output",ExpressionUUID->"63866443-72b2-4154-8266-09e433494ec1"]
+}, Open  ]],
+Cell[40145, 802, 129, 0, 25, "Subsubitem",ExpressionUUID->"98fa069a-181e-4d59-9f34-fe5afb0963a3"],
+Cell[40277, 804, 223, 6, 30, "Input",ExpressionUUID->"bc972920-77f2-4466-b566-396c6e5c7ada"],
+Cell[CellGroupData[{
+Cell[40525, 814, 276, 7, 30, "Input",ExpressionUUID->"b8e52bee-8121-4db0-9997-ea4a6067c662"],
+Cell[40804, 823, 176, 4, 34, "Output",ExpressionUUID->"0a380004-51d4-4e4c-9ec7-6638b43db26c"]
+}, Open  ]],
+Cell[40995, 830, 128, 0, 27, "Subitem",ExpressionUUID->"01f5f1a1-dfba-40a5-84b6-4bdc6cf5be46"],
+Cell[CellGroupData[{
+Cell[41148, 834, 326, 10, 30, "Input",ExpressionUUID->"dfd71e8a-0b4e-4ca7-a044-c65c42781673"],
+Cell[41477, 846, 369, 13, 39, "Output",ExpressionUUID->"4e31ad45-5d89-4955-837c-6b7d7fb4a96e"]
+}, Open  ]],
+Cell[41861, 862, 221, 4, 27, "Subitem",ExpressionUUID->"7572bb41-7743-408f-aab5-d935ef5ee48b"],
+Cell[CellGroupData[{
+Cell[42107, 870, 410, 12, 30, "Input",ExpressionUUID->"12f1354c-0634-42cd-9d4c-6a4e21f0ae9b"],
+Cell[42520, 884, 9766, 246, 163, "Output",ExpressionUUID->"aaaabb47-de23-418f-8386-dd90f617e4ca"]
+}, Open  ]],
+Cell[52301, 1133, 153, 2, 27, "Subitem",ExpressionUUID->"a6a6cf27-6dcb-4a27-a1ae-ba5c1e1608fe"],
+Cell[CellGroupData[{
+Cell[52479, 1139, 321, 10, 30, "Input",ExpressionUUID->"229b71a1-ce69-498d-816f-d46891d4ffe8"],
+Cell[52803, 1151, 111, 2, 34, "Output",ExpressionUUID->"84025e8b-db27-4db9-8d5a-0c6a1ad1c17d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52951, 1158, 330, 9, 30, "Input",ExpressionUUID->"d45db5ac-faa8-47d4-9773-8b7e8cd6c52d"],
+Cell[53284, 1169, 178, 4, 34, "Output",ExpressionUUID->"8446eb9d-5081-4a6c-bb8a-ea9303dca7c2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53499, 1178, 313, 9, 30, "Input",ExpressionUUID->"53dd295e-3b5d-4fd8-a41b-351b2edae0d8"],
+Cell[53815, 1189, 178, 4, 34, "Output",ExpressionUUID->"881f77c3-eba6-4831-9eb3-c59bacf2f0fc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54030, 1198, 335, 9, 30, "Input",ExpressionUUID->"7155fb55-a460-4fa2-b860-bbd4da89a726"],
+Cell[54368, 1209, 292, 8, 34, "Output",ExpressionUUID->"aa4b4719-adb9-42af-92d7-7fc2000f341d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54697, 1222, 318, 9, 30, "Input",ExpressionUUID->"c7c0276f-4d75-4c68-96aa-72fe4207a7c0"],
+Cell[55018, 1233, 205, 5, 34, "Output",ExpressionUUID->"8ae560d2-8f98-4704-84f9-a7d3d3907025"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55284, 1245, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"66e169f7-8e6c-4db3-a7de-890808e6c333",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[55431, 1251, 116, 0, 206, "Section",ExpressionUUID->"cde72dd7-2153-4c3a-934d-35640a9bd713"],
+Cell[CellGroupData[{
+Cell[55572, 1255, 92, 0, 32, "Item",ExpressionUUID->"1bf962d7-6042-46cc-8e5a-965eaa93dbac"],
+Cell[55667, 1257, 146, 2, 27, "Subitem",ExpressionUUID->"12c3b335-2c72-45cb-8036-1ef23d58be24"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55850, 1264, 307, 9, 30, "Input",ExpressionUUID->"0799a753-591d-4e4f-a8b3-f4af2a7ba8d4"],
+Cell[56160, 1275, 286, 8, 34, "Output",ExpressionUUID->"0466e2ee-739f-4972-bd1c-7d51e17db91b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[56483, 1288, 127, 3, 30, "Input",ExpressionUUID->"ecffab26-f502-4432-8908-11b217ed94a9"],
+Cell[56613, 1293, 9190, 232, 145, "Output",ExpressionUUID->"c13dd2f6-bcdf-4ac6-97be-b91affff6643"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65840, 1530, 184, 5, 30, "Input",ExpressionUUID->"800c2aaa-98f3-4637-a9f4-cdcecdfe5b50"],
+Cell[66027, 1537, 113, 2, 34, "Output",ExpressionUUID->"b2ea19e2-c623-48fa-9c8b-2ebbabdbe4f6"]
+}, Open  ]],
+Cell[66155, 1542, 198, 3, 27, "Subitem",ExpressionUUID->"67f10ca6-6994-47ba-9c3e-50b040a3b389"],
+Cell[CellGroupData[{
+Cell[66378, 1549, 316, 10, 30, "Input",ExpressionUUID->"26445cb6-fec3-4a0e-8318-d0d7d1785d07"],
+Cell[66697, 1561, 286, 8, 34, "Output",ExpressionUUID->"e29607fe-23d9-4cb6-8538-b3ec42ab6561"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[67020, 1574, 112, 2, 30, "Input",ExpressionUUID->"d4eeef84-92f2-48d8-ba3c-6ba715b79d34"],
+Cell[67135, 1578, 113, 2, 34, "Output",ExpressionUUID->"f38fe871-16bf-461c-bf7e-6390c5aa0dd6"]
+}, Open  ]],
+Cell[67263, 1583, 127, 0, 27, "Subitem",ExpressionUUID->"85c470ce-8e65-4530-b174-8b3c687f4759"],
+Cell[CellGroupData[{
+Cell[67415, 1587, 245, 6, 52, "Input",ExpressionUUID->"a93d406c-8937-486e-acdd-08625f4e624a"],
+Cell[67663, 1595, 152, 4, 34, "Output",ExpressionUUID->"0da18f3e-07ac-45a2-87c6-d148e7238d53"],
+Cell[67818, 1601, 111, 2, 34, "Output",ExpressionUUID->"a352d8ae-b29c-41f5-ac72-06e1865bf047"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[67966, 1608, 196, 5, 30, "Input",ExpressionUUID->"4e363a76-fcc5-4cdd-9bb0-3b4bc8493110"],
+Cell[68165, 1615, 166, 4, 34, "Output",ExpressionUUID->"0d056ac8-ad68-4f88-bfbf-fa335b59616b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68368, 1624, 90, 0, 32, "Item",ExpressionUUID->"590034af-2d4b-4f2c-835e-807b612547a6"],
+Cell[68461, 1626, 149, 2, 27, "Subitem",ExpressionUUID->"0e2b95b2-0119-4a6c-8045-913462bad036"]
+}, Open  ]],
+Cell[68625, 1631, 246, 7, 30, "Input",ExpressionUUID->"714f4e2d-3e0b-47f1-b784-81cdd38878a2"],
+Cell[CellGroupData[{
+Cell[68896, 1642, 110, 2, 30, "Input",ExpressionUUID->"88cc2892-58c8-4caf-88d9-797143f3fe0b"],
+Cell[69009, 1646, 426, 11, 34, "Output",ExpressionUUID->"f66dc5fe-df4d-43e4-94f4-bfb3067bfece"]
+}, Open  ]],
+Cell[69450, 1660, 133, 0, 27, "Subitem",ExpressionUUID->"1a72c948-d573-47c6-91f6-faff79e8d637"],
+Cell[CellGroupData[{
+Cell[69608, 1664, 256, 6, 52, "Input",ExpressionUUID->"2ea95b7a-64cd-46ac-9ab4-e57b45aac602"],
+Cell[69867, 1672, 1186, 34, 77, "Output",ExpressionUUID->"a92d078d-1db2-42f4-8641-03be408b4191"],
+Cell[71056, 1708, 1193, 36, 77, "Output",ExpressionUUID->"9a2ac49f-5348-4ab0-93f4-a8b5e0ea87a8"]
+}, Open  ]],
+Cell[72264, 1747, 276, 7, 32, "Item",ExpressionUUID->"a2d049d3-e746-4110-968c-ca0d0c403c17"],
+Cell[CellGroupData[{
+Cell[72565, 1758, 127, 3, 30, "Input",ExpressionUUID->"fc6581fb-71ff-48ed-91f7-c017cb24365b"],
+Cell[72695, 1763, 8062, 205, 130, "Output",ExpressionUUID->"5d815106-65bb-4da5-bbe0-8f40f1892af8"]
+}, Open  ]],
+Cell[80772, 1971, 125, 0, 32, "Item",ExpressionUUID->"9ea486c5-4818-4cd4-ba7a-855236242e9d"],
+Cell[80900, 1973, 133, 3, 30, "Input",ExpressionUUID->"c56e3068-75aa-4411-8586-f50c0b77732f"],
+Cell[81036, 1978, 216, 7, 32, "Item",ExpressionUUID->"7d699a35-2e6a-434b-b5c7-6970904c1a66"],
+Cell[CellGroupData[{
+Cell[81277, 1989, 145, 3, 30, "Input",ExpressionUUID->"8fe71b59-2af3-463a-8726-f2e612773601"],
+Cell[81425, 1994, 128, 3, 34, "Output",ExpressionUUID->"ccc69ce5-7e54-4390-baa5-86b40e11811a"]
+}, Open  ]],
+Cell[81568, 2000, 184, 3, 27, "Subitem",ExpressionUUID->"6c08ccfd-579b-4b22-a969-2de9a23f257c"],
+Cell[81755, 2005, 223, 5, 30, "Input",ExpressionUUID->"0e4ae797-90b9-431f-9145-cf3fff6041c0"],
+Cell[CellGroupData[{
+Cell[82003, 2014, 451, 14, 30, "Input",ExpressionUUID->"73e089c5-499a-4a3b-b7bf-74196f943245"],
+Cell[82457, 2030, 418, 12, 34, "Output",ExpressionUUID->"6afc810e-6222-4895-a490-dfb7ba7581d3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82912, 2047, 137, 3, 30, "Input",ExpressionUUID->"76bccd22-05e5-4b41-83c8-68662109e032"],
+Cell[83052, 2052, 111, 2, 34, "Output",ExpressionUUID->"5b6c9535-d03e-4682-aa6d-cf2c00a3f39a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83200, 2059, 137, 3, 30, "Input",ExpressionUUID->"ff2e0530-8bda-44b5-81ce-5be839ef87d5"],
+Cell[83340, 2064, 111, 2, 34, "Output",ExpressionUUID->"14456661-6bb2-493f-a4a9-92837839985b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83488, 2071, 110, 2, 30, "Input",ExpressionUUID->"74516101-8b65-4c16-8084-11ceb26507b1"],
+Cell[83601, 2075, 111, 2, 34, "Output",ExpressionUUID->"68345058-2d28-448a-b997-fdb420837967"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83773, 2084, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"05696fa3-7fb5-4894-9e32-8fa3eea05604",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[83920, 2090, 89, 0, 115, "Section",ExpressionUUID->"7c8e59b4-d314-425d-9a4e-3925bc6d6e77"],
+Cell[CellGroupData[{
+Cell[84034, 2094, 163, 3, 32, "Item",ExpressionUUID->"6f42bf96-4dde-4a11-b4dc-12b099ea5c17"],
+Cell[CellGroupData[{
+Cell[84222, 2101, 90, 0, 27, "Subitem",ExpressionUUID->"132a6916-2e86-4c43-81fd-d129e369bb3c"],
+Cell[CellGroupData[{
+Cell[84337, 2105, 96, 0, 25, "Subsubitem",ExpressionUUID->"295d8433-5704-4d65-a111-b25ca84648aa"],
+Cell[84436, 2107, 105, 0, 25, "Subsubitem",ExpressionUUID->"36106daa-ce66-437b-a060-db8966f89445"],
+Cell[84544, 2109, 110, 0, 25, "Subsubitem",ExpressionUUID->"0d408dcd-a34f-4320-9fac-20d1a4f922ec"],
+Cell[84657, 2111, 167, 2, 25, "Subsubitem",ExpressionUUID->"2a67c894-5f08-461d-bc09-7fd0f258fc16"],
+Cell[84827, 2115, 121, 0, 25, "Subsubitem",ExpressionUUID->"a664e92b-a294-4fd9-862a-c156c439c5e9"],
+Cell[84951, 2117, 96, 0, 25, "Subsubitem",ExpressionUUID->"e9cb570e-adae-4829-be6d-9de1a131cad9"]
+}, Open  ]]
+}, Open  ]],
+Cell[85074, 2121, 116, 0, 32, "Item",ExpressionUUID->"89d61695-72da-4fb8-887e-5c4a9358ef10"],
+Cell[85193, 2123, 160, 2, 27, "Subitem",ExpressionUUID->"01341fdc-207a-4bb2-9c57-34f37b04767a"],
+Cell[85356, 2127, 166, 3, 32, "Item",ExpressionUUID->"56306ae0-4a13-4394-b724-66f3908c3efb"],
+Cell[CellGroupData[{
+Cell[85547, 2134, 258, 6, 27, "Subitem",ExpressionUUID->"740d90a9-7721-42ae-b67e-50838c1c7005"],
+Cell[85808, 2142, 268, 6, 27, "Subitem",ExpressionUUID->"e5dc66fb-5830-469d-8789-87545bb7ce35"],
+Cell[86079, 2150, 153, 2, 27, "Subitem",ExpressionUUID->"d87264b3-2925-46e2-bf3c-f5461a2302d0"],
+Cell[86235, 2154, 132, 0, 27, "Subitem",ExpressionUUID->"ba2ccd22-c9b2-4805-bba0-e504bfa40e00"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[86440, 2162, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"592a7ca1-61fe-4286-895c-3383d55ceb2f",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[86587, 2168, 94, 0, 115, "Section",ExpressionUUID->"9f04368b-46f5-4845-a0e0-06886c6273f6"],
+Cell[CellGroupData[{
+Cell[86706, 2172, 168, 3, 32, "Item",ExpressionUUID->"c0635f79-a4e3-447d-b9bd-8580c7762423"],
+Cell[CellGroupData[{
+Cell[86899, 2179, 527, 15, 28, "Subitem",ExpressionUUID->"feba1438-fc02-4635-9604-eb54a9e6ad7d"],
+Cell[87429, 2196, 130, 0, 27, "Subitem",ExpressionUUID->"81bb98ca-861a-470b-973a-b2e924cf05be"],
+Cell[87562, 2198, 253, 4, 27, "Subitem",ExpressionUUID->"e50952dc-2611-4007-9647-7e4c5534d419"]
+}, Open  ]],
+Cell[87830, 2205, 262, 7, 32, "Item",ExpressionUUID->"2a31bb61-ed5c-473f-a815-47fb7a9e4b6f"],
+Cell[88095, 2214, 180, 3, 32, "Item",ExpressionUUID->"a6f081e9-b275-443b-b58f-fa8117eba6f0"],
+Cell[88278, 2219, 153, 2, 32, "Item",ExpressionUUID->"4c178d71-21cd-4e7a-9525-259885669cee"],
+Cell[88434, 2223, 151, 2, 27, "Subitem",ExpressionUUID->"04fcc6d3-045e-4bf4-bc76-547f4ac0da01"],
+Cell[88588, 2227, 140, 2, 32, "Item",ExpressionUUID->"75b22371-c5ac-44ac-9076-693683810e55"],
+Cell[88731, 2231, 115, 0, 27, "Subitem",ExpressionUUID->"c2bd5dc9-cc24-4dd9-9ebf-2557949876bf"],
+Cell[88849, 2233, 142, 2, 32, "Item",ExpressionUUID->"d04fbf55-c07a-4523-8ac3-e114cf1b6c72"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[89052, 2242, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"838cf2e7-8d97-4e5f-8b4e-f6b8ffcca94d",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[89199, 2248, 88, 0, 115, "Section",ExpressionUUID->"3000aaf3-ad83-4821-ac84-84cd0593a312"],
+Cell[CellGroupData[{
+Cell[89312, 2252, 181, 3, 32, "Item",ExpressionUUID->"9df55137-c49b-4963-a7e7-65875d5fb089"],
+Cell[89496, 2257, 144, 2, 32, "Item",ExpressionUUID->"2f00814b-7f80-446a-aaff-a76596eeae39"],
+Cell[CellGroupData[{
+Cell[89665, 2263, 163, 2, 27, "Subitem",ExpressionUUID->"35b3d325-f5d5-4704-b52a-5319a0afdc7c"],
+Cell[89831, 2267, 109, 0, 27, "Subitem",ExpressionUUID->"0eac1050-8bc5-4d16-ba1c-41a78806ff50"]
+}, Open  ]],
+Cell[89955, 2270, 237, 7, 32, "Item",ExpressionUUID->"0e437fe7-5525-4c08-bf59-61688fd966cd"],
+Cell[90195, 2279, 131, 0, 32, "Item",ExpressionUUID->"4c69de07-525a-4d43-be17-85f384f016c3"],
+Cell[CellGroupData[{
+Cell[90351, 2283, 114, 0, 27, "Subitem",ExpressionUUID->"19bf2c58-b79c-4efb-a351-42a18e1382b3"],
+Cell[90468, 2285, 361, 6, 27, "Subitem",ExpressionUUID->"5e717e4b-9d7f-42c8-a38f-6d9881637d19"],
+Cell[90832, 2293, 275, 3, 27, "Subitem",ExpressionUUID->"ae7c4d05-e588-414c-9a5f-a2f5c135bce7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91180, 2304, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"33e2f340-4011-4bf1-8032-9c8abf498056",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[91327, 2310, 81, 0, 115, "Section",ExpressionUUID->"9cfe39aa-b054-4a06-b06b-ee31ab376443"],
+Cell[CellGroupData[{
+Cell[91433, 2314, 299, 5, 53, "Item",ExpressionUUID->"8530da9d-7b0c-45b9-8bc4-46bac3689773"],
+Cell[91735, 2321, 128, 0, 32, "Item",ExpressionUUID->"b5c72aa2-2e75-4ddd-8209-d01995c4c025"],
+Cell[91866, 2323, 452, 7, 74, "Item",ExpressionUUID->"40d13939-fb87-4cf2-978d-a4a07450f3fa"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
